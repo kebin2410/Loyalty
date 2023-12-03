@@ -43,7 +43,7 @@ const CreditAndDebitCard = ({
           <Image
             src={img2}
             alt="images"
-            className="svg-className bg-white rounded"
+            className="svg-class bg-white rounded"
           />
         </div>
         <div className="d-flex justify-content-between">
