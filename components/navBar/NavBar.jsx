@@ -1,14 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { useEffect, useRef, useState, useContext } from "react";
 import { navData } from "./navData";
-import Logo from "/public/images/logo.png";
+import LogoLight from "/public/images/logo-light.svg";
+import LogoDark from "/public/images/logo-dark.svg";
 
+import Switch from "../../config/ThemeChange/Switch";
+import { ThemeProvider } from "../../config/ThemeChange/ThemeContext";
+import ThemeContext from "../../config/ThemeChange/ThemeContext";
+
+import LangSwitch from "../../config/LanguageChange/Switch";
+import LanguageContext from "../../config/LanguageChange/LanguageContext";
+import { fetchMock } from "../../config/LanguageChange/mockAPI";
 const NavBar = () => {
   const [windowHeight, setWindowHeight] = useState(0);
-  const menus = useRef();
+  const { dark, toggle } = useContext(ThemeContext);
+  const [state, setState] = useState([]);
+  const { lang, currentLanguageData } = useContext(LanguageContext);
 
+
+  // const { card } = useContext(LanguageContext).currentLanguageData;
+  const menus = useRef();
   const hidenMenu = () => {
     menus.current.classList.remove("show");
   };
@@ -19,6 +31,10 @@ const NavBar = () => {
       setWindowHeight(height);
     }
   };
+
+  useEffect(() => {
+    fetchMock(lang).then(setState);
+  }, [lang]);
 
   useEffect(() => {
     window.addEventListener("scroll", navBarTop);
@@ -33,23 +49,39 @@ const NavBar = () => {
         windowHeight > 50 && "header-fixed animated fadeInDown"
       }`}
     >
-      <div className="overlay">
+      <div className="overlay border-bottom">
         <div className="container">
           <div className="row d-flex header-area">
             <nav className="navbar navbar-expand-lg navbar-light">
               <Link className="navbar-brand" href="/" onClick={hidenMenu}>
-                <Image src={Logo} className="logo" alt="logo" />
+                <Image
+                  src={dark ? LogoLight : LogoDark}
+                  className="logo"
+                  alt="logo"
+                />
               </Link>
-              <button
-                className="navbar-toggler collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbar-content"
-              >
-                <i>
-                  <FaBars />
-                </i>
-              </button>
+              <div className="collapsed navbar-toggler">
+                <div className="d-flex">
+                  <ul className="navbar-nav">
+                    {navData.map(
+                      ({ itm, url, id, dropdown, dropdown_itms }) => {
+                        return (
+                          <li key={id} className="nav-item text-danger">
+                            <Link
+                              className="nav-link"
+                              aria-current="page"
+                              href={url}
+                              onClick={hidenMenu}
+                            >
+                              {itm}
+                            </Link>
+                          </li>
+                        );
+                      }
+                    )}
+                  </ul>
+                </div>
+              </div>
               <div
                 className="collapse navbar-collapse justify-content-end"
                 id="navbar-content"
@@ -122,14 +154,18 @@ const NavBar = () => {
                     );
                   })}
                 </ul>
-                <div className="right-area header-action d-flex align-items-center">
+                <div className="right-area header-action d-flex align-items-center d-flex">
                   <Link
                     href="/register"
                     className="cmn-btn"
                     onClick={hidenMenu}
                   >
-                    Open Account
+                    Register
                   </Link>
+                  <LangSwitch />
+                  <ThemeProvider>
+                    <Switch />
+                  </ThemeProvider>
                 </div>
               </div>
             </nav>
