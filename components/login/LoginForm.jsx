@@ -16,8 +16,7 @@ const LoginForm = () => {
                   <div className="form-content p-5">
                     <div className="section-header">
                       <h6 className="p-3 my-3 border rounded">
-                          To access the site, you should input your phone
-                          number.
+                        To access the site, you should input your phone number.
                       </h6>
                       <h4 className="title">Sign in to access your account</h4>
                     </div>
@@ -51,7 +50,7 @@ const LoginForm = () => {
                       exclusive offers.
                     </h5>
                     <h5>
-                      We're thrilled to have you join and reward your loyalty!
+                      We&apos;re thrilled to have you join and reward your loyalty!
                     </h5>
                   </div>
                 </div>
