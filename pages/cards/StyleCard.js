@@ -1,5 +1,5 @@
 import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
-import { card_data } from "../../components/home/homeData";
+import { card_data } from "../../components/cards/cardData";
 
 const CreditCard = () => {
     const singleCard = card_data[2];

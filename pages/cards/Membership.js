@@ -1,5 +1,5 @@
 import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
-import { card_data } from "./cardData";
+import { card_data } from "../../components/cards/cardData";
 import Social from "../../components/social/Social";
 import {
   FaFacebookF,

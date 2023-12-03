@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Input from "react-phone-number-input/input";
 
 const LoginForm = () => {
   const [value, setValue] = useState("");
@@ -25,7 +26,11 @@ const LoginForm = () => {
                           <div className="single-input">
                             <span htmlFor="phone">Enter Your Phone Number</span>
                           </div>
-                       
+                          <Input
+                            placeholder="Enter your phone number"
+                            value={value}
+                            onChange={setValue}
+                          />
                         </div>
                       </div>
                       <div className="btn-area">
