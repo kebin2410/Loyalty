@@ -11,7 +11,6 @@ import {
   FaWhatsapp,
   FaReddit,
 } from "react-icons/fa";
-import { RiTwitterXLine, RiMailFill } from "react-icons/ri";
 const CreditCard = () => {
   const singleCard = card_data[0];
   return (
@@ -38,7 +37,6 @@ const CreditCard = () => {
             [FaLinkedinIn, "/"],
             [FaInstagram, "/"],
             [FaTelegram, "/"],
-            [RiMailFill, "/"],
             [FaPinterestP, "/"],
             [FaWhatsapp, "/"],
             [FaReddit, "/"],

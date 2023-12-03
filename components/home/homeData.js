@@ -65,7 +65,7 @@ export const card_data = [
     identifer:"521-179-219-730",
     issue_date:"Aug 05, 2023",
     expiry_date:"Oct 30, 2025",
-    link: "/cards/LoaltyCard",
+    link: "/cards/LoyaltyCard",
   },
 ];
 
