@@ -152,7 +152,7 @@ const NavBar = () => {
                     );
                   })}
                 </ul>
-                <div className="right-area header-action d-flex align-items-center d-flex">
+                <div className="btn_register right-area header-action d-flex align-items-center d-flex">
                   <Link
                     href="/register"
                     className="cmn-btn"

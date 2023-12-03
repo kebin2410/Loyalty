@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import logo from "/public/images/logo.png";
+import { useEffect, useState, useContext } from "react";
+import ThemeContext from "../../config/ThemeChange/ThemeContext";
+import LogoLight from "/public/images/logo-light.svg";
+import LogoDark from "/public/images/logo-dark.svg";
 
 const ShortNavbar = () => {
   const [windowHeight, setWindowHeight] = useState(0);
-
+  const { dark, toggle } = useContext(ThemeContext);
   const navBarTop = () => {
     if (window !== undefined) {
       let height = window.scrollY;
@@ -26,19 +28,25 @@ const ShortNavbar = () => {
         windowHeight > 50 && "header-fixed animated fadeInDown"
       }`}
     >
-      <div className="overlay">
+      <div className="">
         <div className="container">
           <div className="row d-flex header-area">
-            <nav className="navbar d-flex justify-content-between navbar-expand-lg navbar-dark">
+            <nav className="navbar d-flex justify-content-between  navbar-expand-lg navbar-dark">
               <Link className="navbar-brand" href="/">
-                <Image src={logo} className="logo" alt="logo" />
+                <Image
+                  src={!dark ? LogoLight : LogoDark}
+                  className="logo"
+                  alt="logo"
+                />
               </Link>
               <div className="d-flex align-items-center justify-content-end">
                 <ul className="navbar-nav">
-                  <li className="nav-item">Don&#39;t have an account</li>
+                  <li className="nav-item">
+                    <Link href="/login">Log In</Link>
+                  </li>
                 </ul>
                 <div className="right-area header-action d-flex align-items-center">
-                  <Link href="/register" className="cmn-btn">
+                  <Link href="/register" className="cmn-btn btn-register">
                     Register
                   </Link>
                 </div>

@@ -166,9 +166,10 @@
   }
   .nav-tabs {
     padding: 10px;
-    border: 1px solid #b0baf1;
+    min-width: 400px;
+    //border: 1px solid #b0baf1;
     display: inline-flex;
-    border-radius: 35px;
+    //border-radius: 35px;
     margin-bottom: 40px;
     .nav-item {
       .nav-link {
@@ -176,8 +177,8 @@
         border: none;
         padding: 12px 30px;
         &.active {
-          background: #1a4dbe;
-          color: var(--body-color);
+          background: var(--nav-color);
+          color: var(--head-color);
         }
       }
     }
@@ -2735,10 +2736,6 @@
 
 // Register Section
 .sign-in-up {
-  background-image: url(/images/sign-in-up-bg.png);
-  background-repeat: no-repeat;
-  background-position: right top;
-  // margin-top: 118px;
   margin-top: 112px;
   form {
     margin-top: -10px;

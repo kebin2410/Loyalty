@@ -1,66 +1,60 @@
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import show_hide from "/public/images/icon/show-hide.png";
+import Input from "react-phone-number-input/input";
 
 const LoginForm = () => {
+  const [value, setValue] = useState("");
   return (
-    <section className="sign-in-up login">
-      <div className="overlay pt-120 pb-120">
+    <section className="sign-in-up" style={{ position: "relative" }}>
+      <div className="p-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
-              <div className="form-content">
-                <div className="section-header">
-                  <h5 className="sub-title">The Power of Financial Freedom</h5>
-                  <h2 className="title">Set Up Your Password</h2>
-                  <p>
-                    Your security is our top priority. You&#39;ll need this to
-                    log into your bankio account
-                  </p>
+            <div className="col col-lg-12">
+              <div className="row">
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                  <div className="form-content p-5">
+                    <div className="section-header">
+                      <h6 className="p-3 my-3 border rounded">
+                          To access the site, you should input your phone
+                          number.
+                      </h6>
+                      <h4 className="title">Sign in to access your account</h4>
+                    </div>
+                    <form action="/login" method="post">
+                      <div className="row">
+                        <div className="col-12 pb-5">
+                          <div className="single-input">
+                            <span htmlFor="phone">Enter Your Phone Number</span>
+                          </div>
+                          <Input
+                            placeholder="Enter your phone number"
+                            value={value}
+                            onChange={setValue}
+                          />
+                        </div>
+                      </div>
+                      <div className="btn-area">
+                        <button className="cmn-btn" style={{ width: "100%" }}>
+                          Login
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-
-                <form action="#">
-                  <div className="row">
-                    <div className="col-12">
-                      <div className="single-input">
-                        <label htmlFor="email">Enter Your Email ID</label>
-                        <input
-                          type={"email"}
-                          id="email"
-                          placeholder="Your email ID here"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div className="single-input ">
-                        <label htmlFor="confirmPass">Confirm Password</label>
-                        <div className="password-show d-flex align-items-center">
-                          <input
-                            type={"password"}
-                            className="passInput"
-                            id="confirmPass"
-                            placeholder="Enter Your Password"
-                            required
-                          />
-                          <Image
-                            className="showPass"
-                            src={show_hide}
-                            alt="icon"
-                          />
-                        </div>
-                        <div className="forgot-area text-end">
-                          <Link href="/#" className="forgot-password">
-                            Forgot Password?
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
+                <div className="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center border rounded">
+                  <div className="p-5">
+                    <h3 className="py-2">Your loyalty, rewarded.</h3>
+                    <h5 className="py-5">
+                      Welcome to our loyalty app. Sign in or register for free
+                      to access your points, redeem rewards, and unlock
+                      exclusive offers.
+                    </h5>
+                    <h5>
+                      We're thrilled to have you join and reward your loyalty!
+                    </h5>
                   </div>
-                  <div className="btn-area">
-                    <button className="cmn-btn">Login</button>
-                  </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>

@@ -6,7 +6,6 @@ const CreditAndDebitCard = ({
   img1,
   img2,
   link,
-  key,
   headingText,
   sub_title,
   sub_text,
@@ -17,13 +16,13 @@ const CreditAndDebitCard = ({
 }) => {
   return (
     <div
-      class="card-container"
+      className="card-container"
       onClick={() => {
         document.location.href = link;
       }}
     >
       <Image src={img1} alt="images" className="card-img" />
-      <div class="card-overlay" style={{ backgroundColor: bgColor }}>
+      <div className="card-overlay" style={{ backgroundColor: bgColor }}>
         <div className="d-flex justify-content-between">
           <h4 className="text-white">{headingText}</h4>
           <div className={"d-none"}>
@@ -44,7 +43,7 @@ const CreditAndDebitCard = ({
           <Image
             src={img2}
             alt="images"
-            className="svg-class bg-white rounded"
+            className="svg-className bg-white rounded"
           />
         </div>
         <div className="d-flex justify-content-between">

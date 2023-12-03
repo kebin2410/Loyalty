@@ -639,7 +639,6 @@ button {
   align-items: center;
   text-align: center;
   height: 300px;
-  width: 400px;
   margin: 50px;
   position: relative;
   cursor: pointer;
@@ -690,8 +689,23 @@ button {
 }
 
 .oval-icon{
-  width: 40px;
-  height: 40px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   border: 1px solid gray;
+}
+
+.custom-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.custom-table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.custom-table td {
+  width: 30%; /* Adjust the width as needed */
+  padding: 8px;
+  border: none; /* Remove default cell borders */
+  border-bottom: 1px solid #ccc; /* Add a bottom border for each row */
 }

@@ -353,11 +353,11 @@
     display: inline-block;
   }
   .header-section .navbar .navbar-brand {
-    margin-top: -5px;
+    // margin-top: -5px;
     width: 35%;
   }
   .header-section .navbar .navbar-brand img {
-    max-width: initial;
+    // max-width: initial;
   }
   .header-section .navbar .navbar-collapse .navbar-nav {
     // height: 200px;
@@ -688,6 +688,9 @@
   .sign-in-up {
     background-image: unset;
   }
+  .btn-register {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -901,9 +904,9 @@
     background-image: unset;
   }
   .header-section.register .navbar {
-    justify-content: center !important;
+    // justify-content: center !important;
     .navbar-brand {
-      margin-bottom: 20px;
+      //margin-bottom: 20px;
     }
   }
   .sign-in-up .form-content {
@@ -976,7 +979,7 @@
     line-height: 22.4px;
   }
   .header-section .navbar {
-    padding: 20px 15px;
+    // padding: 20px 15px;
   }
   .faqs-section .accordion .accordion-item .accordion-button::before {
     width: 30px;
