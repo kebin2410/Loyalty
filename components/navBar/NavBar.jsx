@@ -6,7 +6,6 @@ import LogoLight from "/public/images/logo-light.svg";
 import LogoDark from "/public/images/logo-dark.svg";
 
 import Switch from "../../config/ThemeChange/Switch";
-import { ThemeProvider } from "../../config/ThemeChange/ThemeContext";
 import ThemeContext from "../../config/ThemeChange/ThemeContext";
 
 import LangSwitch from "../../config/LanguageChange/Switch";
@@ -17,7 +16,6 @@ const NavBar = () => {
   const { dark, toggle } = useContext(ThemeContext);
   const [state, setState] = useState([]);
   const { lang, currentLanguageData } = useContext(LanguageContext);
-
 
   // const { card } = useContext(LanguageContext).currentLanguageData;
   const menus = useRef();
@@ -55,7 +53,7 @@ const NavBar = () => {
             <nav className="navbar navbar-expand-lg navbar-light">
               <Link className="navbar-brand" href="/" onClick={hidenMenu}>
                 <Image
-                  src={dark ? LogoLight : LogoDark}
+                  src={!dark ? LogoLight : LogoDark}
                   className="logo"
                   alt="logo"
                 />
@@ -163,9 +161,7 @@ const NavBar = () => {
                     Register
                   </Link>
                   <LangSwitch />
-                  <ThemeProvider>
-                    <Switch />
-                  </ThemeProvider>
+                  <Switch />
                 </div>
               </div>
             </nav>

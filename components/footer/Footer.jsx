@@ -54,7 +54,7 @@ const Footer = () => {
         <div className="footer-bottom mx-auto">
           <div className="col d-flex flex-column align-items-center justify-content-center">
             <Link href="/" className="logo my-3">
-              <Image src={dark ? LogoLight : LogoDark} alt="logo" />
+              <Image src={!dark ? LogoLight : LogoDark} alt="logo" />
             </Link>
             <h6>© 2023 Reward Loyalty - All Rights Reserved.</h6>
           </div>
