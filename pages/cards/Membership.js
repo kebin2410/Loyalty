@@ -1,4 +1,4 @@
-import CreditAndDebitCard from "../../components/card/CreditAndDebitCard";
+import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
 import { card_data } from "../../components/home/homeData";
 import Social from "../../components/social/Social";
 import {
@@ -42,7 +42,6 @@ const CreditCard = () => {
             [FaPinterestP, "/"],
             [FaWhatsapp, "/"],
             [FaReddit, "/"],
-            [RiTwitterXLine, "/"],
           ]}
         />
       </div>

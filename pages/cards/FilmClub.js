@@ -1,4 +1,4 @@
-import CreditAndDebitCard from "../../components/card/CreditAndDebitCard";
+import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
 import { card_data } from "../../components/home/homeData";
 
 const CreditCard = () => {

@@ -1,138 +1,64 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
-import Social from "../social/Social";
-import footer_Illu_left from "/public/images/footer-Illu-left.png";
-import footer_Illu_right from "/public/images/footer-Illu-right.png";
-import Logo from "/public/images/logo.png";
+import { useState, useContext } from "react";
+import ThemeContext from "../../config/ThemeChange/ThemeContext";
+import LogoLight from "/public/images/logo-light.svg";
+import LogoDark from "/public/images/logo-dark.svg";
 
 const Footer = () => {
+  const { dark, toggle } = useContext(ThemeContext);
   return (
     <div className="footer-section">
-      <div className="container pt-120">
+      <div className="container">
         <div className="row cus-mar pt-120 pb-120 justify-content-between wow fadeInUp">
           <div className="col-xl-3 col-lg-3 col-md-4 col-6">
-            <div className="footer-box">
-              <Link href="/" className="logo">
-                <Image src={Logo} alt="logo" />
-              </Link>
-              <p>
-                A modern, technology-first bank built for you and your growing
-                business.
-              </p>
-              <div className="social-link d-flex align-items-center">
-                {/* Socials links here */}
-                <Social
-                  items={[
-                    [FaFacebookF, "/"],
-                    [FaTwitter, "/"],
-                    [FaLinkedinIn, "/"],
-                    [FaInstagram, "/"],
-                  ]}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-2 col-lg-2 col-6">
-            <div className="footer-box">
-              <h5>Company</h5>
-              <ul className="footer-link">
-                <li>
-                  <Link href="/about">About Us</Link>
-                </li>
-                <li>
-                  <Link href="/about">Awards</Link>
-                </li>
-                <li>
-                  <Link href="/career-single">Careers</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-xl-2 col-lg-2 col-6">
-            <div className="footer-box">
-              <h5>Useful Links</h5>
-              <ul className="footer-link">
-                <li>
-                  <Link href="/product">Products</Link>
-                </li>
-                <li>
-                  <Link href="/business-loan">Business Loan</Link>
-                </li>
-                <li>
-                  <Link href="/affiliate">Affiliate Program</Link>
-                </li>
-                <li>
-                  <Link href="/blog-list">Blog</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-xl-2 col-lg-2 col-6">
-            <div className="footer-box">
-              <h5>Support</h5>
-              <ul className="footer-link">
-                <li>
-                  <Link href="mailto:support@bankio">Support@bankio</Link>
-                </li>
-                <li>
-                  <Link href="/contact">Contact Us</Link>
-                </li>
-                <li>
-                  <Link href="/faqs">FAQ</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-xl-3 col-8">
-            <div className="footer-box">
-              <h5>Subscribe</h5>
-              <form>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    placeholder="Enter Your Email address"
-                    required
-                  />
-                  <button className="cmn-btn">Subscribe</button>
-                </div>
-              </form>
-              <p>
-                Get the latest updates via email. Any time you may unsubscribe
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <div className="footer-bottom">
-              <div className="left">
-                <p>
-                  {" "}
-                  Copyright © <Link href="index">Bankio</Link> | Designed by{" "}
-                  <Link href="https://themeforest.net/user/pixelaxis">
-                    PIXELAXIS
-                  </Link>
-                </p>
-              </div>
-              <div className="right">
-                <Link href="/privacy-policy" className="cus-bor">
-                  Privacy{" "}
+            <div className="footer-box text-center">
+              <h5>COMPANY</h5>
+              <div className="row">
+                <Link href="/home" className="nav-link p-2">
+                  <h6>Home</h6>
                 </Link>
-                <Link href="terms-conditions">Terms &amp; Condition </Link>
+                <Link href="/about" className="nav-link">
+                  <h6>About</h6>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-3 col-lg-3 col-md-4 col-6">
+            <div className="footer-box text-center">
+              <h5>SUPPORT</h5>
+              <div className="row">
+                <Link href="/FAQ" className="nav-link p-2">
+                  <h6>FAQ</h6>
+                </Link>
+                <Link href="/contact" className="nav-link">
+                  <h6>Contact</h6>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-3 col-lg-3 col-md-4 col-6">
+            <div className="footer-box text-center">
+              <h5>LEGAL</h5>
+              <div className="row">
+                <Link href="/terms-of-use" className="nav-link p-2">
+                  <h6>Terms of Use</h6>
+                </Link>
+                <Link href="/privacy-policy" className="nav-link">
+                  <h6>Privacy Policy</h6>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="img-area">
-        <Image src={footer_Illu_left} className="left" alt="Images" />
-        <Image src={footer_Illu_right} className="right" alt="Images" />
+        <div className="footer-bottom mx-auto">
+          <div className="col d-flex flex-column align-items-center justify-content-center">
+            <Link href="/" className="logo my-3">
+              <Image src={dark ? LogoLight : LogoDark} alt="logo" />
+            </Link>
+            <h6>© 2023 Reward Loyalty - All Rights Reserved.</h6>
+          </div>
+        </div>
       </div>
     </div>
   );

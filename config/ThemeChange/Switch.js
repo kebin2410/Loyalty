@@ -10,7 +10,6 @@ const Switch = (props) => {
       className="Switch"
       onClick={() => {
         toggle();
-        dispatch(changeMode());
       }}
     >
       {!dark ? (
