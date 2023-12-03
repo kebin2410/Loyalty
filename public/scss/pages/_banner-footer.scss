@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  background: var(--body-color);
+  background: var(--nav-color);
   &.header-fixed {
     position: fixed;
     top: 0;
@@ -26,7 +26,7 @@
     }
   }
   .navbar {
-    padding: 30px 15px;
+    padding: 8px 8px;
     .navbar-collapse {
       .navbar-nav {
         .nav-item {
@@ -508,7 +508,7 @@
 
 // Footer Section Start
 .footer-section {
-  background: #f5faff;
+  background: var(--nav-color);
   .img-area {
     position: relative;
     img {

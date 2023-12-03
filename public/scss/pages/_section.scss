@@ -85,10 +85,6 @@
 
 // Card Section
 .card-section {
-  background-image: url(/images/card-bg.png);
-  background-position: top left -150px;
-  background-repeat: no-repeat;
-  background-size: contain;
   .card-carousel-index {
     .single {
       padding: 0 30px;
@@ -192,10 +188,11 @@
     }
     .single-box {
       padding: 30px;
-      background: #ffffff;
       border: 1px solid #b0baf1;
       border-radius: 20px;
+      height: 250px;
       margin-bottom: 25px;
+      margin-top: 50px;
       .thumb {
         position: relative;
         margin: auto;
@@ -262,9 +259,6 @@
     }
   }
   &.card-page {
-    background-image: url(/images/call-action-card-bg.png);
-    background-position: top;
-    background-repeat: no-repeat;
     .section-header {
       h2 {
         color: var(--body-color);
@@ -2117,11 +2111,6 @@
       content: "";
       width: 100%;
       height: 100%;
-      background-image: url(/images/call-action-card-bg.png);
-      background-position: top;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-color: var(--hover-color);
       top: 120px;
       left: 0;
       z-index: -1;
