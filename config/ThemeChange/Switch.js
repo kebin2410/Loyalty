@@ -9,9 +9,9 @@ const Switch = (props) => {
     <div className="mx-2">
       <button className="Switch" onClick={() => toggle()}>
         {!dark ? (
-          <Sun className={`icon ${!dark ? "active" : ""}`} />
+          <Sun className="active" />
         ) : (
-          <Moon className={`icon ${dark ? "active" : ""}`} />
+          <Moon className="active" />
         )}
       </button>
     </div>
