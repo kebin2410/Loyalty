@@ -2,15 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useContext } from "react";
 import ThemeContext from "../../config/ThemeChange/ThemeContext";
-import LogoLight from "/public/images/logo-light.svg";
-import LogoDark from "/public/images/logo-dark.svg";
+// import LogoLight from "/public/images/logo-light.svg";
+// import LogoDark from "/public/images/logo-dark.svg";
 
 const Footer = () => {
   const { dark, toggle } = useContext(ThemeContext);
   return (
     <div className="footer-section">
       <div className="container">
-        <div className="row cus-mar py-5 justify-content-between wow fadeInUp">
+        {/* <div className="row cus-mar py-5 justify-content-between wow fadeInUp">
           <div className="col-xl-3 col-lg-3 col-md-4 col-6">
             <div className="footer-box text-center">
               <h5>COMPANY</h5>
@@ -50,16 +50,16 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="footer-bottom mx-auto">
           <div className="col d-flex flex-column align-items-center justify-content-center">
-            <Link href="/" className="logo my-3 text-center">
-              <Image
+             {/* <Link href="/" className="logo my-3 text-center">
+             <Image
                 className="w-50"
                 src={!dark ? LogoLight : LogoDark}
                 alt="logo"
               />
-            </Link>
+            </Link> */}
             <h6>Powered by Zest Loyalty</h6>
           </div>
         </div>

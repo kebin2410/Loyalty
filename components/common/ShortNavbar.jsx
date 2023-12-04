@@ -6,8 +6,7 @@ import Switch from "../../config/ThemeChange/Switch";
 import LangSwitch from "../../config/LanguageChange/Switch";
 import ThemeContext from "../../config/ThemeChange/ThemeContext";
 
-import LogoLight from "/public/images/logo-light.svg";
-import LogoDark from "/public/images/logo-dark.svg";
+import { FaBars } from "react-icons/fa";
 
 const ShortNavbar = () => {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -36,11 +35,12 @@ const ShortNavbar = () => {
         <div className="row d-flex header-area">
           <nav className="navbar d-flex justify-content-between  navbar-expand-lg navbar-dark">
             <Link className="navbar-brand" href="/">
-              <Image
-                src={!dark ? LogoLight : LogoDark}
+              {/* <Image
+                src={logoLight}
                 className="logo"
                 alt="logo"
-              />
+              /> */}
+              {dark ? <i className="text-white"><FaBars/></i>:<i className="text-black"><FaBars/></i>}
             </Link>
             <div className="d-flex align-items-center justify-content-end">
               <ul className="navbar-nav">

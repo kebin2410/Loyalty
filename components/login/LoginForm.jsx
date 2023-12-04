@@ -13,7 +13,7 @@ const LoginForm = () => {
             <div className="col col-lg-12">
               <div className="row">
                 <div className="col-lg-6 col-md-12 col-sm-12">
-                  <div className="form-content p-5">
+                  <div className="form-content p-1">
                     <div className="section-header">
                       <h6 className="p-3 my-3 border rounded">
                         To access the site, you should input your phone number.
@@ -22,7 +22,7 @@ const LoginForm = () => {
                     </div>
                     <form action="/login" method="post">
                       <div className="row">
-                        <div className="col-12 pb-5">
+                        <div className="col-12 pb-1">
                           <div className="single-input">
                             <span htmlFor="phone">Enter Your Phone Number</span>
                           </div>
@@ -42,16 +42,16 @@ const LoginForm = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center border rounded bg-sign">
-                  <div className="p-5">
-                    <h3 className="py-2">Your loyalty, rewarded.</h3>
-                    <h5 className="py-5 ">
+                  <div className="p-2">
+                    <h4 className="py-2">Your loyalty, rewarded.</h4>
+                    <h6 className="py-3 ">
                       Welcome to our loyalty app. Sign in or register for free
                       to access your points, redeem rewards, and unlock
                       exclusive offers.
-                    </h5>
-                    <h5>
+                    </h6>
+                    <h6>
                       We&apos;re thrilled to have you join and reward your loyalty!
-                    </h5>
+                    </h6>
                   </div>
                 </div>
               </div>

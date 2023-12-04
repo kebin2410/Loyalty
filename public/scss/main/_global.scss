@@ -79,6 +79,7 @@ a:hover {
 }
 
 img {
+  width: 1.2rem;
   max-width: 100%;
   height: auto;
 }
@@ -611,10 +612,7 @@ button {
 .active {
   color: var(--head-color);
 }
-.active:active {
-  background: var(--dark-mode-color);
-  border: 2px solid gray;
-}
+
 
 .flag {
   width: 1rem;
@@ -680,4 +678,8 @@ button {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+#munu-logo{
+  fill: white;
 }

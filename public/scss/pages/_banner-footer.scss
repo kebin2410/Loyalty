@@ -508,6 +508,9 @@
 
 // Footer Section Start
 .footer-section {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background: var(--nav-color);
   .img-area {
     position: relative;
@@ -599,7 +602,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #b0baf1;
+    // border-top: 1px solid #b0baf1;
     padding: 10px 0;
     .left {
       a {
