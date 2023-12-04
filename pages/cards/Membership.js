@@ -49,98 +49,74 @@ const CreditCard = () => {
                       ]}
                     />
                   </div>
-                  <div className="mt-4">
-                    <ul className="nav nav-tabs" id="myTab" role="tablist">
-                      <li className="nav-item" role="presentation">
-                        <button
-                          className="nav-link  active"
-                          id="home-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#home"
-                          type="button"
-                          role="tab"
-                          aria-controls="home"
-                          aria-selected="true"
-                        >
-                          Reward
-                        </button>
-                      </li>
-                      <li className="nav-item" role="presentation">
-                        <button
-                          className="nav-link"
-                          id="profile-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#profile"
-                          type="button"
-                          role="tab"
-                          aria-controls="profile"
-                          aria-selected="false"
-                        >
-                          History
-                        </button>
-                      </li>
-                      <li className="nav-item" role="presentation">
-                        <button
-                          className="nav-link "
-                          id="contact-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#contact"
-                          type="button"
-                          role="tab"
-                          aria-controls="contact"
-                          aria-selected="false"
-                        >
-                          Rules
-                        </button>
-                      </li>
-                    </ul>
-                    <div class="mt-5">
-                      <div class="row">
-                        <div class="col">
-                          <div class="border-bottom mb-3">
-                            <h4>Column 1</h4>
-                            <p>Content for column 1 goes here.</p>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="border-bottom mb-3">
-                            <h4>Column 2</h4>
-                            <p>Content for column 2 goes here.</p>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="border-bottom mb-3">
-                            <h4>Column 3</h4>
-                            <p>Content for column 3 goes here.</p>
-                          </div>
-                        </div>
-                      </div>
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-home-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-home"
+                        aria-selected="true"
+                      >
+                        Reward
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-profile-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-profile"
+                        aria-selected="false"
+                      >
+                        History
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                      >
+                        Rules
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-home"
+                      role="tabpanel"
+                      aria-labelledby="pills-home-tab"
+                    >
+                      ...
                     </div>
-                    <div className="tab-content" id="myTabContent">
-                      <div
-                        className="tab-pane fade show active"
-                        id="home"
-                        role="tabpanel"
-                        aria-labelledby="home-tab"
-                      ></div>
-                      <div
-                        className="tab-pane fade"
-                        id="profile"
-                        role="tabpanel"
-                        aria-labelledby="profile-tab"
-                      >
-                        <h3>Profile Content</h3>
-                        <p>This is the content for Profile tab.</p>
-                      </div>
-                      <div
-                        className="tab-pane fade"
-                        id="contact"
-                        role="tabpanel"
-                        aria-labelledby="contact-tab"
-                      >
-                        <h3>Contact Content</h3>
-                        <p>This is the content for Contact tab.</p>
-                      </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-profile"
+                      role="tabpanel"
+                      aria-labelledby="pills-profile-tab"
+                    >
+                      ...
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-contact"
+                      role="tabpanel"
+                      aria-labelledby="pills-contact-tab"
+                    >
+                      ...
                     </div>
                   </div>
                 </div>

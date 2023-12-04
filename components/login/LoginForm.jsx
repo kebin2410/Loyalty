@@ -44,7 +44,7 @@ const LoginForm = () => {
                 <div className="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center border rounded bg-sign">
                   <div className="p-5">
                     <h3 className="py-2">Your loyalty, rewarded.</h3>
-                    <h5 className="py-5">
+                    <h5 className="py-5 ">
                       Welcome to our loyalty app. Sign in or register for free
                       to access your points, redeem rewards, and unlock
                       exclusive offers.

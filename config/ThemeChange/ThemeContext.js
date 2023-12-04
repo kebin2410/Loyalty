@@ -48,6 +48,8 @@ export function ThemeProvider(props) {
     </ThemeContext.Provider>
   );
 }
+
+// "#374151"
 const darkTheme = [
   "--body-color: #111827",
   "--nav-color:  #1F2937",
@@ -55,7 +57,9 @@ const darkTheme = [
   "--head-color: #ccc",
   "--head-alt-color: #055c2d",
   "--hover-color: #ea580c",
-  "--bs-border-color:#76A9FA"
+  "--bs-border-color:#76A9FA",
+  "--bs-nav-link-color:var(--para-color)",
+  "--dark-mode-color: #374151"
 
 ];
 const lightTheme = [
@@ -65,5 +69,7 @@ const lightTheme = [
   "--head-color: #0a1023",
   "--head-alt-color: #055c2d",
   "--hover-color: #ea580c",
-  "--bs-border-color:#1E429F"
+  "--bs-border-color:#1E429F",
+  "--bs-nav-link-color:var(--head-color)",
+  "--dark-mode-color: var(--nav-color)"
 ];

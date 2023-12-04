@@ -589,16 +589,16 @@ li {
   height: 2rem;
   position: relative;
   border-radius: 10px;
-  border-width: 1px;
-  border-style: solid;
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 4px 4px 10px -3px black;
-  background: #ffffff;
+  background: var(--dark-mode-color);
   border-radius: 50%;
   padding: 0;
+}
+.Switch:hover {
+  
 }
 
 .Switch .icon {
@@ -677,7 +677,8 @@ button {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 1px solid gray;
+  color: white;
+  background-color: #4b5563;
 }
 .bg-sign {
   background: var(--nav-color);

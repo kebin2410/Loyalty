@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { IoMdMoon as Moon, IoMdSunny as Sun } from "react-icons/io";
+// import { IoMdMoon as Moon, IoMdSunny as Sun } from "react-icons/io";
+import { LuSunDim as Moon, LuMoon as Sun } from "react-icons/lu";
 
 import ThemeContext from "./ThemeContext";
 
