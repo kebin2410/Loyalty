@@ -1,12 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState, useContext } from "react";
-import ThemeContext from "../../config/ThemeChange/ThemeContext";
+import Link from "next/link";
+import Image from "next/image";
 
 import Switch from "../../config/ThemeChange/Switch";
 import LangSwitch from "../../config/LanguageChange/Switch";
-import LanguageContext from "../../config/LanguageChange/LanguageContext";
-import { fetchMock } from "../../config/LanguageChange/mockAPI";
+import ThemeContext from "../../config/ThemeChange/ThemeContext";
 
 import LogoLight from "/public/images/logo-light.svg";
 import LogoDark from "/public/images/logo-dark.svg";
@@ -14,19 +12,19 @@ import LogoDark from "/public/images/logo-dark.svg";
 const ShortNavbar = () => {
   const [windowHeight, setWindowHeight] = useState(0);
   const { dark, toggle } = useContext(ThemeContext);
-  // const navBarTop = () => {
-  //   if (window !== undefined) {
-  //     let height = window.scrollY;
-  //     setWindowHeight(height);
-  //   }
-  // };
+  const navBarTop = () => {
+    if (window !== undefined) {
+      let height = window.scrollY;
+      setWindowHeight(height);
+    }
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", navBarTop);
-  //   return () => {
-  //     window.removeEventListener("scroll", navBarTop);
-  //   };
-  // }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", navBarTop);
+    return () => {
+      window.removeEventListener("scroll", navBarTop);
+    };
+  }, []);
 
   return (
     <header
@@ -56,8 +54,12 @@ const ShortNavbar = () => {
                     Register
                   </Link>
                 </div>
-                <LangSwitch />
-                <Switch />
+                <div>
+                  <LangSwitch />
+                </div>
+                <div>
+                  <Switch />
+                </div>
               </div>
             </nav>
           </div>
