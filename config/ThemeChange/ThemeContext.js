@@ -54,7 +54,9 @@ const darkTheme = [
   "--para-color: #F97316",
   "--head-color: #ccc",
   "--head-alt-color: #055c2d",
-  "--hover-color: #ea580c"
+  "--hover-color: #ea580c",
+  "--bs-border-color:#76A9FA"
+
 ];
 const lightTheme = [
   "--body-color: #eeeeee",
@@ -62,5 +64,6 @@ const lightTheme = [
   "--para-color: #F97316",
   "--head-color: #0a1023",
   "--head-alt-color: #055c2d",
-  "--hover-color: #ea580c"
+  "--hover-color: #ea580c",
+  "--bs-border-color:#1E429F"
 ];
