@@ -35,11 +35,11 @@ export default function LangSwitch() {
           <Image src={countryInfo[lng].flag} alt="image" className="flag" />
         </button>
         <ul className="dropdown-menu">
-          {countryInfo?.map((item, key) => (
+          {countryInfo?.map((item, index) => (
             <li
-              key={key}
+              key={index}
               onClick={() => {
-                setLang(key);
+                setLang(index);
                 switchLanguage(item.lang);
               }}
             >

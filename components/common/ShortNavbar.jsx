@@ -51,12 +51,13 @@ const ShortNavbar = () => {
                     <Link href="/login">Log In</Link>
                   </li>
                 </ul>
-                <div className="right-area header-action">
+                <div className="right-area header-action d-flex align-items-center">
                   <Link href="/register" className="cmn-btn btn-register">
                     Register
                   </Link>
                 </div>
                 <LangSwitch />
+                <Switch />
               </div>
             </nav>
           </div>
