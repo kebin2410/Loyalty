@@ -8,11 +8,7 @@ const Switch = (props) => {
   return (
     <div className="mx-2">
       <button className="Switch" onClick={() => toggle()}>
-        {!dark ? (
-          <Sun className="active" />
-        ) : (
-          <Moon className="active" />
-        )}
+        {!dark ? <Sun className="active" /> : <Moon className="active" />}
       </button>
     </div>
   );
