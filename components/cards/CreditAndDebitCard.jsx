@@ -37,8 +37,8 @@ const CreditAndDebitCard = ({
         </div>
         <div className="d-flex justify-content-between">
           <div className="d-flex flex-column justify-content-start align-items-start p-3">
-            <h6 className="text-white py-2">{sub_title}</h6>
-            <span className="text-white text-start">{sub_text}</span>
+            <h6 className="text-white py-2 line-clamp">{sub_title}</h6>
+            <span className="text-white text-start line-clamp">{sub_text}</span>
           </div>
           <Image
             src={img2}
@@ -48,17 +48,17 @@ const CreditAndDebitCard = ({
         </div>
         <div className="d-flex justify-content-between">
           <div>
-            <div>Identifier</div>
-            <div>{identifier}</div>
+            <h6 className="line-clamp text-white">Identifier</h6>
+            <h6 className="line-clamp text-white">{identifier}</h6>
           </div>
           <div className="d-flex">
-            <div className="text-white mx-4">
-              <div>Issue date</div>
-              <div>{issue_date}</div>
+            <div className="text-white mx-4 responsive-text">
+              <h6 className="line-clamp text-white">Issue date</h6>
+              <h6 className="line-clamp text-white">{issue_date}</h6>
             </div>
             <div className="text-white">
-              <div>Expiry date</div>
-              <div>{expire_date}</div>
+              <h6 className="line-clamp text-white">Expiry date</h6>
+              <h6 className="line-clamp text-white">{expire_date}</h6>
             </div>
           </div>
         </div>

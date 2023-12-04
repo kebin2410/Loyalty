@@ -41,7 +41,7 @@ const LoginForm = () => {
                     </form>
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center border rounded">
+                <div className="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center border rounded bg-sign">
                   <div className="p-5">
                     <h3 className="py-2">Your loyalty, rewarded.</h3>
                     <h5 className="py-5">

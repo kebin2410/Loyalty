@@ -9,10 +9,6 @@ const Layout = ({ children }) => {
       <NavBar />
       {children}
       <Footer />
-
-      {/* Scroll To Top */}
-      <ScrollToTop />
-      {/* Pre Loader */}
       <Preloader />
     </>
   );

@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="footer-section">
       <div className="container">
-        <div className="row cus-mar pt-120 pb-120 justify-content-between wow fadeInUp">
+        <div className="row cus-mar py-5 justify-content-between wow fadeInUp">
           <div className="col-xl-3 col-lg-3 col-md-4 col-6">
             <div className="footer-box text-center">
               <h5>COMPANY</h5>
