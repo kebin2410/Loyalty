@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Image from "next/image";
-
 import LanguageContext from "./LanguageContext";
+
 //----------flag import--------------
 import us from "/public/images/flag/us.png";
 import de from "/public/images/flag/de.png";
@@ -23,7 +23,7 @@ export default function LangSwitch() {
     { name: "Português", flag: br, lang: "en-BR" },
   ];
   return (
-    <>
+    <div>
       <div className="dropdown mx-4 lang-select">
         <button
           className="btn btn-secondary dropdown-toggle rounded-pill"
@@ -51,6 +51,6 @@ export default function LangSwitch() {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
