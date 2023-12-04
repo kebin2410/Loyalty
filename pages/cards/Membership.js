@@ -49,10 +49,10 @@ const CreditCard = () => {
                       ]}
                     />
                   </div>
-                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
+                  <ul className="nav nav-pills my-3" id="pills-tab" role="tablist">
+                    <li className="nav-item" role="presentation">
                       <button
-                        class="nav-link active"
+                        className="nav-link active bg-transparent"
                         id="pills-home-tab"
                         data-bs-toggle="pill"
                         data-bs-target="#pills-home"
@@ -64,9 +64,9 @@ const CreditCard = () => {
                         Reward
                       </button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li className="nav-item" role="presentation">
                       <button
-                        class="nav-link"
+                        className="nav-link bg-transparent"
                         id="pills-profile-tab"
                         data-bs-toggle="pill"
                         data-bs-target="#pills-profile"
@@ -78,9 +78,9 @@ const CreditCard = () => {
                         History
                       </button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li className="nav-item" role="presentation">
                       <button
-                        class="nav-link"
+                        className="nav-link bg-transparent border-0 border-bottom rounded-square"
                         id="pills-contact-tab"
                         data-bs-toggle="pill"
                         data-bs-target="#pills-contact"
@@ -93,9 +93,9 @@ const CreditCard = () => {
                       </button>
                     </li>
                   </ul>
-                  <div class="tab-content" id="pills-tabContent">
+                  <div className="tab-content" id="pills-tabContent">
                     <div
-                      class="tab-pane fade show active"
+                      className="tab-pane fade show active"
                       id="pills-home"
                       role="tabpanel"
                       aria-labelledby="pills-home-tab"
@@ -103,7 +103,7 @@ const CreditCard = () => {
                       ...
                     </div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="pills-profile"
                       role="tabpanel"
                       aria-labelledby="pills-profile-tab"
@@ -111,7 +111,7 @@ const CreditCard = () => {
                       ...
                     </div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="pills-contact"
                       role="tabpanel"
                       aria-labelledby="pills-contact-tab"
