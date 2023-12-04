@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
 import { card_data } from "../../components/cards/cardData";
 import Social from "../../components/social/Social";
@@ -49,74 +50,79 @@ const CreditCard = () => {
                       ]}
                     />
                   </div>
-                  <ul className="nav nav-pills my-3" id="pills-tab" role="tablist">
-                    <li className="nav-item" role="presentation">
-                      <button
-                        className="nav-link active bg-transparent"
-                        id="pills-home-tab"
+                  <div
+                    className="d-flex my-3 border-bottom three-panel"
+                    id="pills-tab"
+                    role="tablist"
+                  >
+                    <div className="mx-3" role="presentation" style={{cursor:"pointer"}}>
+                      <div
+                        className="active"
+                        id="reward-tab"
                         data-bs-toggle="pill"
-                        data-bs-target="#pills-home"
-                        type="button"
+                        data-bs-target="#pills-reward"
                         role="tab"
-                        aria-controls="pills-home"
+                        aria-controls="pills-reward"
                         aria-selected="true"
                       >
                         Reward
-                      </button>
-                    </li>
-                    <li className="nav-item" role="presentation">
-                      <button
-                        className="nav-link bg-transparent"
-                        id="pills-profile-tab"
+                      </div>
+                    </div>
+                    <div className="mx-3" role="presentation" style={{cursor:"pointer"}}>
+                      <div
+                        className="nav-items"
+                        id="history-tab"
                         data-bs-toggle="pill"
-                        data-bs-target="#pills-profile"
-                        type="button"
+                        data-bs-target="#pills-history"
                         role="tab"
-                        aria-controls="pills-profile"
+                        aria-controls="pills-history"
                         aria-selected="false"
                       >
                         History
-                      </button>
-                    </li>
-                    <li className="nav-item" role="presentation">
-                      <button
-                        className="nav-link bg-transparent border-0 border-bottom rounded-square"
-                        id="pills-contact-tab"
+                      </div>
+                    </div>
+                    <div className="mx-3" role="presentation" style={{cursor:"pointer"}}>
+                      <div
+                        className=""
+                        id="rules-tab"
                         data-bs-toggle="pill"
-                        data-bs-target="#pills-contact"
-                        type="button"
+                        data-bs-target="#pills-rules"
                         role="tab"
-                        aria-controls="pills-contact"
+                        aria-controls="pills-rules"
                         aria-selected="false"
                       >
                         Rules
-                      </button>
-                    </li>
-                  </ul>
+                      </div>
+                    </div>
+                  </div>
                   <div className="tab-content" id="pills-tabContent">
                     <div
                       className="tab-pane fade show active"
-                      id="pills-home"
+                      id="pills-reward"
                       role="tabpanel"
-                      aria-labelledby="pills-home-tab"
+                      aria-labelledby="reward-tab"
                     >
-                      ...
+                      
+                        <table></table>
+
+
+
                     </div>
                     <div
                       className="tab-pane fade"
-                      id="pills-profile"
+                      id="pills-history"
                       role="tabpanel"
-                      aria-labelledby="pills-profile-tab"
+                      aria-labelledby="history-tab"
                     >
-                      ...
+                      ...b
                     </div>
                     <div
                       className="tab-pane fade"
-                      id="pills-contact"
+                      id="pills-rules"
                       role="tabpanel"
-                      aria-labelledby="pills-contact-tab"
+                      aria-labelledby="rules-tab"
                     >
-                      ...
+                      ...c
                     </div>
                   </div>
                 </div>

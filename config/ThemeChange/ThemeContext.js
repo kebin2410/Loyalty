@@ -58,8 +58,9 @@ const darkTheme = [
   "--head-alt-color: #055c2d",
   "--hover-color: #ea580c",
   "--bs-border-color:#76A9FA",
-  "--bs-nav-link-color:var(--para-color)",
+  "--bs-nav-link-color:#374151",
   "--dark-mode-color: #374151"
+  
 
 ];
 const lightTheme = [

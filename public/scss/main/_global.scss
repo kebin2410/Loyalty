@@ -612,6 +612,14 @@ button {
 .active {
   color: var(--head-color);
 }
+.mx-3 > .active{
+  border-bottom: 3px solid #f97316;
+}
+
+.three-panel{
+  color: var(--bs-border-color);
+}
+
 
 
 .flag {
@@ -680,6 +688,8 @@ button {
   -webkit-line-clamp: 2;
 }
 
-#munu-logo{
-  fill: white;
+.nav-active{
+  // padding-bottom: 20px;
+  border-width: 2px;
+  border-bottom: #f97316;
 }
