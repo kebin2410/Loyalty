@@ -176,9 +176,11 @@
         border-radius: 50px;
         border: none;
         padding: 12px 30px;
+        color: var(--head-color);
+        
         &.active {
-          background: var(--nav-color);
-          color: var(--head-color);
+          background: #2c3655;
+          color: var(--body-color);
         }
       }
     }
@@ -2736,7 +2738,7 @@
 
 // Register Section
 .sign-in-up {
-  margin-top: 112px;
+  margin-top: 3%;
   form {
     margin-top: -10px;
     .single-input {

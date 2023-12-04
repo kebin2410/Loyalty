@@ -24,7 +24,7 @@ export default function LangSwitch() {
   ];
   return (
     <>
-      <div className="dropdown mx-4">
+      <div className="dropdown mx-4 lang-select">
         <button
           className="btn btn-secondary dropdown-toggle rounded-pill"
           type="button"
