@@ -56,7 +56,6 @@ const ShortNavbar = () => {
                     Register
                   </Link>
                 </div>
-                <LangSwitch />
                 <Switch />
               </div>
             </nav>
