@@ -56,7 +56,7 @@ const Footer = () => {
             <Link href="/" className="logo my-3">
               <Image src={!dark ? LogoLight : LogoDark} alt="logo" />
             </Link>
-            <h6>© 2023 Reward Loyalty - All Rights Reserved.</h6>
+            <h6>Powered by Zest Loyalty</h6>
           </div>
         </div>
       </div>

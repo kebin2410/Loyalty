@@ -3,7 +3,7 @@ import { IoMdMoon as Moon, IoMdSunny as Sun } from "react-icons/io";
 
 import ThemeContext from "./ThemeContext";
 
-const Switch = (props) => {
+const Switch = () => {
   const { dark, toggle } = useContext(ThemeContext);
   return (
     <div className="mx-2">

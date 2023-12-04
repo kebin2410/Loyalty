@@ -32,32 +32,32 @@ const ShortNavbar = () => {
         windowHeight > 50 && "header-fixed animated fadeInDown"
       }`}
     >
-        <div className="container">
-          <div className="row d-flex header-area">
-            <nav className="navbar d-flex justify-content-between  navbar-expand-lg navbar-dark">
-              <Link className="navbar-brand" href="/">
-                <Image
-                  src={!dark ? LogoLight : LogoDark}
-                  className="logo"
-                  alt="logo"
-                />
-              </Link>
-              <div className="d-flex align-items-center justify-content-end">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <Link href="/login">Log In</Link>
-                  </li>
-                </ul>
-                <div className="right-area header-action d-flex align-items-center">
-                  <Link href="/register" className="cmn-btn btn-register">
-                    Register
-                  </Link>
-                </div>
-                <Switch />
+      <div className="container">
+        <div className="row d-flex header-area">
+          <nav className="navbar d-flex justify-content-between  navbar-expand-lg navbar-dark">
+            <Link className="navbar-brand" href="/">
+              <Image
+                src={!dark ? LogoLight : LogoDark}
+                className="logo"
+                alt="logo"
+              />
+            </Link>
+            <div className="d-flex align-items-center justify-content-end">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link href="/login">Log In</Link>
+                </li>
+              </ul>
+              <div className="right-area header-action d-flex align-items-center">
+                <Link href="/register" className="cmn-btn btn-register">
+                  Register
+                </Link>
               </div>
-            </nav>
-          </div>
+              <Switch />
+            </div>
+          </nav>
         </div>
+      </div>
     </header>
   );
 };
