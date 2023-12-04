@@ -14,19 +14,19 @@ import LogoDark from "/public/images/logo-dark.svg";
 const ShortNavbar = () => {
   const [windowHeight, setWindowHeight] = useState(0);
   const { dark, toggle } = useContext(ThemeContext);
-  const navBarTop = () => {
-    if (window !== undefined) {
-      let height = window.scrollY;
-      setWindowHeight(height);
-    }
-  };
+  // const navBarTop = () => {
+  //   if (window !== undefined) {
+  //     let height = window.scrollY;
+  //     setWindowHeight(height);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", navBarTop);
-    return () => {
-      window.removeEventListener("scroll", navBarTop);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", navBarTop);
+  //   return () => {
+  //     window.removeEventListener("scroll", navBarTop);
+  //   };
+  // }, []);
 
   return (
     <header
