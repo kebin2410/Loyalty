@@ -11,7 +11,7 @@ import LogoDark from "/public/images/logo-dark.svg";
 
 const ShortNavbar = () => {
   const [windowHeight, setWindowHeight] = useState(0);
-  const { dark, toggle } = useContext(ThemeContext);
+  // const { dark, toggle } = useContext(ThemeContext);
   const navBarTop = () => {
     if (window !== undefined) {
       let height = window.scrollY;
@@ -38,7 +38,8 @@ const ShortNavbar = () => {
             <nav className="navbar d-flex justify-content-between  navbar-expand-lg navbar-dark">
               <Link className="navbar-brand" href="/">
                 <Image
-                  src={!dark ? LogoLight : LogoDark}
+                  // src={!dark ? LogoLight : LogoDark}
+                  src={LogoDark}
                   className="logo"
                   alt="logo"
                 />
@@ -54,12 +55,8 @@ const ShortNavbar = () => {
                     Register
                   </Link>
                 </div>
-                <div>
-                  <LangSwitch />
-                </div>
-                <div>
-                  <Switch />
-                </div>
+                <LangSwitch />
+                <Switch />
               </div>
             </nav>
           </div>
