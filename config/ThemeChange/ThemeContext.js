@@ -59,7 +59,7 @@ const lightTheme = [
   "--hover-color: #ea580c",
   "--bs-border-color:#76A9FA",
   "--bs-nav-link-color:#374151",
-  "--dark-mode-color: #374151"
+  "--switch-mode-color: #ffffff"
 ];
 const darkTheme = [
   "--body-color: #eeeeee",
@@ -70,5 +70,5 @@ const darkTheme = [
   "--hover-color: #ea580c",
   "--bs-border-color:#1E429F",
   "--bs-nav-link-color:var(--head-color)",
-  "--dark-mode-color: var(--nav-color)"
+  "--switch-mode-color: #000000"
 ];

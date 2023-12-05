@@ -60,7 +60,7 @@ const Footer = () => {
                 alt="logo"
               />
             </Link> */}
-            <h6>Powered by Zest Loyalty</h6>
+            <p style={{color:"var(--head-color)", fontSize:"0.8rem"}}>Powered by Zest Loyalty</p>
           </div>
         </div>
       </div>

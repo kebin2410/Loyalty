@@ -30,12 +30,14 @@ const CreditCard = () => {
             <div className="col-lg-12">
               <div className="tab-content">
                 <div className="center-container pt-120">
-                  <Breadcrumb
-                    breadcrumbs={[
-                      ["Home", "/"],
-                      [singleCard.heading_text, "/"],
-                    ]}
-                  />
+                  <div className="py-2">
+                    <Breadcrumb
+                      breadcrumbs={[
+                        ["Home", "/"],
+                        [singleCard.heading_text, "/"],
+                      ]}
+                      />
+                    </div>
                   <CreditAndDebitCard
                     id={singleCard.id}
                     img1={singleCard.img1}
@@ -137,14 +139,14 @@ const CreditCard = () => {
                         role="tabpanel"
                         aria-labelledby="reward-tab"
                       >
-                        <table className="custom-table">
+                        <table className="reward-table">
                           <tbody>
                             <tr>
                               <td>
                                 <Image
                                   src={sm1}
                                   alt="images"
-                                  className="svg-class bg-white rounded"
+                                  className="reward-table-image bg-white rounded"
                                 />
                               </td>
                               <td className="td-padding">Free Cooking Class</td>
@@ -158,7 +160,7 @@ const CreditCard = () => {
                                 <Image
                                   src={sm2}
                                   alt="images"
-                                  className="svg-class bg-white rounded"
+                                  className="reward-table-image bg-white rounded"
                                 />
                               </td>
                               <td>Second Pizza for Free</td>
@@ -172,7 +174,7 @@ const CreditCard = () => {
                                 <Image
                                   src={sm3}
                                   alt="images"
-                                  className="svg-class bg-white rounded"
+                                  className="reward-table-image bg-white rounded"
                                 />
                               </td>
                               <td>Dinner for Two</td>
