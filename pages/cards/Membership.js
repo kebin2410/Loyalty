@@ -1,8 +1,15 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
 import { card_data } from "../../components/cards/cardData";
 import Social from "../../components/social/Social";
-import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
+import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
+
+import sm1 from "../../public/images/bg/sm01.jpg";
+import sm2 from "../../public/images/bg/sm02.jpg";
+import sm3 from "../../public/images/bg/sm03.jpg";
+import sm4 from "../../public/images/bg/sm04.jpg";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -25,13 +32,12 @@ const CreditCard = () => {
               <div className="tab-content">
                 <div className="center-container pt-120">
                   <Breadcrumb
-                    breadcrumbs={
-                      [
-                        ["Home", "/"],
-                        [singleCard.heading_text, "/"],
-                      ]} 
-                    />
-                     <CreditAndDebitCard
+                    breadcrumbs={[
+                      ["Home", "/"],
+                      [singleCard.heading_text, "/"],
+                    ]}
+                  />
+                  <CreditAndDebitCard
                     id={singleCard.id}
                     img1={singleCard.img1}
                     img2={singleCard.img2}
@@ -44,7 +50,10 @@ const CreditCard = () => {
                     issue_date={singleCard.issue_date}
                     expire_date={singleCard.expiry_date}
                   />
-                  <div className="social-link d-flex flex-wrap justify-content-around align-items-center" style={{maxWidth:"600px", width:"100%"}}>
+                  <div
+                    className="social-link d-flex flex-wrap justify-content-around align-items-center"
+                    style={{ maxWidth: "500px", width: "100%" }}
+                  >
                     {/* Socials links here */}
                     <Social
                       items={[
@@ -63,7 +72,7 @@ const CreditCard = () => {
                     className="d-flex justify-content-around my-3 border-bottom three-panel"
                     id="pills-tab"
                     role="tablist"
-                    style={{maxWidth:"400px", width:"100%"}}
+                    style={{ maxWidth: "500px", width: "100%" }}
                   >
                     <div
                       className=""
@@ -117,35 +126,52 @@ const CreditCard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="tab-content text-center" id="pills-tabContent" style={{maxWidth:"600px", width:"100%"}} >
+                  <div
+                    className="tab-content text-center"
+                    id="pills-tabContent"
+                    style={{ maxWidth: "500px", width: "100%" }}
+                  >
                     <div
                       className="tab-pane fade show active"
                       id="pills-reward"
                       role="tabpanel"
                       aria-labelledby="reward-tab"
                     >
-                      <div className="container">
+                      <div className="center-container">
                         <table className="custom-table">
                           <tbody>
                             <tr>
-                              <td>Data 1</td>
-                              <td>Data 2</td>
-                              <td>Data 3</td>
+                              <td>
+                                <Image
+                                  src={sm1}
+                                  alt="images"
+                                  className="svg-class bg-white rounded"
+                                />
+                              </td>
+                              <td className="td-padding">Free Cooking Class</td>
+                              <td>3000</td>
                             </tr>
                             <tr>
-                              <td>Data 1</td>
-                              <td>Data 2</td>
-                              <td>Data 3</td>
+                              <td>
+                                <Image
+                                  src={sm2}
+                                  alt="images"
+                                  className="svg-class bg-white rounded"
+                                />
+                              </td>
+                              <td>Second Pizza for Free</td>
+                              <td>2000</td>
                             </tr>
                             <tr>
-                              <td>Data 1</td>
-                              <td>Data 2</td>
-                              <td>Data 3</td>
-                            </tr>
-                            <tr>
-                              <td>Data 1</td>
-                              <td>Data 2</td>
-                              <td>Data 3</td>
+                              <td>
+                                <Image
+                                  src={sm3}
+                                  alt="images"
+                                  className="svg-class bg-white rounded"
+                                />
+                              </td>
+                              <td>Dinner for Two</td>
+                              <td>150</td>
                             </tr>
                           </tbody>
                         </table>

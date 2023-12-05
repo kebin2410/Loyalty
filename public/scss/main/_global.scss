@@ -23,11 +23,11 @@ html {
 body {
   font-family: var(--body-font);
   background-color: var(--body-color);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   padding: 0;
   margin: 0;
-  font-weight: 400;
+  font-weight: 600;
   overflow-x: hidden;
 }
 
@@ -55,7 +55,7 @@ h6,
 h6 > a {
   font-family: var(--body-font);
   color: var(--head-color);
-  font-weight: 600;
+  font-weight: 700;
   text-transform: initial;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -241,21 +241,21 @@ h5 > a {
 
 h6,
 h6 > a {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 23.4px;
   margin-top: -3px;
 }
 
 table thead tr th {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
 }
 
 a {
   display: inline-block;
   color: var(--para-color);
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 14px;
   line-height: 30px;
 }
 
@@ -264,8 +264,8 @@ span,
 li {
   margin: 0;
   font-family: var(--body-font);
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 600;
   color: var(--para-color);
   line-height: 30px;
 }
@@ -568,7 +568,7 @@ li {
   display: inline-block;
   font-family: "arafat font";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -702,18 +702,26 @@ button {
 .custom-table {
   border-collapse: separate;
   border-radius: 10px;
-  width: 100%;
+  border-spacing: 0;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 1px #cccccc;
   border: 2px solid var(--nav-color);
 }
 
 .custom-table th,
 .custom-table td {
   border: none;
-  padding: 10px;
+  padding: 16px 24px;
 }
 
 /* Set background color for odd rows */
 .custom-table tr {
   border-bottom: 2px solid var(--nav-color);
-  background-color: transparent;
+  cursor: pointer;
+  background-color: var(--nav-color);
+}
+.custom-table tr:hover {
+  background-color: var(--body-color);
 }

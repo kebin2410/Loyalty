@@ -1,8 +1,8 @@
 import qr_code from "/public/images/svg/qr-code.svg";
-import bg1 from "/public/images/bg/sm1.jpg";
-import bg2 from "/public/images/bg/sm2.jpg";
-import bg3 from "/public/images/bg/sm3.jpg";
-import bg4 from "/public/images/bg/sm4.jpg";
+import bg1 from "/public/images/bg/bg01.jpg";
+import bg2 from "/public/images/bg/bg02.jpg";
+import bg3 from "/public/images/bg/bg03.jpg";
+import bg4 from "/public/images/bg/bg04.jpg";
 
 export const card_data = [
   {
