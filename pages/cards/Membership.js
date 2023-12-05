@@ -4,11 +4,11 @@ import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
 import { card_data } from "../../components/cards/cardData";
 import Social from "../../components/social/Social";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
+import { BsDatabaseFill } from "react-icons/bs";
 
 import sm1 from "../../public/images/bg/sm01.jpg";
 import sm2 from "../../public/images/bg/sm02.jpg";
 import sm3 from "../../public/images/bg/sm03.jpg";
-import sm4 from "../../public/images/bg/sm04.jpg";
 
 import {
   FaFacebookF,
@@ -68,76 +68,77 @@ const CreditCard = () => {
                       ]}
                     />
                   </div>
-                  <div
-                    className="d-flex justify-content-around my-3 border-bottom three-panel"
-                    id="pills-tab"
-                    role="tablist"
-                    style={{ maxWidth: "500px", width: "100%" }}
-                  >
+                  <div className="center-container">
                     <div
-                      className=""
-                      role="presentation"
-                      style={{ cursor: "pointer" }}
+                      className="d-flex justify-content-around my-3 border-bottom three-panel"
+                      id="pills-tab"
+                      role="tablist"
+                      style={{ maxWidth: "500px", width: "100%" }}
                     >
                       <div
-                        className="nav-items active"
-                        id="reward-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-reward"
-                        role="tab"
-                        aria-controls="pills-reward"
-                        aria-selected="true"
+                        className=""
+                        role="presentation"
+                        style={{ cursor: "pointer" }}
+                        
                       >
-                        Reward
+                        <div
+                          className="nav-items active"
+                          id="reward-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-reward"
+                          role="tab"
+                          aria-controls="pills-reward"
+                          aria-selected="true"
+                        >
+                          Reward
+                        </div>
+                      </div>
+                      <div
+                        className=""
+                        role="presentation"
+                        style={{ cursor: "pointer" }}
+                      >
+                        <div
+                          className="nav-items"
+                          id="history-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-history"
+                          role="tab"
+                          aria-controls="pills-history"
+                          aria-selected="false"
+                        >
+                          History
+                        </div>
+                      </div>
+                      <div
+                        className=""
+                        role="presentation"
+                        style={{ cursor: "pointer" }}
+                      >
+                        <div
+                          className="nav-items"
+                          id="rules-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-rules"
+                          role="tab"
+                          aria-controls="pills-rules"
+                          aria-selected="false"
+                        >
+                          Rules
+                        </div>
                       </div>
                     </div>
                     <div
-                      className=""
-                      role="presentation"
-                      style={{ cursor: "pointer" }}
+                      className="tab-content text-center"
+                      id="pills-tabContent"
+                      style={{ maxWidth: "500px", width: "100%" }}
                     >
                       <div
-                        className="nav-items"
-                        id="history-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-history"
-                        role="tab"
-                        aria-controls="pills-history"
-                        aria-selected="false"
+                        className="tab-pane fade show active"
+                        id="pills-reward"
+                        role="tabpanel"
+                        aria-labelledby="reward-tab"
                       >
-                        History
-                      </div>
-                    </div>
-                    <div
-                      className=""
-                      role="presentation"
-                      style={{ cursor: "pointer" }}
-                    >
-                      <div
-                        className="nav-items"
-                        id="rules-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-rules"
-                        role="tab"
-                        aria-controls="pills-rules"
-                        aria-selected="false"
-                      >
-                        Rules
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="tab-content text-center"
-                    id="pills-tabContent"
-                    style={{ maxWidth: "500px", width: "100%" }}
-                  >
-                    <div
-                      className="tab-pane fade show active"
-                      id="pills-reward"
-                      role="tabpanel"
-                      aria-labelledby="reward-tab"
-                    >
-                      <div className="center-container">
                         <table className="custom-table">
                           <tbody>
                             <tr>
@@ -149,7 +150,7 @@ const CreditCard = () => {
                                 />
                               </td>
                               <td className="td-padding">Free Cooking Class</td>
-                              <td>3000</td>
+                              <td><BsDatabaseFill />3000</td>
                             </tr>
                             <tr>
                               <td>
@@ -160,7 +161,7 @@ const CreditCard = () => {
                                 />
                               </td>
                               <td>Second Pizza for Free</td>
-                              <td>2000</td>
+                              <td><BsDatabaseFill />2000</td>
                             </tr>
                             <tr>
                               <td>
@@ -171,7 +172,7 @@ const CreditCard = () => {
                                 />
                               </td>
                               <td>Dinner for Two</td>
-                              <td>150</td>
+                              <td className="text-center"><BsDatabaseFill />150</td>
                             </tr>
                           </tbody>
                         </table>
