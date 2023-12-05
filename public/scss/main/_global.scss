@@ -12,9 +12,11 @@
   --bs-nav-link-color: #374151;
   --dark-mode-color: #374151;
 }
+
 .collapsing {
   transition: 0.3s;
 }
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -42,17 +44,17 @@ h6 {
 }
 
 h1,
-h1 > a,
+h1>a,
 h2,
-h2 > a,
+h2>a,
 h3,
-h3 > a,
+h3>a,
 h4,
-h4 > a,
+h4>a,
 h5,
-h5 > a,
+h5>a,
 h6,
-h6 > a {
+h6>a {
   font-family: var(--body-font);
   color: var(--head-color);
   font-weight: 700;
@@ -64,12 +66,12 @@ h6 > a {
   -o-transition: all 0.3s;
 }
 
-h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover,
-h5 > a:hover,
-h6 > a:hover {
+h1>a:hover,
+h2>a:hover,
+h3>a:hover,
+h4>a:hover,
+h5>a:hover,
+h6>a:hover {
   color: var(--body-color);
 }
 
@@ -150,6 +152,7 @@ input[type="password"] {
     height: 11px;
   }
 }
+
 select {
   -webkit-appearance: none;
   padding: 10px 10px !important;
@@ -205,42 +208,42 @@ iframe {
 }
 
 h1,
-h1 > a {
+h1>a {
   font-size: 76px;
   line-height: 98.8px;
   margin-top: -18px;
 }
 
 h2,
-h2 > a {
+h2>a {
   font-size: 57px;
   line-height: 74.1px;
   margin-top: -12px;
 }
 
 h3,
-h3 > a {
+h3>a {
   font-size: 43px;
   line-height: 55.9px;
   margin-top: -8px;
 }
 
 h4,
-h4 > a {
+h4>a {
   font-size: 32px;
   line-height: 41.6px;
   margin-top: -7px;
 }
 
 h5,
-h5 > a {
+h5>a {
   font-size: 24px;
   line-height: 31.2px;
   margin-top: -5px;
 }
 
 h6,
-h6 > a {
+h6>a {
   font-size: 14px;
   line-height: 23.4px;
   margin-top: -3px;
@@ -309,11 +312,13 @@ li {
   line-height: 36px;
   margin-top: -7px;
 }
+
 .xlr {
   font-size: 24px;
   line-height: 36px;
   margin-top: -7px;
 }
+
 .mdr {
   font-size: 16px;
   line-height: 22px;
@@ -339,9 +344,11 @@ li {
   .pt-120 {
     padding-top: 60px;
   }
+
   .mb-60 {
     margin-bottom: 40px;
   }
+
   .mt-60 {
     margin-top: 40px;
   }
@@ -412,10 +419,12 @@ li {
 
 .icon-svg {
   position: relative;
+
   img {
     opacity: 1;
     position: absolute;
   }
+
   svg {
     position: absolute;
     stroke-dashoffset: 1500;
@@ -425,6 +434,7 @@ li {
     opacity: 0;
     visibility: hidden;
   }
+
   &:hover {
     svg {
       visibility: visible;
@@ -433,6 +443,7 @@ li {
       fill: transparent;
       transition: transform 0.3s, fill 0.5s, stroke-dashoffset 6s;
     }
+
     img {
       opacity: 0;
       visibility: hidden;
@@ -450,6 +461,7 @@ li {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
@@ -457,6 +469,7 @@ li {
     -ms-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -472,6 +485,7 @@ li {
     -ms-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -497,15 +511,18 @@ li {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 50px;
+
   &:hover {
     color: var(--head-color);
     background: transparent;
     border: 1px solid #848894;
   }
+
   &.second {
     color: #0a1023;
     background: transparent;
     border: 1px solid #848894;
+
     &:hover {
       color: var(--body-color);
       background: var(--hover-color);
@@ -520,32 +537,39 @@ li {
     right: 230%;
     opacity: 0;
   }
+
   80% {
     right: 200%;
     opacity: 1;
   }
+
   50% {
     right: 100%;
     opacity: 0.5;
   }
+
   0% {
     right: 10%;
     opacity: 0;
   }
 }
+
 @keyframes run_obj_alt {
   100% {
     left: 230%;
     opacity: 0;
   }
+
   80% {
     left: 200%;
     opacity: 1;
   }
+
   50% {
     left: 100%;
     opacity: 0.5;
   }
+
   0% {
     left: 10%;
     opacity: 0;
@@ -556,14 +580,14 @@ li {
 @font-face {
   font-family: "arafat font";
   src: url("../../../public/fonts/arafat-font.eot");
-  src: url("../../../public/fonts/arafat-font.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../../../public/fonts/arafat-font.eot?#iefix") format("embedded-opentype"),
     url("../../../public/fonts/arafat-font.woff") format("woff"),
     url("../../../public/fonts/arafat-font.ttf") format("truetype"),
     url("../../../public/fonts/arafat-font.svg#arafat-font") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 [class*="icon-"]:before {
   display: inline-block;
   font-family: "arafat font";
@@ -573,15 +597,19 @@ li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-a-left-arrow:before {
   content: "\0041";
 }
+
 .icon-b-right-arrow:before {
   content: "\0042";
 }
+
 .icon-c-left-double-arrow:before {
   content: "\0043";
 }
+
 .icon-d-right-double-arrow:before {
   content: "\0044";
 }
@@ -615,11 +643,12 @@ button {
 .active {
   color: var(--head-color);
 }
-.mx-3 > .active {
+
+.mx-3>.active {
   border-bottom: 3px solid #f97316;
 }
 
-.mx-3 > .nav-items:hover {
+.mx-3>.nav-items:hover {
   border-radius: 1px;
   border-bottom: 3px solid var(--head-color);
 }
@@ -643,7 +672,8 @@ button {
   position: relative;
   cursor: pointer;
   width: 100%;
-  max-width: 500px; /* Adjust as needed */
+  max-width: 400px;
+  /* Adjust as needed */
 }
 
 .card-img {
@@ -658,7 +688,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 20px;
   top: 0;
   left: 0;
@@ -669,11 +699,13 @@ button {
 
 .center-container {
   display: grid;
-  place-items: center; /* Center both horizontally and vertically */
+  place-items: center;
+  /* Center both horizontally and vertically */
 }
+
 .svg-class {
-  width: fit-content;
-  height: fit-content;
+  width: 70px;
+  height: 70px;
 }
 
 .oval-icon {
@@ -683,8 +715,9 @@ button {
   color: white;
   background-color: #4b5563;
 }
+
 .bg-sign {
-  background: var(--nav-color);
+  background: #EA580C;
 }
 
 .line-clamp {
@@ -723,6 +756,7 @@ button {
   cursor: pointer;
   background-color: var(--nav-color);
 }
+
 .custom-table tr:hover {
   background-color: var(--body-color);
 }

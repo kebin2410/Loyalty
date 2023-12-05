@@ -20,7 +20,6 @@ import {
   FaWhatsapp,
   FaReddit,
 } from "react-icons/fa";
-import { sign } from "crypto";
 const CreditCard = () => {
   const singleCard = card_data[0];
   return (

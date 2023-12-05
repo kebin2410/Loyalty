@@ -7,7 +7,7 @@
   z-index: 999;
   background: var(--nav-color);
   &.header-fixed {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -508,7 +508,7 @@
 
 // Footer Section Start
 .footer-section {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   background: var(--nav-color);

@@ -48,7 +48,7 @@ const CreditAndDebitCard = ({
         </div>
         <div className="d-flex justify-content-between">
           <div>
-            <h6 className="line-clamp text-white">Identifier</h6>
+            <h6 className="line-clamp text-white">Membership ID</h6>
             <h6 className="line-clamp text-white">{identifier}</h6>
           </div>
           <div className="d-flex">

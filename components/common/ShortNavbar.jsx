@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState, useContext, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -27,9 +27,8 @@ const ShortNavbar = () => {
 
   return (
     <header
-      className={`header-section register login ${
-        windowHeight > 50 && "header-fixed animated fadeInDown"
-      }`}
+      className={`header-section register login ${windowHeight > 50 && "header-fixed animated fadeInDown"
+        }`}
     >
       <div className="container">
         <div className="row d-flex header-area">
@@ -40,7 +39,7 @@ const ShortNavbar = () => {
                 className="logo"
                 alt="logo"
               /> */}
-              {!dark ? <i className="text-white"><FaBars/></i>:<i className="text-black"><FaBars/></i>}
+              {!dark ? <i className="text-white"><FaBars /></i> : <i className="text-black"><FaBars /></i>}
             </Link>
             <div className="d-flex align-items-center justify-content-end">
               <ul className="navbar-nav">
