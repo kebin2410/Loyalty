@@ -595,7 +595,7 @@ li {
   justify-content: space-around;
   align-items: center;
   background: var(--dark-mode-color);
-  
+
   border-radius: 50%;
   padding: 0;
 }
@@ -612,15 +612,18 @@ button {
 .active {
   color: var(--head-color);
 }
-.mx-3 > .active{
+.mx-3 > .active {
   border-bottom: 3px solid #f97316;
 }
 
-.three-panel{
-  color: var(--bs-border-color);
+.mx-3 > .nav-items:hover {
+  border-radius: 1px;
+  border-bottom: 3px solid var(--head-color);
 }
 
-
+.three-panel {
+  color: var(--bs-border-color);
+}
 
 .flag {
   width: 1rem;
@@ -653,7 +656,7 @@ button {
   justify-content: space-between;
   position: absolute;
   border-radius: 25px;
-  padding: 30px;
+  padding: 15px;
   top: 0;
   left: 0;
   color: white;
@@ -681,24 +684,23 @@ button {
   background: var(--nav-color);
 }
 
-.line-clamp{
+.line-clamp {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
 
-.nav-active{
-  // padding-bottom: 20px;
+.nav-active {
   border-width: 2px;
   border-bottom: #f97316;
 }
 
 .custom-table {
+  border-collapse: separate;
   border-radius: 10px;
-  border-collapse: collapse;
   width: 100%;
-  border: 1px solid black;
+  border: 2px solid var(--nav-color);
 }
 
 .custom-table th,
@@ -708,7 +710,7 @@ button {
 }
 
 /* Set background color for odd rows */
-.custom-table tr:nth-child(odd) {
-  outline: 1px solid black;
+.custom-table tr {
+  border-bottom: 2px solid var(--nav-color);
   background-color: transparent;
 }

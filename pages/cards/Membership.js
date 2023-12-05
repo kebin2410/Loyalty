@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
 import { card_data } from "../../components/cards/cardData";
 import Social from "../../components/social/Social";
+import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
 import {
   FaFacebookF,
   FaInstagram,
@@ -12,6 +13,7 @@ import {
   FaWhatsapp,
   FaReddit,
 } from "react-icons/fa";
+import { sign } from "crypto";
 const CreditCard = () => {
   const singleCard = card_data[0];
   return (
@@ -22,7 +24,14 @@ const CreditCard = () => {
             <div className="col-lg-12">
               <div className="tab-content">
                 <div className="center-container pt-120">
-                  <CreditAndDebitCard
+                  <Breadcrumb
+                    breadcrumbs={
+                      [
+                        ["Home", "/"],
+                        [singleCard.heading_text, "/"],
+                      ]} 
+                    />
+                     <CreditAndDebitCard
                     id={singleCard.id}
                     img1={singleCard.img1}
                     img2={singleCard.img2}
@@ -35,7 +44,7 @@ const CreditCard = () => {
                     issue_date={singleCard.issue_date}
                     expire_date={singleCard.expiry_date}
                   />
-                  <div className="social-link d-flex flex-wrap justify-content-around align-items-center">
+                  <div className="social-link d-flex flex-wrap justify-content-around align-items-center" style={{maxWidth:"600px", width:"100%"}}>
                     {/* Socials links here */}
                     <Social
                       items={[
@@ -51,18 +60,18 @@ const CreditCard = () => {
                     />
                   </div>
                   <div
-                    className="d-flex justify-content-between my-3 border-bottom three-panel"
+                    className="d-flex justify-content-around my-3 border-bottom three-panel"
                     id="pills-tab"
                     role="tablist"
                     style={{maxWidth:"400px", width:"100%"}}
                   >
                     <div
-                      className="mx-3"
+                      className=""
                       role="presentation"
                       style={{ cursor: "pointer" }}
                     >
                       <div
-                        className="active"
+                        className="nav-items active"
                         id="reward-tab"
                         data-bs-toggle="pill"
                         data-bs-target="#pills-reward"
@@ -74,7 +83,7 @@ const CreditCard = () => {
                       </div>
                     </div>
                     <div
-                      className="mx-3"
+                      className=""
                       role="presentation"
                       style={{ cursor: "pointer" }}
                     >
@@ -91,12 +100,12 @@ const CreditCard = () => {
                       </div>
                     </div>
                     <div
-                      className="mx-3"
+                      className=""
                       role="presentation"
                       style={{ cursor: "pointer" }}
                     >
                       <div
-                        className=""
+                        className="nav-items"
                         id="rules-tab"
                         data-bs-toggle="pill"
                         data-bs-target="#pills-rules"
@@ -115,16 +124,24 @@ const CreditCard = () => {
                       role="tabpanel"
                       aria-labelledby="reward-tab"
                     >
-                      <div class="container">
-                        <table class="custom-table">
-                          <thead>
-                            <tr>
-                              <th>Column 1</th>
-                              <th>Column 2</th>
-                              <th>Column 3</th>
-                            </tr>
-                          </thead>
+                      <div className="container">
+                        <table className="custom-table">
                           <tbody>
+                            <tr>
+                              <td>Data 1</td>
+                              <td>Data 2</td>
+                              <td>Data 3</td>
+                            </tr>
+                            <tr>
+                              <td>Data 1</td>
+                              <td>Data 2</td>
+                              <td>Data 3</td>
+                            </tr>
+                            <tr>
+                              <td>Data 1</td>
+                              <td>Data 2</td>
+                              <td>Data 3</td>
+                            </tr>
                             <tr>
                               <td>Data 1</td>
                               <td>Data 2</td>
