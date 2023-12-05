@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
 import { card_data } from "../../components/cards/cardData";
 import Social from "../../components/social/Social";
@@ -51,11 +51,16 @@ const CreditCard = () => {
                     />
                   </div>
                   <div
-                    className="d-flex my-3 border-bottom three-panel"
+                    className="d-flex justify-content-between my-3 border-bottom three-panel"
                     id="pills-tab"
                     role="tablist"
+                    style={{maxWidth:"400px", width:"100%"}}
                   >
-                    <div className="mx-3" role="presentation" style={{cursor:"pointer"}}>
+                    <div
+                      className="mx-3"
+                      role="presentation"
+                      style={{ cursor: "pointer" }}
+                    >
                       <div
                         className="active"
                         id="reward-tab"
@@ -68,7 +73,11 @@ const CreditCard = () => {
                         Reward
                       </div>
                     </div>
-                    <div className="mx-3" role="presentation" style={{cursor:"pointer"}}>
+                    <div
+                      className="mx-3"
+                      role="presentation"
+                      style={{ cursor: "pointer" }}
+                    >
                       <div
                         className="nav-items"
                         id="history-tab"
@@ -81,7 +90,11 @@ const CreditCard = () => {
                         History
                       </div>
                     </div>
-                    <div className="mx-3" role="presentation" style={{cursor:"pointer"}}>
+                    <div
+                      className="mx-3"
+                      role="presentation"
+                      style={{ cursor: "pointer" }}
+                    >
                       <div
                         className=""
                         id="rules-tab"
@@ -95,18 +108,31 @@ const CreditCard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="tab-content" id="pills-tabContent">
+                  <div className="tab-content text-center" id="pills-tabContent" style={{maxWidth:"600px", width:"100%"}} >
                     <div
                       className="tab-pane fade show active"
                       id="pills-reward"
                       role="tabpanel"
                       aria-labelledby="reward-tab"
                     >
-                      
-                        <table></table>
-
-
-
+                      <div class="container">
+                        <table class="custom-table">
+                          <thead>
+                            <tr>
+                              <th>Column 1</th>
+                              <th>Column 2</th>
+                              <th>Column 3</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Data 1</td>
+                              <td>Data 2</td>
+                              <td>Data 3</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                     <div
                       className="tab-pane fade"

@@ -693,3 +693,22 @@ button {
   border-width: 2px;
   border-bottom: #f97316;
 }
+
+.custom-table {
+  border-radius: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.custom-table th,
+.custom-table td {
+  border: none;
+  padding: 10px;
+}
+
+/* Set background color for odd rows */
+.custom-table tr:nth-child(odd) {
+  outline: 1px solid black;
+  background-color: transparent;
+}
