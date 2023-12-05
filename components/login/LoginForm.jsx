@@ -39,7 +39,7 @@ const LoginForm = () => {
                         </div>
                       </div>
                       <div className="btn-area">
-                        <button className="cmn-btn" style={{ width: "100%" }}>
+                        <button className="cmn-btn text-white" style={{ width: "100%" }}>
                           Login
                         </button>
                       </div>
