@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect, useEffect } from "react";
 
 const ThemeContext = React.createContext({
-  dark: false,
+  dark: true,
   toggle: () => {}
 });
 
@@ -50,7 +50,7 @@ export function ThemeProvider(props) {
 }
 
 // "#374151"
-const darkTheme = [
+const lightTheme = [
   "--body-color: #111827",
   "--nav-color:  #1F2937",
   "--para-color: #F97316",
@@ -60,10 +60,8 @@ const darkTheme = [
   "--bs-border-color:#76A9FA",
   "--bs-nav-link-color:#374151",
   "--dark-mode-color: #374151"
-  
-
 ];
-const lightTheme = [
+const darkTheme = [
   "--body-color: #eeeeee",
   "--nav-color:  #ffffff",
   "--para-color: #F97316",
