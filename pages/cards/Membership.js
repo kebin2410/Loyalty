@@ -68,66 +68,65 @@ const CreditCard = () => {
                       ]}
                     />
                   </div>
-                  <div className="center-container">
+                  <div
+                    className="d-flex justify-content-around my-3 border-bottom three-panel"
+                    id="pills-tab"
+                    role="tablist"
+                    style={{ maxWidth: "500px", width: "100%" }}
+                  >
                     <div
-                      className="d-flex justify-content-around my-3 border-bottom three-panel"
-                      id="pills-tab"
-                      role="tablist"
-                      style={{ maxWidth: "500px", width: "100%" }}
+                      className=""
+                      role="presentation"
+                      style={{ cursor: "pointer" }}
                     >
                       <div
-                        className=""
-                        role="presentation"
-                        style={{ cursor: "pointer" }}
-                        
+                        className="nav-items active"
+                        id="reward-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-reward"
+                        role="tab"
+                        aria-controls="pills-reward"
+                        aria-selected="true"
                       >
-                        <div
-                          className="nav-items active"
-                          id="reward-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pills-reward"
-                          role="tab"
-                          aria-controls="pills-reward"
-                          aria-selected="true"
-                        >
-                          Reward
-                        </div>
-                      </div>
-                      <div
-                        className=""
-                        role="presentation"
-                        style={{ cursor: "pointer" }}
-                      >
-                        <div
-                          className="nav-items"
-                          id="history-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pills-history"
-                          role="tab"
-                          aria-controls="pills-history"
-                          aria-selected="false"
-                        >
-                          History
-                        </div>
-                      </div>
-                      <div
-                        className=""
-                        role="presentation"
-                        style={{ cursor: "pointer" }}
-                      >
-                        <div
-                          className="nav-items"
-                          id="rules-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pills-rules"
-                          role="tab"
-                          aria-controls="pills-rules"
-                          aria-selected="false"
-                        >
-                          Rules
-                        </div>
+                        Reward
                       </div>
                     </div>
+                    <div
+                      className=""
+                      role="presentation"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <div
+                        className="nav-items"
+                        id="history-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-history"
+                        role="tab"
+                        aria-controls="pills-history"
+                        aria-selected="false"
+                      >
+                        History
+                      </div>
+                    </div>
+                    <div
+                      className=""
+                      role="presentation"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <div
+                        className="nav-items"
+                        id="rules-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-rules"
+                        role="tab"
+                        aria-controls="pills-rules"
+                        aria-selected="false"
+                      >
+                        Rules
+                      </div>
+                    </div>
+                  </div>
+                  <div className="center-container">
                     <div
                       className="tab-content text-center"
                       id="pills-tabContent"
@@ -150,7 +149,10 @@ const CreditCard = () => {
                                 />
                               </td>
                               <td className="td-padding">Free Cooking Class</td>
-                              <td><BsDatabaseFill />3000</td>
+                              <td>
+                                <BsDatabaseFill />
+                                3000
+                              </td>
                             </tr>
                             <tr>
                               <td>
@@ -161,7 +163,10 @@ const CreditCard = () => {
                                 />
                               </td>
                               <td>Second Pizza for Free</td>
-                              <td><BsDatabaseFill />2000</td>
+                              <td className="">
+                                <BsDatabaseFill />
+                                2000
+                              </td>
                             </tr>
                             <tr>
                               <td>
@@ -172,7 +177,10 @@ const CreditCard = () => {
                                 />
                               </td>
                               <td>Dinner for Two</td>
-                              <td className="text-center"><BsDatabaseFill />150</td>
+                              <td className="text-center">
+                                <BsDatabaseFill />
+                                150
+                              </td>
                             </tr>
                           </tbody>
                         </table>
