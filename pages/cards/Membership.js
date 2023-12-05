@@ -133,17 +133,15 @@ const CreditCard = () => {
                     <div className="tab-pane fade" id="tab3">
                       <h5>Rules and conditions</h5>
                       <ul className="">
-                        <li>Points expire after 10 months.</li>
-                        <li>
-                          You receive 20 points at your first purchase.
+                        <li className="py-2">- Points expire after 10 months.</li>
+                        <li className="py-2">
+                          - You receive 20 points at your first purchase.
                         </li>
-                        <li>
-                          For each 1 USD spent, you receive 50 points.
+                        <li className="py-2">
+                          - For each 1 USD spent, you receive 50 points.
                         </li>
-                        <li>
-                        </li>
-                        <li>
-                          Each purchase earns a minimum of 50 points and a maximum of 100,000 points.
+                        <li className="py-2">
+                          - Each purchase earns a minimum of 50 points and a maximum of 100,000 points.
                         </li>
                       </ul>
                     </div>

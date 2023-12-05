@@ -20,6 +20,7 @@ import {
   FaWhatsapp,
   FaReddit,
 } from "react-icons/fa";
+import Link from "next/link";
 const CreditCard = () => {
   const singleCard = card_data[2];
   return (
@@ -30,12 +31,14 @@ const CreditCard = () => {
             <div className="col-lg-12">
               <div className="tab-content">
                 <div className="center-container pt-120">
-                  <Breadcrumb
-                    breadcrumbs={[
-                      ["Home", "/"],
-                      [singleCard.heading_text, "/"],
-                    ]}
-                  />
+                  <div className="py-2">
+                    <Breadcrumb
+                      breadcrumbs={[
+                        ["Home", "/"],
+                        [singleCard.heading_text, "/"],
+                      ]}
+                    />
+                  </div>
                   <CreditAndDebitCard
                     id={singleCard.id}
                     img1={singleCard.img1}
@@ -51,7 +54,7 @@ const CreditCard = () => {
                   />
                   <div
                     className="social-link d-flex flex-wrap justify-content-around align-items-center"
-                    style={{ maxWidth: "500px", width: "100%" }}
+                    style={{ maxWidth: "400px", width: "100%" }}
                   >
                     {/* Socials links here */}
                     <Social
@@ -67,139 +70,80 @@ const CreditCard = () => {
                       ]}
                     />
                   </div>
-                  <div
-                    className="d-flex justify-content-around my-3 border-bottom three-panel"
-                    id="pills-tab"
-                    role="tablist"
-                    style={{ maxWidth: "500px", width: "100%" }}
-                  >
-                    <div
-                      className=""
-                      role="presentation"
-                      style={{ cursor: "pointer" }}
-                    >
-                      <div
-                        className="nav-items active"
-                        id="reward-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-reward"
-                        role="tab"
-                        aria-controls="pills-reward"
-                        aria-selected="true"
-                      >
-                        Reward
+                  <ul className="nav nav-pills mt-4 d-flex justify-content-around border-bottom mx-5 " style={{ width: "100%", maxWidth: "400px" }}>
+                    <li className="nav-item">
+                      <a className="nav-link active bg-transparent" style={{ color: "var(--head-color)" }} id="tab1-tab" data-bs-toggle="pill" href="#tab1">Rewards</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link bg-transparent" style={{ color: "var(--head-color)" }} id="tab2-tab" data-bs-toggle="pill" href="#tab2">History</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link bg-transparent" style={{ color: "var(--head-color)" }} id="tab3-tab" data-bs-toggle="pill" href="#tab3">Rules</a>
+                    </li>
+                  </ul>
+
+                  <div className="tab-content mt-3 p-3" >
+                    <div className="tab-pane fade show active" id="tab1">
+                      <table className="reward-table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <Image src={sm1} alt="images"
+                                className="reward-table-image bg-white rounded" />
+                            </td>
+                            <td className="td-padding">Free Cooking Class</td>
+                            <td>
+                              <BsDatabaseFill />
+                              3000
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <Image src={sm2} alt="images"
+                                className="reward-table-image bg-white rounded" />
+                            </td>
+                            <td>Second Pizza for Free</td>
+                            <td className="">
+                              <BsDatabaseFill />
+                              2000
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <Image src={sm3} alt="images"
+                                className="reward-table-image bg-white rounded" />
+                            </td>
+                            <td>Dinner for Two</td>
+                            <td className="text-center">
+                              <BsDatabaseFill />
+                              150
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="tab-pane fade" id="tab2">
+                      <div className="d-flex justify-content-center align-items-center">
+                        <Link href="/login">
+                          <p>Log in</p>
+                        </Link>
+                        <h6>&nbsp;&nbsp;to see your history.</h6>
                       </div>
                     </div>
-                    <div
-                      className=""
-                      role="presentation"
-                      style={{ cursor: "pointer" }}
-                    >
-                      <div
-                        className="nav-items"
-                        id="history-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-history"
-                        role="tab"
-                        aria-controls="pills-history"
-                        aria-selected="false"
-                      >
-                        History
-                      </div>
-                    </div>
-                    <div
-                      className=""
-                      role="presentation"
-                      style={{ cursor: "pointer" }}
-                    >
-                      <div
-                        className="nav-items"
-                        id="rules-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-rules"
-                        role="tab"
-                        aria-controls="pills-rules"
-                        aria-selected="false"
-                      >
-                        Rules
-                      </div>
-                    </div>
-                  </div>
-                  <div className="center-container">
-                    <div
-                      className="tab-content text-center"
-                      id="pills-tabContent"
-                      style={{ maxWidth: "500px", width: "100%" }}
-                    >
-                      <div
-                        className="tab-pane fade show active"
-                        id="pills-reward"
-                        role="tabpanel"
-                        aria-labelledby="reward-tab"
-                      >
-                        <table className="custom-table">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <Image
-                                  src={sm1}
-                                  alt="images"
-                                  className="svg-class bg-white rounded"
-                                />
-                              </td>
-                              <td className="td-padding">Free Cooking Class</td>
-                              <td>
-                                <BsDatabaseFill />
-                                3000
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <Image
-                                  src={sm2}
-                                  alt="images"
-                                  className="svg-class bg-white rounded"
-                                />
-                              </td>
-                              <td>Second Pizza for Free</td>
-                              <td className="">
-                                <BsDatabaseFill />
-                                2000
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <Image
-                                  src={sm3}
-                                  alt="images"
-                                  className="svg-class bg-white rounded"
-                                />
-                              </td>
-                              <td>Dinner for Two</td>
-                              <td className="text-center">
-                                <BsDatabaseFill />
-                                150
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div
-                      className="tab-pane fade"
-                      id="pills-history"
-                      role="tabpanel"
-                      aria-labelledby="history-tab"
-                    >
-                      ...b
-                    </div>
-                    <div
-                      className="tab-pane fade"
-                      id="pills-rules"
-                      role="tabpanel"
-                      aria-labelledby="rules-tab"
-                    >
-                      ...c
+                    <div className="tab-pane fade" id="tab3">
+                      <h5>Rules and conditions</h5>
+                      <ul className="">
+                        <li className="py-2">- Points expire after 10 months.</li>
+                        <li className="py-2">
+                          - You receive 20 points at your first purchase.
+                        </li>
+                        <li className="py-2">
+                          - For each 1 USD spent, you receive 50 points.
+                        </li>
+                        <li className="py-2">
+                          - Each purchase earns a minimum of 50 points and a maximum of 100,000 points.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -208,7 +152,7 @@ const CreditCard = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
