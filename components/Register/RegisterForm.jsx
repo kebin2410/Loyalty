@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Input from "react-phone-number-input/input";
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 
 const RegisterForm = () => {
   const [value, setValue] = useState("");
@@ -23,10 +24,14 @@ const RegisterForm = () => {
                           <div className="single-input">
                             <span htmlFor="phone">Enter Your Phone Number</span>
                           </div>
-                          <Input
-                            placeholder="Enter your phone number"
+                          <PhoneInput
+                            name="phone"
+                            international
+                            placeholder="Enter phone number"
                             value={value}
                             onChange={setValue}
+                            id="phone"
+                            className="rounded rounded-full bg-gray-100 text-gray-700 shadow-sm border-green"
                           />
                         </div>
                       </div>
