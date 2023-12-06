@@ -73,7 +73,7 @@ const OtpForm = () => {
                     <Link href="#">Resend Code</Link>
                     <Link href="#">Back</Link>
                   </div>
-                  <button className="cmn-btn w-100">Submit OTP</button>
+                  <button className="cmn-btn w-100 text-white">Submit OTP</button>
                 </div>
               </form>
             </div>

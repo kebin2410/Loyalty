@@ -1,4 +1,4 @@
-import CreditAndDebitCard from "../components/cards/CreditAndDebitCard";
+import LoyaltyCard from "../components/cards/LoyaltyCard";
 import { card_data } from "../components/home/homeData";
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
               <div className="tab-content">
                 <div className="center-container">
                   {card_data.map((singleCard, index) => (
-                    <CreditAndDebitCard
+                    <LoyaltyCard
                       key={index}
                       id={singleCard.id}
                       img1={singleCard.img1}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const CreditAndDebitCard = ({
+const LoyaltyCard = ({
   img1,
   img2,
   link,
@@ -67,4 +67,4 @@ const CreditAndDebitCard = ({
   );
 };
 
-export default CreditAndDebitCard;
+export default LoyaltyCard;

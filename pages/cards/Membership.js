@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import CreditAndDebitCard from "../../components/cards/CreditAndDebitCard";
+import LoyaltyCard from "../../components/cards/LoyaltyCard";
 import { card_data } from "../../components/cards/cardData";
 import Social from "../../components/social/Social";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
@@ -39,7 +39,7 @@ const CreditCard = () => {
                       ]}
                     />
                   </div>
-                  <CreditAndDebitCard
+                  <LoyaltyCard
                     id={singleCard.id}
                     img1={singleCard.img1}
                     img2={singleCard.img2}

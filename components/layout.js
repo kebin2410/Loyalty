@@ -1,5 +1,5 @@
 import Footer from "./footer/Footer";
-import NavBar from "./common/ShortNavbar";
+import NavBar from "./navBar/ShortNavbar";
 import Preloader from "./preloader/Preloader";
 import ScrollToTop from "./scrollToTop/ScrollToTop";
 
