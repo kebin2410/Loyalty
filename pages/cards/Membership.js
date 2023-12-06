@@ -82,7 +82,7 @@ const CreditCard = () => {
                     </li>
                   </ul>
 
-                  <div className="tab-content mt-3 p-3" >
+                  <div className="tab-content mt-3 p-3" style={{ width: "100%", maxWidth: "400px" }}>
                     <div className="tab-pane fade show active" id="tab1">
                       <table className="reward-table">
                         <tbody>
@@ -93,7 +93,6 @@ const CreditCard = () => {
                             </td>
                             <td className="td-padding">Free Cooking Class</td>
                             <td>
-                              <BsDatabaseFill />
                               3000
                             </td>
                           </tr>
@@ -103,8 +102,7 @@ const CreditCard = () => {
                                 className="reward-table-image bg-white rounded" />
                             </td>
                             <td>Second Pizza for Free</td>
-                            <td className="">
-                              <BsDatabaseFill />
+                            <td>
                               2000
                             </td>
                           </tr>
@@ -115,7 +113,6 @@ const CreditCard = () => {
                             </td>
                             <td>Dinner for Two</td>
                             <td className="text-center">
-                              <BsDatabaseFill />
                               150
                             </td>
                           </tr>

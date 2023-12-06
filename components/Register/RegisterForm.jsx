@@ -5,6 +5,7 @@ import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 
 const RegisterForm = () => {
+
   const [value, setValue] = useState("");
   return (
     <div className="h-100 flex flex-grow-1">
@@ -15,7 +16,7 @@ const RegisterForm = () => {
               <div className="section-header">
                 <h2 className="title">Become a member</h2>
               </div>
-              <form action="/login" method="post">
+              <form action="/register" method="post">
                 <div className="row">
                   <div className="col-12 pb-1">
                     <div className="single-input">
@@ -33,9 +34,7 @@ const RegisterForm = () => {
                   </div>
                 </div>
                 <div className="btn-area">
-                  <button className="cmn-btn text-white" style={{ width: "100%" }}>
-                    Create an account
-                  </button>
+                  <Link className="cmn-btn text-white" href={"/otp"} style={{ width: "100%" }}>Create an account</Link>
                 </div>
                 <div className="py-2">
                   <span style={{ color: "var(--head-color)" }}>Already have an account? <Link href={"/login"}>Log in here</Link></span>
@@ -46,9 +45,9 @@ const RegisterForm = () => {
           <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 bg-sign d-flex flex-column justify-content-center">
             <div className="p-5">
               <h2 className="py-2 text-white">Start earning.</h2>
-              <h6 className="py-3 text-white">
+              <h5 className="py-3 text-white">
                 Earn points, redeem rewards, and enjoy exclusive deals with our loyalty app. Sign up now for unparalleled benefits!
-              </h6>
+              </h5>
             </div>
           </div>
         </div>

@@ -93,7 +93,6 @@ const CreditCard = () => {
                             </td>
                             <td className="td-padding">Free Cooking Class</td>
                             <td>
-                              <BsDatabaseFill />
                               3000
                             </td>
                           </tr>
@@ -104,7 +103,6 @@ const CreditCard = () => {
                             </td>
                             <td>Second Pizza for Free</td>
                             <td className="">
-                              <BsDatabaseFill />
                               2000
                             </td>
                           </tr>
@@ -115,7 +113,6 @@ const CreditCard = () => {
                             </td>
                             <td>Dinner for Two</td>
                             <td className="text-center">
-                              <BsDatabaseFill />
                               150
                             </td>
                           </tr>

@@ -53,14 +53,14 @@ const Footer = () => {
         </div> */}
         <div className="footer-bottom mx-auto">
           <div className="col d-flex flex-column align-items-center justify-content-center">
-             {/* <Link href="/" className="logo my-3 text-center">
+            {/* <Link href="/" className="logo my-3 text-center">
              <Image
                 className="w-50"
                 src={!dark ? LogoLight : LogoDark}
                 alt="logo"
               />
             </Link> */}
-            <p style={{color:"var(--head-color)", fontSize:"0.8rem"}}>Powered by Zest Loyalty</p>
+            <p style={{ color: "var(--head-color)", fontSize: "0.8rem" }}>Powered by Zest Loyalty</p>
           </div>
         </div>
       </div>
