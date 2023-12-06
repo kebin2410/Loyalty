@@ -25,12 +25,12 @@ const CreditCard = () => {
   const singleCard = card_data[0];
   return (
     <section className="card-section">
-      <div className="overlay pb-120">
+      <div className="overlay">
         <div className="container wow fadeInUp">
           <div className="row">
             <div className="col-lg-12">
               <div className="tab-content">
-                <div className="center-container pt-120">
+                <div className="center-container">
                   <div className="py-2">
                     <Breadcrumb
                       breadcrumbs={[

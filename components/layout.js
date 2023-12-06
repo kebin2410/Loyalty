@@ -5,7 +5,7 @@ import ScrollToTop from "./scrollToTop/ScrollToTop";
 
 const Layout = ({ children }) => {
   return (
-    <div className="d-flex flex-column">
+    <div className="d-flex flex-column h-100">
       <NavBar />
       {children}
       <Footer />

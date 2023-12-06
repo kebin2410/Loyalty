@@ -3,7 +3,7 @@ import { card_data } from "./homeData";
 
 const CreditCard = () => {
   return (
-    <div className="center-container">
+    <div className="center-container min-vh-100">
       {card_data.map((singleCard, index) => (
         <CreditAndDebitCard
           key={index}
