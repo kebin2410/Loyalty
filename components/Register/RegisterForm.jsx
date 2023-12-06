@@ -4,7 +4,7 @@ import Link from "next/link";
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 
-const LoginForm = () => {
+const RegisterForm = () => {
   const [value, setValue] = useState("");
   return (
     <div className="h-100 flex flex-grow-1">
@@ -57,4 +57,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default RegisterForm;

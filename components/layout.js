@@ -5,12 +5,14 @@ import ScrollToTop from "./scrollToTop/ScrollToTop";
 
 const Layout = ({ children }) => {
   return (
-    <div className="d-flex flex-column h-100">
+    <>
       <NavBar />
-      {children}
+      <div className="w-100 mx-auto d-flex flex-column h-100">
+        {children}
+      </div>
       <Footer />
       <Preloader />
-    </div>
+    </>
   );
 };
 

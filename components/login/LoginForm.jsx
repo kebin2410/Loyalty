@@ -42,7 +42,7 @@ const LoginForm = () => {
                   </button>
                 </div>
                 <div className="py-2">
-                  <span style={{ color: "var(--head-color)" }}>Don't have an account yet? <Link href={"/register"}>Create a free account</Link></span>
+                  <span className="text-white" style={{ color: "var(--head-color)" }}>Don't have an account yet? <Link href={"/register"}>Create a free account</Link></span>
                 </div>
               </form>
             </div>

@@ -24,7 +24,7 @@ const CreditAndDebitCard = ({
       <Image src={img1} alt="images" className="card-img" />
       <div className="card-overlay" style={{ backgroundColor: bgColor }}>
         <div className="d-flex justify-content-between">
-          <h4 className="text-white">{headingText}</h4>
+          <h5 className="text-white">{headingText}</h5>
           <div className={"d-none"}>
             <p className="text-white">Balance</p>
             <Link
@@ -36,8 +36,8 @@ const CreditAndDebitCard = ({
           </div>
         </div>
         <div className="d-flex justify-content-between">
-          <div className="d-flex flex-column justify-content-start align-items-start p-3">
-            <h6 className="text-white py-2 line-clamp">{sub_title}</h6>
+          <div className="d-flex flex-column justify-content-start align-items-start">
+            <h6 className="text-white line-clamp">{sub_title}</h6>
             <span className="text-white text-start line-clamp">{sub_text}</span>
           </div>
           <Image
@@ -52,7 +52,7 @@ const CreditAndDebitCard = ({
             <h6 className="line-clamp text-white">{identifier}</h6>
           </div>
           <div className="d-flex">
-            <div className="text-white mx-4 responsive-text">
+            <div className="text-white mx-2 responsive-text">
               <h6 className="line-clamp text-white">Issue date</h6>
               <h6 className="line-clamp text-white">{issue_date}</h6>
             </div>

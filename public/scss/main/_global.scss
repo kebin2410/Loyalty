@@ -377,7 +377,7 @@ li {
 }
 
 *::-webkit-scrollbar-track {
-  background: #00003e;
+  background: var(--body-color);
 }
 
 *::-webkit-scrollbar {
@@ -386,7 +386,7 @@ li {
 
 *::-webkit-scrollbar-button,
 *::-webkit-scrollbar-thumb {
-  background-color: #5732c6;
+  background-color: var(--nav-color);
 }
 
 .scrollToTop {
@@ -706,6 +706,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding: 0 1rem;
 }
 
@@ -781,4 +782,8 @@ button {
 
 .place-self-center {
   place-self: center;
+}
+
+.place-items-center {
+  place-items: center;
 }

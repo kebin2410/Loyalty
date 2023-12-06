@@ -8,6 +8,10 @@
     right: -118px;
     bottom: 25%;
   }
+
+  .card-container {
+    height: 200px;
+  }
 }
 
 @media (max-width: 1799px) {
@@ -30,6 +34,10 @@
   .loan-calculation .img-area {
     width: 20%;
   }
+
+  .card-container {
+    height: 200px;
+  }
 }
 
 @media (max-width: 1599px) {
@@ -43,6 +51,10 @@
 
   .banner-section.educations-loan .overlay {
     background-position: right 70px bottom;
+  }
+
+  .card-container {
+    height: 200px;
   }
 }
 
@@ -132,6 +144,10 @@
 
   .sign-in-up {
     background-size: 35%;
+  }
+
+  .card-container {
+    height: 200px;
   }
 }
 
@@ -350,6 +366,10 @@
   .latest-articles.blog-contant .side-single .blog-item .img-area,
   .latest-articles .blog-item.list .thumb {
     margin-bottom: 20px;
+  }
+
+  .card-container {
+    height: 200px;
   }
 }
 
@@ -843,6 +863,10 @@
   .btn-register {
     display: none;
   }
+
+  .card-container {
+    height: 200px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1135,6 +1159,10 @@
   .lang-select {
     display: none;
   }
+
+  .card-container {
+    height: 200px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1386,6 +1414,10 @@
 
   .faqs-section .nav-tabs .nav-item {
     margin-bottom: 15px;
+  }
+
+  .card-container {
+    height: 200px;
   }
 }
 

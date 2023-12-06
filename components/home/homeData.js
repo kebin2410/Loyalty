@@ -41,32 +41,7 @@ export const card_data = [
     expiry_date: "Mar 24, 2030",
     link: "/cards/FilmClub",
   },
-  {
-    id: 3,
-    img1: bg3,
-    img2: qr_code,
-    bg_color: "rgba(37, 162, 90, 0.9)",
-    heading_text: "Style Card",
-    sub_title: "Earn as You Style",
-    sub_text: "Accumulate points every time you visit our salon!",
-    identifer: "180-879-966-499",
-    issue_date: "Aug 08, 2023",
-    expiry_date: "Jan 08, 2027",
-    link: "/cards/StyleCard",
-  },
-  {
-    id: 4,
-    img1: bg4,
-    img2: qr_code,
-    bg_color: "rgba(220, 87, 59, 0.9)",
-    heading_text: "Loyalty Card",
-    sub_title: "Save Now",
-    sub_text: "Join our loyalty program and save on every purchase!",
-    identifer: "521-179-219-730",
-    issue_date: "Aug 05, 2023",
-    expiry_date: "Oct 30, 2025",
-    link: "/cards/LoyaltyCard",
-  },
+
 ];
 
 export const business_solutions_data = [
