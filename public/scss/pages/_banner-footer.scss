@@ -597,7 +597,7 @@
 
 // Footer Section Start
 .footer-section {
-  position: relative; // I repaired
+  position: fixed; // I repaired
   bottom: 0;
   width: 100%;
   background: var(--nav-color);

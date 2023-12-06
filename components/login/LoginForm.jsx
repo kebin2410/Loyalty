@@ -8,7 +8,7 @@ const LoginForm = () => {
   const [value, setValue] = useState("");
   return (
     <div className="h-100 flex flex-grow-1">
-      <section section className="sign-in-up w-100 place-self-center h-100 w-100 mx-auto place-self-center" >
+      <section section className="sign-in-up w-100 place-self-center h-100 w-100 mx-auto place-self-center true" >
         <div className="row h-100">
           <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 p-5 d-flex flex-column justify-content-center">
             <div className="">
@@ -42,7 +42,7 @@ const LoginForm = () => {
                   </button>
                 </div>
                 <div className="py-2">
-                  <span className="text-white" style={{ color: "var(--head-color)" }}>Don&apos;t have an account yet? <Link href={"/register"}>Create a free account</Link></span>
+                  <span style={{ color: "var(--head-color)" }}>Don&apos;t have an account yet? <Link href={"/register"}>Create a free account</Link></span>
                 </div>
               </form>
             </div>
