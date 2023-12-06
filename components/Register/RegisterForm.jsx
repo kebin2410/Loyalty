@@ -38,7 +38,7 @@ const LoginForm = () => {
                   </button>
                 </div>
                 <div className="py-2">
-                  <span className="text-white">Already have an account? <Link href={"/login"}>Log in here</Link></span>
+                  <span style={{ color: "var(--head-color)" }}>Already have an account? <Link href={"/login"}>Log in here</Link></span>
                 </div>
               </form>
             </div>
