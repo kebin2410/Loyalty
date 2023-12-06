@@ -47,7 +47,7 @@ const RegisterForm = () => {
             <div className="p-5">
               <h2 className="py-2 text-white">Start earning.</h2>
               <h6 className="py-3 text-white">
-                Earn points, redeem rewards, and enjoy exclusive deals with our loyalty app. Sign up now for unparalleled benefits!
+                Earn points,,git  redeem rewards, and enjoy exclusive deals with our loyalty app. Sign up now for unparalleled benefits!
               </h6>
             </div>
           </div>
