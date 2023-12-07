@@ -1,24 +1,27 @@
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import OtpInput from 'react-otp-input';
 import arrow_left from "/public/images/icon/arrow-left.png";
 
 const OtpForm = () => {
+  const [otp, setOtp] = useState('');
   return (
-    <section className="sign-in-up verify-number">
-      <div className="overlay">
-        <div className="">
-          <div className="row py-5">
-            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-5">
+    <div className="h-100 flex flex-grow-1">
+      <section className="sign-in-up  w-100 place-self-center h-100 w-100 mx-auto place-self-center" >
+        <div className="row h-100">
+          <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 p-5 d-flex flex-column justify-content-center">
+            <div className="">
               <div className="section-header">
-                <h2 className="title">Input OTP code</h2>
+                <h4 className="title">Input OTP code</h4>
               </div>
-              <form action="#">
+              <form action="/otp" method="post">
                 <div className="row">
-                  <div className="col-xl-5 col-lg-6 col-md-6 ">
+                  <div className="col-12 pb-1">
                     <div className="single-input">
-                      <label style={{ color: "var(--head-color)" }}>Correctly Here</label>
+                      <label style={{ color: "var(--head-color)" }}>Key-in OTP here</label>
                       <div className="mobile-otp d-flex align-items-center">
-                        <div className="inputs d-flex flex-row justify-content-center">
+                        <div className="inputs d-flex flex-row justify-content-center gap-3">
                           <input
                             className="text-center form-control"
                             type="text"
@@ -71,15 +74,15 @@ const OtpForm = () => {
                     <Link href="#">Resend Code</Link>
                     <Link href="#">Back</Link>
                   </div>
-                  <button className="cmn-btn w-100 text-white">Submit OTP</button>
+                  <button className="cmn-btn w-100">Submit OTP</button>
                 </div>
               </form>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 bg-sign d-flex flex-column justify-content-center">
+          <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 bg-sign d-flex flex-column justify-content-center">
             <div className="p-5">
               <h2 className="py-2 text-white">Verify Your Phone Number</h2>
-              <h5 className="py-3 text-white">
+              <h5 className="py-3 text-white" style={{ fontWeight: "400" }}>
                 A 6 digit One Time Password (OTP) has been sent to your
                 given phone number which will expire in 15 minutes, after
                 which you will need to resend the code.
@@ -87,8 +90,9 @@ const OtpForm = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section >
+        <div style={{ height: "200px" }}></div>
+      </section >
+    </div >
   );
 };
 

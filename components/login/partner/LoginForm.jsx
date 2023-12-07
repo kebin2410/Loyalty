@@ -48,15 +48,16 @@ const LoginForm = () => {
           <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 bg-sign d-flex flex-column justify-content-center">
             <div className="p-5">
               <h2 className="py-2 text-white">Partner Portal</h2>
-              <h5 className="py-3 text-white">
+              <h5 className="py-3 text-white" style={{ fontWeight: "400" }}>
                 This is your go-to platform for loyalty programs, rewards, and staff management. Our interface, built for ease and growth, lets you create customized programs, update rewards, and track performance.
               </h5>
-              <h5 className="text-white">
+              <h5 className="text-white" style={{ fontWeight: "400" }}>
                 Dive in and enhance customer relations and brand loyalty today.
               </h5>
             </div>
           </div>
         </div>
+        <div style={{ height: "200px" }}></div>
       </section>
     </div >
   );

@@ -1,16 +1,16 @@
 import ShortNavbar from "../../../components/navBar/ShortNavbar";
-import Edit from "../../../components/main/staff/edit";
+import EditMain from "../../../components/main/staff/edit";
 import Footer from "../../../components/footer/Footer";
-export default function Login() {
+export default function Edit() {
     return (
         <>
             <ShortNavbar />
-            <Edit />
+            <EditMain />
             <Footer />
         </>
     );
 }
 
-Login.getLayout = function getLayout(page) {
+Edit.getLayout = function getLayout(page) {
     return <>{page}</>;
 };

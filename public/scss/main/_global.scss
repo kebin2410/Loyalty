@@ -506,14 +506,14 @@ li {
   font-weight: 500;
   text-align: center;
   background: var(--hover-color);
-  color: var(--head-color);
+  color: white;
   border: 1px solid var(--hover-color);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 5px;
 
   &:hover {
-    color: var(--head-color);
+    color: var(--bs-hover-button-color);
     background: transparent;
     border: 1px solid #848894;
   }
@@ -800,4 +800,12 @@ button {
 
 .custom-input:focus {
   border-color: #F97316;
+}
+
+.gradient-button {
+  background: linear-gradient(45deg, red, blue);
+}
+
+.zest-logo {
+  width: 35%;
 }

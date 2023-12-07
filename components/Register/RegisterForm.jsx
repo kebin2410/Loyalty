@@ -34,7 +34,7 @@ const RegisterForm = () => {
                   </div>
                 </div>
                 <div className="btn-area">
-                  <Link className="cmn-btn text-white" href={"/otp"} style={{ width: "100%" }}>Create an account</Link>
+                  <Link className="cmn-btn" href={"/otp"} style={{ width: "100%" }}>Create an account</Link>
                 </div>
                 <div className="py-2">
                   <span style={{ color: "var(--head-color)" }}>Already have an account? <Link href={"/login"}>Log in here</Link></span>
@@ -45,12 +45,13 @@ const RegisterForm = () => {
           <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 bg-sign d-flex flex-column justify-content-center">
             <div className="p-5">
               <h2 className="py-2 text-white">Start earning.</h2>
-              <h5 className="py-3 text-white">
+              <h5 className="py-3 text-white" style={{ fontWeight: "400" }}>
                 Earn points, redeem rewards, and enjoy exclusive deals with our loyalty app. Sign up now for unparalleled benefits!
               </h5>
             </div>
           </div>
         </div>
+        <div style={{ height: "200px" }}></div>
       </section>
     </div >
   );

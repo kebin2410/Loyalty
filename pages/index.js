@@ -31,6 +31,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div style={{ height: "500px" }}></div>
     </section>
   );
 };

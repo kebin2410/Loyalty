@@ -63,6 +63,8 @@ const lightTheme = [
   "--bs-nav-link-color:#374151",
   "--bs-inner-color:#374151",
   "--switch-mode-color: #ffffff",
+  "--bs-button-color: black",
+  "--bs-hover-button-color: white",
 ];
 const darkTheme = [
   "--body-color: #eeeeee",
@@ -76,4 +78,6 @@ const darkTheme = [
   "--bs-nav-link-color: var(--head-color)",
   "--bs-inner-color: var(--nav-color)",
   "--switch-mode-color: #000000",
+  "--bs-button-color: white",
+  "--bs-hover-button-color: black",
 ];

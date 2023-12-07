@@ -134,18 +134,19 @@ const CreditCard = () => {
                         <h6>&nbsp;&nbsp;to see your history.</h6>
                       </div>
                     </div>
-                    <div className="tab-pane fade text-center" id="tab3">
-                      <h5>Rules and conditions</h5>
-                      <ul className="p-2 text-start" >
-                        <li className="py-2" style={{ color: "var(--head-color)" }}>- Points expire after 10 months.</li>
-                        <li className="py-2" style={{ color: "var(--head-color)" }}>
-                          - You receive 20 points at your first purchase.
+                    <div className="tab-pane fade d-flex flex-column justify-content-center" id="tab3">
+                      <ul className="px-5" style={{ listStyle: "disc" }}>
+                        <h5 className="">Rules and conditions</h5>
+                        <li className="py-2" style={{ color: "var(--head-color)", fontWeight: "400" }}>
+                          Points expire after 10 months.</li>
+                        <li className="py-2" style={{ color: "var(--head-color)", fontWeight: "400" }}>
+                          You receive 20 points at your first purchase.
                         </li>
-                        <li className="py-2" style={{ color: "var(--head-color)" }}>
-                          - For each 1 USD spent, you receive 50 points.
+                        <li className="py-2" style={{ color: "var(--head-color)", fontWeight: "400" }}>
+                          For each 1 USD spent, you receive 50 points.
                         </li>
-                        <li className="py-2" style={{ color: "var(--head-color)" }}>
-                          - Each purchase earns a minimum of 50 points and a maximum of 100,000 points.
+                        <li className="py-2" style={{ color: "var(--head-color)", fontWeight: "400" }}>
+                          Each purchase earns a minimum of 50 points and a maximum of 100,000 points.
                         </li>
                       </ul>
                     </div>

@@ -6,7 +6,7 @@ import Switch from "../../common/ThemeChange/Switch";
 import LangSwitch from "../../common/LanguageChange/Switch";
 import ThemeContext from "../../common/ThemeChange/ThemeContext";
 
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaHome } from "react-icons/fa";
 
 const ShortNavbar = () => {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -34,7 +34,7 @@ const ShortNavbar = () => {
         <div className="row d-flex header-area">
           <nav className="navbar d-flex justify-content-between  navbar-expand-lg navbar-dark">
             <Link className="navbar-brand" href="/">
-              {!dark ? <i className="text-white"><FaBars /></i> : <i className="text-black"><FaBars /></i>}
+              {!dark ? <i className="text-white"><FaHome /></i> : <i className="text-black"><FaHome /></i>}
             </Link>
             <div className="d-flex align-items-center justify-content-end">
               <ul className="navbar-nav">

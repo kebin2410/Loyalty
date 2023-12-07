@@ -13,9 +13,6 @@ const LoginForm = () => {
           <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 p-5 d-flex flex-column justify-content-center">
             <div className="">
               <div className="section-header">
-                {/* <h5 className="p-3 my-3 border rounded" style={{ background: "var(--nav-color)" }}>
-                  To access the site, you should input your phone number.
-                </h5> */}
                 <h4 className="title">Sign in to access your account</h4>
               </div>
               <form action="/login" method="post">
@@ -32,10 +29,9 @@ const LoginForm = () => {
                       className="rounded rounded-full bg-gray-100 text-gray-700 shadow-sm border-green"
                     />
                   </div>
-
                 </div>
                 <div className="btn-area">
-                  <button className="cmn-btn text-white" style={{ width: "100%" }}>
+                  <button className="cmn-btn" style={{ width: "100%" }}>
                     Login
                   </button>
                 </div>
@@ -48,17 +44,18 @@ const LoginForm = () => {
           <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 bg-sign d-flex flex-column justify-content-center">
             <div className="p-5">
               <h2 className="py-2 text-white">Your loyalty, rewarded.</h2>
-              <h5 className="py-3 text-white">
+              <h5 className="py-3 text-white" style={{ fontWeight: "400" }}>
                 Welcome to our loyalty app. Sign in or register for free
                 to access your points, redeem rewards, and unlock
                 exclusive offers.
               </h5>
-              <h5 className="text-white">
+              <h5 className="text-white" style={{ fontWeight: "400" }}>
                 We&apos;re thrilled to have you join and reward your loyalty!
               </h5>
             </div>
           </div>
         </div>
+        <div style={{ height: "200px" }}></div>
       </section>
     </div >
   );
