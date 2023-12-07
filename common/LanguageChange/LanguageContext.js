@@ -3,16 +3,16 @@ import React, { useState, useLayoutEffect, useEffect } from "react";
 const LanguageContext = React.createContext({
   lang: "",
   currentLanguageData: {},
-  switchLanguage: () => {}
+  switchLanguage: () => { }
 });
 
 export default LanguageContext;
 
 export const LanguageProvider = props => {
-   // Client-side-only code
-    const [lang, setLang] = useState(
-      typeof window !== "undefined" && (window.localStorage.getItem("appUILang") || window.navigator.language)
-    );
+  // Client-side-only code
+  const [lang, setLang] = useState(
+    typeof window !== "undefined" && (window.localStorage.getItem("appUILang") || window.navigator.language)
+  );
 
 
   useLayoutEffect(() => {

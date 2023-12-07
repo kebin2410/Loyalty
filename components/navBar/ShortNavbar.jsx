@@ -2,9 +2,9 @@ import { useEffect, useState, useContext, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import Switch from "../../config/ThemeChange/Switch";
-import LangSwitch from "../../config/LanguageChange/Switch";
-import ThemeContext from "../../config/ThemeChange/ThemeContext";
+import Switch from "../../common/ThemeChange/Switch";
+import LangSwitch from "../../common/LanguageChange/Switch";
+import ThemeContext from "../../common/ThemeChange/ThemeContext";
 
 import { FaBars } from "react-icons/fa";
 
@@ -16,8 +16,8 @@ const ShortNavbar = () => {
       let height = window.scrollY;
       setWindowHeight(height);
     }
-  };
 
+  };
   useEffect(() => {
     window.addEventListener("scroll", navBarTop);
     return () => {
@@ -34,11 +34,6 @@ const ShortNavbar = () => {
         <div className="row d-flex header-area">
           <nav className="navbar d-flex justify-content-between  navbar-expand-lg navbar-dark">
             <Link className="navbar-brand" href="/">
-              {/* <Image
-                src={logoLight}
-                className="logo"
-                alt="logo"
-              /> */}
               {!dark ? <i className="text-white"><FaBars /></i> : <i className="text-black"><FaBars /></i>}
             </Link>
             <div className="d-flex align-items-center justify-content-end">

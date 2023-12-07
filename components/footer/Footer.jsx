@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useContext } from "react";
-import ThemeContext from "../../config/ThemeChange/ThemeContext";
+import ThemeContext from "../../common/ThemeChange/ThemeContext";
 // import LogoLight from "/public/images/logo-light.svg";
 // import LogoDark from "/public/images/logo-dark.svg";
 
@@ -60,7 +60,9 @@ const Footer = () => {
                 alt="logo"
               />
             </Link> */}
-            <p style={{ color: "var(--head-color)", fontSize: "0.8rem" }}>Powered by Zest Loyalty</p>
+            <Link href={"https://zest.my/"}>
+              <p style={{ color: "var(--head-color)", fontSize: "0.8rem" }}>Powered by Zest Loyalty</p>
+            </Link>
           </div>
         </div>
       </div>

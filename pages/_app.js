@@ -2,9 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import { useEffect, useState, useContext } from "react";
 import Layout from "../components/layout";
-import { LanguageProvider } from "../config/LanguageChange/LanguageContext";
+import { LanguageProvider } from "../common/LanguageChange/LanguageContext";
 import "../styles/globals.scss";
-import { ThemeProvider } from "../config/ThemeChange/ThemeContext";
+import { ThemeProvider } from "../common/ThemeChange/ThemeContext";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {

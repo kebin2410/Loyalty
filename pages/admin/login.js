@@ -1,6 +1,6 @@
-import ShortNavbar from "../components/navBar/ShortNavbar";
-import LoginForm from "../components/login/member/LoginForm";
-import Footer from "../components/footer/Footer";
+import ShortNavbar from "../../components/navBar/ShortNavbar";
+import LoginForm from "../../components/login/admin/LoginForm";
+import Footer from "../../components/footer/Footer";
 export default function Login() {
   return (
     <>

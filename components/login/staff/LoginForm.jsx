@@ -47,14 +47,9 @@ const LoginForm = () => {
           </div>
           <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 bg-sign d-flex flex-column justify-content-center">
             <div className="p-5">
-              <h2 className="py-2 text-white">Your loyalty, rewarded.</h2>
+              <h2 className="py-2 text-white">Staff Portal</h2>
               <h5 className="py-3 text-white">
-                Welcome to our loyalty app. Sign in or register for free
-                to access your points, redeem rewards, and unlock
-                exclusive offers.
-              </h5>
-              <h5 className="text-white">
-                We&apos;re thrilled to have you join and reward your loyalty!
+                Welcome to your hub for customer engagement. Seamlessly manage loyalty points and process reward redemptions with ease.
               </h5>
             </div>
           </div>

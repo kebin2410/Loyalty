@@ -2,13 +2,13 @@ import React, { useState, useLayoutEffect, useEffect } from "react";
 
 const ThemeContext = React.createContext({
   dark: true,
-  toggle: () => {}
+  toggle: () => { }
 });
 
 export default ThemeContext;
 
 export function ThemeProvider(props) {
-  
+
   const [dark, setDark] = useState(
     useState(typeof window !== "undefined" && window.localStorage.getItem("darkTheme"))
   );
@@ -59,7 +59,7 @@ const lightTheme = [
   "--hover-color: #ea580c",
   "--bs-border-color:#76A9FA",
   "--bs-nav-link-color:#374151",
-  "--switch-mode-color: #ffffff"
+  "--switch-mode-color: #ffffff",
 ];
 const darkTheme = [
   "--body-color: #eeeeee",
@@ -70,5 +70,5 @@ const darkTheme = [
   "--hover-color: #ea580c",
   "--bs-border-color:#1E429F",
   "--bs-nav-link-color:var(--head-color)",
-  "--switch-mode-color: #000000"
+  "--switch-mode-color: #000000",
 ];
