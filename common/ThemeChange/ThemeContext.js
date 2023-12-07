@@ -50,6 +50,7 @@ export function ThemeProvider(props) {
 }
 
 // "#374151"
+// #374151
 const lightTheme = [
   "--body-color: #111827",
   "--nav-color:  #1F2937",
@@ -57,8 +58,10 @@ const lightTheme = [
   "--head-color: #ccc",
   "--head-alt-color: #055c2d",
   "--hover-color: #ea580c",
-  "--bs-border-color:#76A9FA",
+  "--bs-border-color:gray",
+  // "--bs-border-color:#76A9FA",
   "--bs-nav-link-color:#374151",
+  "--bs-inner-color:#374151",
   "--switch-mode-color: #ffffff",
 ];
 const darkTheme = [
@@ -68,7 +71,9 @@ const darkTheme = [
   "--head-color: #0a1023",
   "--head-alt-color: #055c2d",
   "--hover-color: #ea580c",
-  "--bs-border-color:#1E429F",
-  "--bs-nav-link-color:var(--head-color)",
+  "--bs-border-color:gray",
+  // "--bs-border-color:#1E429F",
+  "--bs-nav-link-color: var(--head-color)",
+  "--bs-inner-color: var(--nav-color)",
   "--switch-mode-color: #000000",
 ];

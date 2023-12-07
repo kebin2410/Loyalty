@@ -2,7 +2,7 @@ import React, { useCallback, useContext, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { FaUserCircle, FaUsers, FaQrcode } from "react-icons/fa";
+import { FaRegUserCircle, FaUsers, FaQrcode } from "react-icons/fa";
 
 const Staff = () => {
     return (
@@ -20,7 +20,7 @@ const Staff = () => {
                                     <Link href={"/staff/account/edit"} className="my-2 col-xl-4 col-lg-4 col-md-12 col-sm-12" style={{ textAlign: "left" }}>
                                         <div className="card h-100" style={{ marginBottom: "1rem", backgroundColor: "var(--nav-color)" }} >
                                             <div className="card-body py-4">
-                                                <div className="rounded d-flex justify-content-center align-items-center mb-2" style={{ width: "40px", height: "40px", backgroundColor: "#7C2D12" }}><FaUserCircle color="orange" size={"15px"} /></div>
+                                                <div className="rounded d-flex justify-content-center align-items-center mb-2" style={{ width: "40px", height: "40px", backgroundColor: "#7C2D12" }}><FaRegUserCircle color="orange" size={"15px"} /></div>
                                                 <h3 className="card-title">Account Settings</h3>
                                                 <h5 className="card-text" style={{ color: "var(--head-color)", fontWeight: "400" }}>Update your account details like e-mail address and password.</h5>
                                             </div>
@@ -50,7 +50,7 @@ const Staff = () => {
                     </div>
                 </div >
             </section >
-        </div >
+        </div>
     );
 }
 

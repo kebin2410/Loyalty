@@ -783,3 +783,19 @@ button {
 .place-items-center {
   place-items: center;
 }
+
+.custom-input {
+  background-color: var(--bs-inner-color);
+  border-color: gray;
+  border-width: 2px;
+  color: var(--head-color);
+  font-size: 16px;
+}
+
+.custom-input:hover {
+  border-color: #F97316;
+}
+
+.custom-input:focus {
+  border-color: #F97316;
+}
