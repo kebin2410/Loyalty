@@ -49,7 +49,7 @@ const LoginForm = () => {
             <div className="p-5">
               <h2 className="py-2 text-white">Admin Portal</h2>
               <h5 className="py-3 text-white">
-                Welcome to the Reward Loyalty Program Admin Portal. Log in to manage and enhance your customers' loyalty experience. Together, let's create lasting connections and drive business success.
+                Welcome to the Reward Loyalty Program Admin Portal. Log in to manage and enhance your customers&apos; loyalty experience. Together, let&apos;s create lasting connections and drive business success.
               </h5>
             </div>
           </div>
