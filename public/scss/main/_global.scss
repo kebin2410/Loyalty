@@ -712,8 +712,9 @@ button {
 }
 
 .reward-table-image {
-  width: fit-content;
-  width: fit-content;
+  width: 170px;
+  // width: 100%;
+  height: fit-content;
 }
 
 .oval-icon {
@@ -749,6 +750,7 @@ button {
   -webkit-border-radius: 6px 6px 6px 6px;
   box-shadow: 0 1px 1px #cccccc;
   border: 2px solid var(--nav-color);
+  padding: 0;
 }
 
 .reward-table th,

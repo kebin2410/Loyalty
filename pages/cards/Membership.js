@@ -4,7 +4,7 @@ import LoyaltyCard from "../../components/cards/LoyaltyCard";
 import { card_data } from "../../components/cards/cardData";
 import Social from "../../components/social/Social";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import { BsDatabaseFill } from "react-icons/bs";
+import { BsDatabase } from "react-icons/bs";
 
 import sm1 from "../../public/images/bg/sm01.jpg";
 import sm2 from "../../public/images/bg/sm02.jpg";
@@ -55,7 +55,7 @@ const CreditCard = () => {
                   />
                   <div
                     className="social-link d-flex flex-wrap justify-content-around align-items-center"
-                    style={{ maxWidth: "400px", width: "100%" }}
+                    style={{ maxWidth: "448px", width: "100%" }}
                   >
                     {/* Socials links here */}
                     <Social
@@ -71,7 +71,7 @@ const CreditCard = () => {
                       ]}
                     />
                   </div>
-                  <ul className="nav nav-pills mt-4 d-flex justify-content-around border-bottom mx-5 " style={{ width: "100%", maxWidth: "400px" }}>
+                  <ul className="nav nav-pills mt-4 d-flex justify-content-around border-bottom mx-5 " style={{ width: "100%", maxWidth: "448px" }}>
                     <li className="nav-item">
                       <a className="nav-link active bg-transparent" style={{ color: "var(--head-color)" }} id="tab1-tab" data-bs-toggle="pill" href="#tab1">Rewards</a>
                     </li>
@@ -83,7 +83,7 @@ const CreditCard = () => {
                     </li>
                   </ul>
 
-                  <div className="tab-content mt-3 p-3" style={{ width: "100%", maxWidth: "400px" }}>
+                  <div className="tab-content mt-3" style={{ width: "100%", maxWidth: "448px" }}>
                     <div className="tab-pane fade show active" id="tab1">
                       <table className="reward-table">
                         <tbody>
@@ -94,7 +94,9 @@ const CreditCard = () => {
                             </td>
                             <td className="td-padding">Free Cooking Class</td>
                             <td>
-                              3000
+                              <div className="d-flex align-items-center" style={{ fontWeight: "500" }}>
+                                <BsDatabase />{"3000"}
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -104,7 +106,9 @@ const CreditCard = () => {
                             </td>
                             <td>Second Pizza for Free</td>
                             <td>
-                              2000
+                              <div className="d-flex align-items-center" style={{ fontWeight: "500" }}>
+                                <BsDatabase />{"2000"}
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -114,7 +118,9 @@ const CreditCard = () => {
                             </td>
                             <td>Dinner for Two</td>
                             <td className="text-center">
-                              150
+                              <div className="d-flex align-items-center" style={{ fontWeight: "500" }}>
+                                <BsDatabase />{"1000"}
+                              </div>
                             </td>
                           </tr>
                         </tbody>
@@ -128,17 +134,17 @@ const CreditCard = () => {
                         <h6>&nbsp;&nbsp;to see your history.</h6>
                       </div>
                     </div>
-                    <div className="tab-pane fade" id="tab3">
+                    <div className="tab-pane fade text-center" id="tab3">
                       <h5>Rules and conditions</h5>
-                      <ul className="">
-                        <li className="py-2">- Points expire after 10 months.</li>
-                        <li className="py-2">
+                      <ul className="p-2 text-start" >
+                        <li className="py-2" style={{ color: "var(--head-color)" }}>- Points expire after 10 months.</li>
+                        <li className="py-2" style={{ color: "var(--head-color)" }}>
                           - You receive 20 points at your first purchase.
                         </li>
-                        <li className="py-2">
+                        <li className="py-2" style={{ color: "var(--head-color)" }}>
                           - For each 1 USD spent, you receive 50 points.
                         </li>
-                        <li className="py-2">
+                        <li className="py-2" style={{ color: "var(--head-color)" }}>
                           - Each purchase earns a minimum of 50 points and a maximum of 100,000 points.
                         </li>
                       </ul>

@@ -23,7 +23,7 @@ const LoyaltyCard = ({
       }}
     >
       <Image src={img1} alt="images" className="card-img" />
-      <div className="card-overlay" style={{ backgroundColor: bgColor, }}>
+      <div className="card-overlay" style={{ backgroundColor: bgColor }}>
         <div className="d-flex justify-content-between">
           <h4 className="text-white">{headingText}</h4>
           <div className={""}>

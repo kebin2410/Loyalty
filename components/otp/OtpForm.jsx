@@ -7,18 +7,16 @@ const OtpForm = () => {
     <section className="sign-in-up verify-number">
       <div className="overlay">
         <div className="">
-          <div className="row">
+          <div className="row py-5">
             <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-5">
-
               <div className="section-header">
                 <h2 className="title">Input OTP code</h2>
-
               </div>
               <form action="#">
                 <div className="row">
-                  <div className="col-xl-5 col-lg-6 col-md-6">
+                  <div className="col-xl-5 col-lg-6 col-md-6 ">
                     <div className="single-input">
-                      <label style={{ color: "var(--head-color)" }}>Enter OTP Here</label>
+                      <label style={{ color: "var(--head-color)" }}>Correctly Here</label>
                       <div className="mobile-otp d-flex align-items-center">
                         <div className="inputs d-flex flex-row justify-content-center">
                           <input

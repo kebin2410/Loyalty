@@ -13,9 +13,9 @@ const LoginForm = () => {
           <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 p-5 d-flex flex-column justify-content-center">
             <div className="">
               <div className="section-header">
-                <h5 className="p-3 my-3 border rounded" style={{ background: "var(--nav-color)" }}>
+                {/* <h5 className="p-3 my-3 border rounded" style={{ background: "var(--nav-color)" }}>
                   To access the site, you should input your phone number.
-                </h5>
+                </h5> */}
                 <h4 className="title">Sign in to access your account</h4>
               </div>
               <form action="/login" method="post">
