@@ -28,7 +28,7 @@ const Edit = () => {
                                             <input className="my-2 px-3 custom-input"></input>
                                             <div className="d-flex my-2 px-3" style={{}}><h6>Birthday *</h6></div>
                                             <input className="my-2 px-3 custom-input"></input>
-                                            <button className="cmn-btn w-100 my-2 px-3 ">Save changes</button>
+                                            <button className="cmn-btn w-100 my-2 px-3"><h5>Save changes</h5></button>
                                         </div>
                                     </div>
                                 </div>
