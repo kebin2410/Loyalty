@@ -669,23 +669,19 @@ button {
 
 .card-container {
   display: flex;
-  // justify-content: center;
-  // align-items: center;
   text-align: center;
-  height: 250px;
   margin: 15px;
   position: relative;
   cursor: pointer;
+  max-height: 250px;
+  max-width: 448px;
+  height: 100%;
   width: 100%;
-  max-width: 400px;
-  /* Adjust as needed */
 }
 
 .card-img {
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
   border-radius: 25px;
-  display: block;
 }
 
 .card-overlay {
@@ -694,7 +690,7 @@ button {
   justify-content: space-between;
   position: absolute;
   border-radius: 15px;
-  padding: 20px;
+  padding: 1rem;
   top: 0;
   left: 0;
   color: white;
