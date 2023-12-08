@@ -21,8 +21,8 @@ export default function App() {
         width: "100%"
       }}
     >
-      <IconTextField sx={{borderColor: "var(--head-color)", color: "var(--head-color)", backgroundColor: "var(--bs-inner-color)",}} label="Salary" iconStart={<AttachMoneyIcon sx={{ color: "var(--head-color)", fontSize: 20 }} />}/>
-      <IconTextField sx={{ borderColor: "var(--head-color)", color: "var(--head-color)", backgroundColor: "var(--bs-inner-color)",}} label="First Name" iconStart={<AccountCircle sx={{ color: "var(--head-color)", fontSize: 20 }}/>} />
+      <IconTextField sx={{ borderColor: "var(--head-color)", color: "var(--head-color)", backgroundColor: "var(--bs-inner-color)",}} label="Purchase amount" iconStart={<AttachMoneyIcon sx={{ color: "var(--head-color)", fontSize: 20 }} />}/>
+      <IconTextField sx={{ borderColor: "var(--head-color)", color: "var(--head-color)", backgroundColor: "var(--bs-inner-color)",}} label="Points" iconStart={<AccountCircle sx={{ color: "var(--head-color)", fontSize: 20 }}/>} />
     </Box>
   );
 }
