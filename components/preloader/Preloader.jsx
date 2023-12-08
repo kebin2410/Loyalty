@@ -23,22 +23,22 @@ const Preloader = () => {
           <div className="spinner"></div>
           <p className="text-center mt-3">Loading</p>
         </div>
-        {/* <div className="loader">
+        <div className="loader">
           <div className="row">
-            <div className="col-3 loader-section ">
+            <div className="col-3 loader-section">
               <div className="bg"></div>
             </div>
-            <div className="col-3 loader-section ">
+            <div className="col-3 loader-section">
               <div className="bg"></div>
             </div>
-            <div className="col-3 loader-section ">
+            <div className="col-3 loader-section">
               <div className="bg"></div>
             </div>
-            <div className="col-3 loader-section ">
+            <div className="col-3 loader-section">
               <div className="bg"></div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     )
   );
