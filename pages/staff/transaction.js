@@ -135,7 +135,7 @@ const Transaction = () => {
                         fontSize: "20px",
                       }}
                     >
-                      +123 points
+                      +123 points {"by affandy on branch"}
                     </div>
                     <div className="text-secondary">
                       Points expire 11 months from now
