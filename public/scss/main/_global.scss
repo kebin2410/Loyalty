@@ -809,6 +809,9 @@ button {
 .custom-input:focus {
   border-color: #F97316;
 }
+.custom-input:disabled{
+  cursor: not-allowed;
+}
 
 .gradient-button {
   background: linear-gradient(45deg, red, blue);

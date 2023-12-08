@@ -5,9 +5,11 @@ import { card_data } from "../../components/cards/cardData";
 import { BsDatabase, BsBoxArrowUpRight } from "react-icons/bs";
 import StyledDropzone from "../../components/dropzone/dropzone2";
 import { FaRegUserCircle, FaUsers, FaQrcode } from "react-icons/fa";
+import IconInput from "../../components/IconInput";
 
 import Link from "next/link";
 const Earn = () => {
+  const [disabled, setDisabled] = useState(false);
   const singleCard = card_data[0];
   return (
     <section className="card-section">
@@ -22,16 +24,40 @@ const Earn = () => {
                     className="d-flex flex-column match-width my-2"
                     style={{}}
                   >
-                    <h6>Purchase amount *</h6>
-                    <input className="my-1 custom-input"></input>
+                    <h6>Purchase amount {!disabled ? "" : "*"}</h6>
+                    <input
+                      type="number"
+                      className="my-1 custom-input"
+                      disabled={!disabled}
+                    ></input>
                   </div>
-                  <div></div>
+                  {/* <IconInput /> */}
+                  <div className="form-check form-switch match-width">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                      onClick={() => setDisabled(!disabled)}
+                    />
+                    <label
+                      className="px-3 form-check-label wb-color"
+                      for="flexSwitchCheckDefault"
+                    >
+                      Enter points only
+                    </label>
+                  </div>
                   <div
                     className="d-flex flex-column match-width my-2"
                     style={{}}
                   >
-                    <h6>Points *</h6>
-                    <input className="my-1 custom-input"></input>
+                    <h6>Points {disabled ? "" : "*"}</h6>
+
+                    <input
+                      type="number"
+                      className="my-1 custom-input"
+                      disabled={disabled}
+                    ></input>
                   </div>
                   <div className="match-width">
                     <StyledDropzone />
@@ -47,7 +73,7 @@ const Earn = () => {
                     Add points to balance
                   </button>
                   <div
-                    className="d-flex align-items-center justify-content-around match-width border p-2 rounded"
+                    className="d-flex align-items-center justify-content-around match-width border p-3 rounded"
                     style={{
                       color: "var(--head-color)",
                       backgroundColor: "var(--bs-inner-color)",
