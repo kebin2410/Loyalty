@@ -906,8 +906,18 @@ button {
 }
 
 .hover-underline {
+  cursor: pointer;
   color: var(--para-color);
 }
 .hover-underline:hover {
+  
   text-decoration: underline;
+}
+
+.match-width{
+  max-width: 448px;
+  width: 100%
+}
+.wb-color{
+  color: var(--wb-font-button-color);
 }

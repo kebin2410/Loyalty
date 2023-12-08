@@ -2,18 +2,20 @@ import React, { useState, useLayoutEffect, useEffect } from "react";
 
 const ThemeContext = React.createContext({
   dark: true,
-  toggle: () => { }
+  toggle: () => {},
 });
 
 export default ThemeContext;
 
 export function ThemeProvider(props) {
-
   const [dark, setDark] = useState(
-    useState(typeof window !== "undefined" && window.localStorage.getItem("darkTheme"))
+    useState(
+      typeof window !== "undefined" && window.localStorage.getItem("darkTheme")
+    )
   );
   useLayoutEffect(() => {
-    const lastTheme = typeof window !== "undefined" && window.localStorage.getItem("darkTheme");
+    const lastTheme =
+      typeof window !== "undefined" && window.localStorage.getItem("darkTheme");
 
     if (lastTheme === "true") {
       setDark(true);
@@ -27,13 +29,14 @@ export function ThemeProvider(props) {
     // if state changes, repaints the app
   }, [dark]);
 
-  const applyTheme = theme => {
+  const applyTheme = (theme) => {
     const root = document.getElementsByTagName("html")[0];
     root.style.cssText = theme.join(";");
   };
   const toggle = () => {
     setDark(!dark);
-    typeof window !== "undefined" && window.localStorage.setItem("darkTheme", !dark);
+    typeof window !== "undefined" &&
+      window.localStorage.setItem("darkTheme", !dark);
     const body = document.getElementsByTagName("body")[0];
     body.style.cssText = "transition: background .5s ease";
   };
@@ -41,7 +44,7 @@ export function ThemeProvider(props) {
     <ThemeContext.Provider
       value={{
         dark,
-        toggle
+        toggle,
       }}
     >
       {props.children}
@@ -65,6 +68,7 @@ const lightTheme = [
   "--switch-mode-color: #ffffff",
   "--bs-button-color: black",
   "--bs-hover-button-color: white",
+  "--wb-font-button-color: white",
 ];
 const darkTheme = [
   "--body-color: #eeeeee",
@@ -80,4 +84,5 @@ const darkTheme = [
   "--switch-mode-color: #000000",
   "--bs-button-color: white",
   "--bs-hover-button-color: black",
+  "--wb-font-color: black",
 ];
