@@ -818,7 +818,8 @@ button {
 }
 
 .zest-logo {
-  width: 35%;
+  height: 14px;
+  width: fit-content;
 }
 
 .custom-btn1 {
@@ -924,3 +925,4 @@ button {
 .wb-color{
   color: var(--wb-font-button-color);
 }
+

@@ -44,7 +44,7 @@ const Staff = () => {
                                             </div>
                                         </div>
                                     </Link>
-                                    <div style={{ height: "500px" }}></div>
+                                    <div className="empty-height"></div>
                                 </div>
                             </div>
                         </div>

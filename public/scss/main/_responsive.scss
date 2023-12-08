@@ -1473,6 +1473,12 @@
     width: initial;
     min-height: 90px;
   }
+  .empty-height{
+    height: 200px;
+  }
+  .footer-section{
+    position: fixed;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1540,5 +1546,11 @@
       // padding: 10px 20px 15px;
       padding: 10px 20px 10px;
     }
+  }
+  .empty-height{
+    height: 200px;
+  }
+  .footer-section{
+    position: fixed;
   }
 }

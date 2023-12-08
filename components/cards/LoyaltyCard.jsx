@@ -29,7 +29,7 @@ const LoyaltyCard = ({
           <div className={""}>
             {balance &&
               <>
-                <p className="text-white" style={{ fontWeight: "400" }}>Balance</p>
+                <p className="text-white" style={{ fontWeight: "200" }}>Balance</p>
                 <div className="d-flex align-items-center" style={{ fontWeight: "600" }}>
                   <BsDatabase strokeWidth={"0.5"}/>{" "}{balance}
                 </div>

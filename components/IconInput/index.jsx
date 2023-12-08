@@ -12,9 +12,12 @@ export default function App() {
     <Box
       className="App"
       sx={{
-        display: "grid",
+        display: "flex",
         gridTemplateColumns: "270px 270px",
-        gridGap: 10
+        gridGap: 10,
+        borderWidth: 20,
+        borderColor: "#0089ff",
+        backgroundColor:"#0089ff",
       }}
     >
       <IconTextField
@@ -22,17 +25,12 @@ export default function App() {
         iconStart={<AttachMoneyIcon sx={{ color: "green", fontSize: 20 }} />}
         iconEnd={<QuestionMark sx={{ color: "#0089ff", fontSize: 20 }} />}
       />
-      <IconTextField label="Password" iconEnd={<Visibility />} />
-      <IconTextField label="First Name" iconStart={<AccountCircle />} />
-      <IconTextField
-        label="Last Name"
-        iconEnd={<ErrorOutlineIcon sx={{ color: "red" }} />}
-      />
+      <IconTextField label="First Name" iconStart={<AccountCircle sx={{ color: "green", fontSize: 20 }}/>} />
     </Box>
   );
 }
  
-const IconTextField = ({ iconStart, iconEnd, InputProps, ...props }) => {
+export const IconTextField = ({ iconStart, iconEnd, InputProps, ...props }) => {
   return (
     <TextField
       {...props}

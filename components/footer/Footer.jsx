@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useContext } from "react";
 import ThemeContext from "../../common/ThemeChange/ThemeContext";
-import LogoLight from "/public/logo/logo-light.svg";
-import LogoDark from "/public/logo/logo-dark.svg";
+import LogoLight from "/public/logo/ZEST_Logo_Orange.png";
+import LogoDark from "/public/logo/ZEST_Logo_White.png";
 
 const Footer = () => {
   const { dark, toggle } = useContext(ThemeContext);
@@ -51,19 +51,20 @@ const Footer = () => {
             </div>
           </div>
         </div> */}
-        <div className="footer-bottom mx-auto">
-          <div className="col d-flex align-items-center justify-content-center">
-            <Link href={"https://zest.my/"}>
-              <div style={{ color: "var(--head-color)", fontSize: "0.8rem" }}>Powered by<Image
+        <div className="footer-bottom">
+            <Link href={"https://zest.my/"} className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ color: "var(--head-color)", fontSize: "0.8rem" }}>
+              <h6>Powered by</h6>
+              <Image
                 className="zest-logo px-2"
                 src={dark ? LogoLight : LogoDark}
                 alt="logo"
-              /></div>
+              />
+              </div>
             </Link>
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

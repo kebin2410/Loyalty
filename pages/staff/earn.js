@@ -5,7 +5,7 @@ import { card_data } from "../../components/cards/cardData";
 import { BsDatabase, BsBoxArrowUpRight } from "react-icons/bs";
 import StyledDropzone from "../../components/dropzone/dropzone2";
 import { FaRegUserCircle, FaUsers, FaQrcode } from "react-icons/fa";
-import IconInput from "../../components/IconInput";
+import IconInput, { IconTextField } from "../../components/IconInput";
 
 import Link from "next/link";
 const Earn = () => {
@@ -31,7 +31,7 @@ const Earn = () => {
                       disabled={!disabled}
                     ></input>
                   </div>
-                  {/* <IconInput /> */}
+                  <IconInput />
                   <div className="form-check form-switch match-width">
                     <input
                       className="form-check-input"
@@ -42,7 +42,7 @@ const Earn = () => {
                     />
                     <label
                       className="px-3 form-check-label wb-color"
-                      for="flexSwitchCheckDefault"
+                      htmlFor="flexSwitchCheckDefault"
                     >
                       Enter points only
                     </label>
