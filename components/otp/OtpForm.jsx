@@ -15,7 +15,7 @@ const OtpForm = () => {
               <div className="section-header">
                 <h4 className="title">Input OTP code</h4>
               </div>
-              <form action="/otp" method="post">
+              <form action="/">
                 <div className="row">
                   <div className="col-12 pb-1">
                     <div className="single-input">

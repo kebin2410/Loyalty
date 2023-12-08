@@ -15,7 +15,7 @@ const LoginForm = () => {
               <div className="section-header">
                 <h4 className="title">Sign in to access your account</h4>
               </div>
-              <form action="/login" method="post">
+              <form action="/">
                 <div className="row">
                   <div className="col-12 pb-1">
                     <div className="single-input">
