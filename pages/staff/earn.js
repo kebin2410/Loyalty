@@ -24,11 +24,11 @@ const Earn = () => {
                     className="d-flex flex-column match-width my-2"
                     style={{}}
                   >
-                    <h6>Purchase amount {!disabled ? "" : "*"}</h6>
+                    <h6>Purchase amount {disabled ? "" : "*"}</h6>
                     <input
                       type="number"
                       className="my-1 custom-input"
-                      disabled={!disabled}
+                      disabled={disabled}
                     ></input>
                   </div>
                   {/* <IconInput /> */}
@@ -51,11 +51,11 @@ const Earn = () => {
                     className="d-flex flex-column match-width my-2"
                     style={{}}
                   >
-                    <h6>Points {disabled ? "" : "*"}</h6>
+                    <h6>Points {!disabled ? "" : "*"}</h6>
                     <input
                       type="number"
                       className="my-1 custom-input"
-                      disabled={disabled}
+                      disabled={!disabled}
                     ></input>
                   </div>
                   <div className="match-width">
