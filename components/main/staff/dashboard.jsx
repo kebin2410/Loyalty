@@ -21,12 +21,12 @@ const Staff = () => {
                                         <div className="card h-100" style={{ marginBottom: "1rem", backgroundColor: "var(--nav-color)" }} >
                                             <div className="card-body py-4">
                                                 <div className="rounded d-flex justify-content-center align-items-center mb-2" style={{ width: "40px", height: "40px", backgroundColor: "#7C2D12" }}><FaRegUserCircle color="orange" size={"15px"} /></div>
-                                                <h3 className="card-title">Account Settings</h3>
+                                                    <h3 className="card-title">Account Settings</h3>
                                                 <h5 className="card-text" style={{ color: "var(--head-color)", fontWeight: "400" }}>Update your account details like e-mail address and password.</h5>
                                             </div>
                                         </div>
                                     </Link>
-                                    <Link href={"#"} className="my-2 col-xl-4 col-lg-4 col-md-12 col-sm-12" style={{ textAlign: "left" }}>
+                                    <Link href={"/staff/qrcode"} className="my-2 col-xl-4 col-lg-4 col-md-12 col-sm-12" style={{ textAlign: "left" }}>
                                         <div className="card h-100" style={{ marginBottom: "1rem", backgroundColor: "var(--nav-color)" }} >
                                             <div className="card-body py-4">
                                                 <div className="rounded d-flex justify-content-center align-items-center mb-2" style={{ width: "40px", height: "40px", backgroundColor: "#7C2D12" }}><FaQrcode color="orange" size={"15px"} /></div>
@@ -35,7 +35,7 @@ const Staff = () => {
                                             </div>
                                         </div>
                                     </Link>
-                                    <Link href={"#"} className="my-2 col-xl-4 col-lg-4 col-md-12 col-sm-12" style={{ textAlign: "left" }}>
+                                    <Link href={"/staff/members"} className="my-2 col-xl-4 col-lg-4 col-md-12 col-sm-12" style={{ textAlign: "left" }}>
                                         <div className="card h-100" style={{ marginBottom: "1rem", backgroundColor: "var(--nav-color)" }}  >
                                             <div className="card-body py-4">
                                                 <div className="rounded d-flex justify-content-center align-items-center mb-2" style={{ width: "40px", height: "40px", backgroundColor: "#7C2D12" }}><FaUsers color="orange" size={"15px"} /></div>

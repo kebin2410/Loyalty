@@ -17,15 +17,12 @@ export default function App() {
         gridGap: 10,
         borderWidth: 20,
         borderColor: "#0089ff",
-        backgroundColor:"#0089ff",
+        maxWidth: "448px",
+        width: "100%"
       }}
     >
-      <IconTextField
-        label="Salary"
-        iconStart={<AttachMoneyIcon sx={{ color: "green", fontSize: 20 }} />}
-        iconEnd={<QuestionMark sx={{ color: "#0089ff", fontSize: 20 }} />}
-      />
-      <IconTextField label="First Name" iconStart={<AccountCircle sx={{ color: "green", fontSize: 20 }}/>} />
+      <IconTextField sx={{borderColor: "var(--head-color)", color: "var(--head-color)", backgroundColor: "var(--bs-inner-color)",}} label="Salary" iconStart={<AttachMoneyIcon sx={{ color: "var(--head-color)", fontSize: 20 }} />}/>
+      <IconTextField sx={{ borderColor: "var(--head-color)", color: "var(--head-color)", backgroundColor: "var(--bs-inner-color)",}} label="First Name" iconStart={<AccountCircle sx={{ color: "var(--head-color)", fontSize: 20 }}/>} />
     </Box>
   );
 }

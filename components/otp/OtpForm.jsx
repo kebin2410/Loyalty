@@ -21,7 +21,7 @@ const OtpForm = () => {
                     <div className="single-input">
                       <label style={{ color: "var(--head-color)" }}>Key-in OTP here</label>
                       <div className="mobile-otp d-flex align-items-center">
-                        <div className="inputs d-flex flex-row justify-content-center gap-3">
+                        <div className="input d-flex flex-row justify-content-center gap-3">
                           <input
                             className="text-center form-control"
                             type="number"

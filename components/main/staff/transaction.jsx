@@ -14,7 +14,7 @@ const Transaction = () => {
                                 <div className="row">
                                     <div className="card p-0" style={{ backgroundColor: "var(--bs-inner-color)" }}>
                                         <div className="card-body">
-                                            <Link href={"#"} className="cmn-btn w-100 my-2 px-3"><div className="d-flex align-items-center justify-content-center"><FaQrcode />&nbsp;&nbsp; Scan QR Code</div></Link>
+                                            <Link href={""} className="cmn-btn w-100 my-2 px-3"><div className="d-flex align-items-center justify-content-center"><FaQrcode />&nbsp;&nbsp; Scan QR Code</div></Link>
                                         </div>
                                     </div>
                                 </div>

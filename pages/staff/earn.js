@@ -52,7 +52,6 @@ const Earn = () => {
                     style={{}}
                   >
                     <h6>Points {disabled ? "" : "*"}</h6>
-
                     <input
                       type="number"
                       className="my-1 custom-input"

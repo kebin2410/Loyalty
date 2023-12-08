@@ -56,7 +56,7 @@ export default function StyledDropzone(props) {
                 <input {...getInputProps()} />
                 <div className='text-center'>
                     <BsCamera size={"30px"} />
-                    <h6><b>Add a photo of the receipt</b></h6>
+                    <h6 className='p-2'><b>Add a photo of the receipt</b></h6>
                 </div>
             </div>
         </div>

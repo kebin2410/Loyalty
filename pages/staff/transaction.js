@@ -35,14 +35,14 @@ const Transaction = () => {
             <div className="col-lg-12">
               <div className="tab-content">
                 <div className="center-container">
-                  <div className="py-2">
+                  {/* <div className="py-2">
                     <Breadcrumb
                       breadcrumbs={[
                         ["Home", "/"],
                         [singleCard.heading_text, "/"],
                       ]}
                     />
-                  </div>
+                  </div> */}
                   <LoyaltyCard
                     id={singleCard.id}
                     img1={singleCard.img1}
@@ -67,14 +67,15 @@ const Transaction = () => {
                       <div className="px-2">View card on website</div>
                     </div>
                   </Link>
-                  <button
-                    className="cmn-btn w-100 mb-2"
+                  <Link
+                    href={"/staff/earn"}
+                    className="cmn-btn w-100 my-2"
                     style={{ maxWidth: "448px" }}
                   >
                     Add transaction
-                  </button>
+                  </Link>
                   <div
-                    className="d-flex align-items-center justify-content-around match-width border p-2 rounded"
+                    className="d-flex align-items-center justify-content-around match-width border p-2 m-2 rounded"
                     style={{
                       color: "var(--head-color)",
                       backgroundColor: "var(--bs-inner-color)",

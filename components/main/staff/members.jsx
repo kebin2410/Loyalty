@@ -20,7 +20,7 @@ const Members = () => {
                             <input className="custom-input" style={{ padding: "10px", margin: "0", height: "38px" }} placeholder={"🔍Search"} />
                         </div>
                         <table className="member-table w-100 my-4">
-                            <thead className="p-4">
+                            <thead className="p-auto">
                                 <tr className="">
                                     <th className="responsive-avatar">AVATAR</th>
                                     <th className="">NAME<UpDownIcon /></th>
@@ -39,7 +39,7 @@ const Members = () => {
                                         {"mem***@a******.com"}
                                     </td>
                                     <td className="">
-                                        <Link href={"#"} className="hover-underline">The Canai Guys</Link>
+                                        <Link href={"/staff/transaction"} className="hover-underline">The Canai Guys</Link>
                                     </td>
                                 </tr>
                             </tbody>
