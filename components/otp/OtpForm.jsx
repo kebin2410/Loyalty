@@ -24,42 +24,42 @@ const OtpForm = () => {
                         <div className="inputs d-flex flex-row justify-content-center gap-3">
                           <input
                             className="text-center form-control"
-                            type="text"
+                            type="number"
                             placeholder=""
                             maxLength="1"
                             required
                           />
                           <input
                             className="text-center form-control"
-                            type="text"
+                            type="number"
                             placeholder=""
                             maxLength="1"
                             required
                           />
                           <input
                             className="text-center form-control"
-                            type="text"
+                            type="number"
                             placeholder=""
                             maxLength="1"
                             required
                           />
                           <input
                             className="text-center form-control"
-                            type="text"
+                            type="number"
                             placeholder=""
                             maxLength="1"
                             required
                           />
                           <input
                             className="text-center form-control"
-                            type="text"
+                            type="number"
                             placeholder=""
                             maxLength="1"
                             required
                           />
                           <input
                             className="text-center form-control"
-                            type="text"
+                            type="number"
                             placeholder=""
                             maxLength="1"
                             required
