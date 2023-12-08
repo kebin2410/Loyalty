@@ -31,7 +31,7 @@ const Earn = () => {
                       disabled={!disabled}
                     ></input>
                   </div>
-                  <IconInput />
+                  {/* <IconInput /> */}
                   <div className="form-check form-switch match-width">
                     <input
                       className="form-check-input"
