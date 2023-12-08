@@ -25,16 +25,16 @@ const Preloader = () => {
         </div>
         <div className="loader">
           <div className="row">
-            <div className="col-3 loader-section section-left">
+            <div className="col-3 loader-section ">
               <div className="bg"></div>
             </div>
-            <div className="col-3 loader-section section-left">
+            <div className="col-3 loader-section ">
               <div className="bg"></div>
             </div>
-            <div className="col-3 loader-section section-right">
+            <div className="col-3 loader-section ">
               <div className="bg"></div>
             </div>
-            <div className="col-3 loader-section section-right">
+            <div className="col-3 loader-section ">
               <div className="bg"></div>
             </div>
           </div>

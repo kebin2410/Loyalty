@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <NavBar />
       <div className="w-100 d-flex flex-column">{children}</div>
       <Footer />
-      {/* <Preloader /> */}
+      <Preloader />
     </>
   );
 };
