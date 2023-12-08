@@ -30,7 +30,17 @@ export default function App() {
 export const IconTextField = ({ iconStart, iconEnd, InputProps, ...props }) => {
   return (
     <TextField
+      sx={{
+      "& label": {
+        "&.Mui-focused": {
+          color: 'white'
+        }
+      },
+      borderWidth: 30,
+      borderColor: "white",
+      }}
       {...props}
+      InputLabelProps={{style : {color : 'var(--head-color)', fontSize: "18px"} }}
       InputProps={{
         ...InputProps,
         startAdornment: iconStart ? (
