@@ -29,9 +29,9 @@ const LoyaltyCard = ({
           <div className={""}>
             {balance &&
               <>
-                <p className="text-white">Balance</p>
-                <div className="d-flex align-items-center" style={{ fontWeight: "200" }}>
-                  <BsDatabase />{" "}{balance}
+                <p className="text-white" style={{ fontWeight: "400" }}>Balance</p>
+                <div className="d-flex align-items-center" style={{ fontWeight: "600" }}>
+                  <BsDatabase strokeWidth={"0.5"}/>{" "}{balance}
                 </div>
               </>
             }
@@ -39,8 +39,8 @@ const LoyaltyCard = ({
         </div>
         <div className="d-flex justify-content-between gap-2">
           <div className="d-flex flex-column justify-content-start align-items-start p-3">
-            <h5 className="text-white line-clamp pb-2" style={{ fontWeight: "400" }}>{sub_title}</h5>
-            <h6 className="text-white text-start line-clamp" style={{ fontWeight: "300" }}>{sub_text}</h6>
+            <h5 className="text-white line-clamp-1 mb-2" style={{ fontWeight: "400" }}>{sub_title}</h5>
+            <h6 className="text-white text-start line-clamp-2" style={{ fontWeight: "300" }}>{sub_text}</h6>
           </div>
           <Image
             src={img2}
@@ -50,17 +50,17 @@ const LoyaltyCard = ({
         </div>
         <div className="d-flex justify-content-between">
           <div className="text-start">
-            <h6 className="line-clamp text-white pb-1" style={{ fontWeight: "200" }}>Membership ID</h6>
-            <h6 className="line-clamp text-white" style={{ fontWeight: "600" }}>{identifier}</h6>
+            <h6 className="line-clamp-1 text-white pb-1" style={{ fontWeight: "200" }}>Membership ID</h6>
+            <h6 className="line-clamp-1 text-white" style={{ fontWeight: "600" }}>{identifier}</h6>
           </div>
           <div className="d-flex">
             <div className="mx-2 responsive-text text-start">
-              <h6 className="line-clamp text-white pb-1" style={{ fontWeight: "200" }}>Issue Date</h6>
+              <h6 className="line-clamp-1 text-white pb-1" style={{ fontWeight: "200" }}>Issue Date</h6>
               <h6 className="line-clamp text-white" style={{ fontWeight: "600" }}>{issue_date}</h6>
             </div>
             <div className="text-end">
-              <h6 className="line-clamp text-white pb-1" style={{ fontWeight: "200" }}>Expiry Date</h6>
-              <h6 className="line-clamp text-white" style={{ fontWeight: "600" }}>{expire_date}</h6>
+              <h6 className="line-clamp-1 text-white pb-1" style={{ fontWeight: "200" }}>Expiry Date</h6>
+              <h6 className="line-clamp-1 text-white" style={{ fontWeight: "600" }}>{expire_date}</h6>
             </div>
           </div>
         </div>

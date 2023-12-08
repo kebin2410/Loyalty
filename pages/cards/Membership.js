@@ -71,55 +71,106 @@ const CreditCard = () => {
                       ]}
                     />
                   </div>
-                  <ul className="nav nav-pills mt-4 d-flex justify-content-around border-bottom mx-5 " style={{ width: "100%", maxWidth: "448px" }}>
+                  <ul
+                    className="nav nav-pills mt-4 d-flex justify-content-around border-bottom mx-5 "
+                    style={{ width: "100%", maxWidth: "448px" }}
+                  >
                     <li className="nav-item">
-                      <a className="nav-link active bg-transparent" style={{ color: "var(--head-color)" }} id="tab1-tab" data-bs-toggle="pill" href="#tab1">Rewards</a>
+                      <a
+                        className="nav-link active bg-transparent"
+                        style={{ color: "var(--head-color)" }}
+                        id="tab1-tab"
+                        data-bs-toggle="pill"
+                        href="#tab1"
+                      >
+                        Rewards
+                      </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link bg-transparent" style={{ color: "var(--head-color)" }} id="tab2-tab" data-bs-toggle="pill" href="#tab2">History</a>
+                      <a
+                        className="nav-link bg-transparent"
+                        style={{ color: "var(--head-color)" }}
+                        id="tab2-tab"
+                        data-bs-toggle="pill"
+                        href="#tab2"
+                      >
+                        History
+                      </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link bg-transparent" style={{ color: "var(--head-color)" }} id="tab3-tab" data-bs-toggle="pill" href="#tab3">Rules</a>
+                      <a
+                        className="nav-link bg-transparent"
+                        style={{ color: "var(--head-color)" }}
+                        id="tab3-tab"
+                        data-bs-toggle="pill"
+                        href="#tab3"
+                      >
+                        Rules
+                      </a>
                     </li>
                   </ul>
 
-                  <div className="tab-content mt-3" style={{ width: "100%", maxWidth: "448px" }}>
+                  <div
+                    className="tab-content mt-3"
+                    style={{ width: "100%", maxWidth: "448px" }}
+                  >
                     <div className="tab-pane fade show active" id="tab1">
                       <table className="reward-table">
                         <tbody>
                           <tr>
                             <td>
-                              <Image src={sm1} alt="images"
-                                className="reward-table-image bg-white rounded" />
+                              <Image
+                                src={sm1}
+                                alt="images"
+                                className="reward-table-image bg-white rounded"
+                              />
                             </td>
                             <td className="td-padding">Free Cooking Class</td>
                             <td>
-                              <div className="d-flex align-items-center" style={{ fontWeight: "500" }}>
-                                <BsDatabase />{"3000"}
+                              <div
+                                className="d-flex align-items-center"
+                                style={{ fontWeight: "500" }}
+                              >
+                                <BsDatabase />
+                                {"3000"}
                               </div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <Image src={sm2} alt="images"
-                                className="reward-table-image bg-white rounded" />
+                              <Image
+                                src={sm2}
+                                alt="images"
+                                className="reward-table-image bg-white rounded"
+                              />
                             </td>
                             <td>Second Pizza for Free</td>
                             <td>
-                              <div className="d-flex align-items-center" style={{ fontWeight: "500" }}>
-                                <BsDatabase />{"2000"}
+                              <div
+                                className="d-flex align-items-center"
+                                style={{ fontWeight: "500" }}
+                              >
+                                <BsDatabase />
+                                {"2000"}
                               </div>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <Image src={sm3} alt="images"
-                                className="reward-table-image bg-white rounded" />
+                              <Image
+                                src={sm3}
+                                alt="images"
+                                className="reward-table-image bg-white rounded"
+                              />
                             </td>
                             <td>Dinner for Two</td>
                             <td className="text-center">
-                              <div className="d-flex align-items-center" style={{ fontWeight: "500" }}>
-                                <BsDatabase />{"1000"}
+                              <div
+                                className="d-flex align-items-center"
+                                style={{ fontWeight: "500" }}
+                              >
+                                <BsDatabase />
+                                {"1000"}
                               </div>
                             </td>
                           </tr>
@@ -134,19 +185,48 @@ const CreditCard = () => {
                         <h6>&nbsp;&nbsp;to see your history.</h6>
                       </div>
                     </div>
-                    <div className="tab-pane fade d-flex flex-column justify-content-center" id="tab3">
+                    <div
+                      className="tab-pane fade d-flex flex-column justify-content-center"
+                      id="tab3"
+                    >
                       <ul className="px-5" style={{ listStyle: "disc" }}>
                         <h5 className="">Rules and conditions</h5>
-                        <li className="py-2" style={{ color: "var(--head-color)", fontWeight: "400" }}>
-                          Points expire after 10 months.</li>
-                        <li className="py-2" style={{ color: "var(--head-color)", fontWeight: "400" }}>
+                        <li
+                          className="py-2"
+                          style={{
+                            color: "var(--head-color)",
+                            fontWeight: "400",
+                          }}
+                        >
+                          Points expire after 10 months.
+                        </li>
+                        <li
+                          className="py-2"
+                          style={{
+                            color: "var(--head-color)",
+                            fontWeight: "400",
+                          }}
+                        >
                           You receive 20 points at your first purchase.
                         </li>
-                        <li className="py-2" style={{ color: "var(--head-color)", fontWeight: "400" }}>
+                        <li
+                          className="py-2"
+                          style={{
+                            color: "var(--head-color)",
+                            fontWeight: "400",
+                          }}
+                        >
                           For each 1 USD spent, you receive 50 points.
                         </li>
-                        <li className="py-2" style={{ color: "var(--head-color)", fontWeight: "400" }}>
-                          Each purchase earns a minimum of 50 points and a maximum of 100,000 points.
+                        <li
+                          className="py-2"
+                          style={{
+                            color: "var(--head-color)",
+                            fontWeight: "400",
+                          }}
+                        >
+                          Each purchase earns a minimum of 50 points and a
+                          maximum of 100,000 points.
                         </li>
                       </ul>
                     </div>
@@ -157,7 +237,7 @@ const CreditCard = () => {
           </div>
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 

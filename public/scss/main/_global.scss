@@ -729,11 +729,18 @@ button {
   background: #EA580C;
 }
 
-.line-clamp {
+.line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .nav-active {
@@ -789,9 +796,10 @@ button {
 .custom-input {
   background-color: var(--bs-inner-color);
   border-color: gray;
-  border-width: 2px;
+  border-width: 1px;
+  padding: 3px 3px;
   color: var(--head-color);
-  font-size: 16px;
+  // font-size: 16px;
 }
 
 .custom-input:hover {
@@ -808,4 +816,98 @@ button {
 
 .zest-logo {
   width: 35%;
+}
+
+.custom-btn1 {
+  // padding: 10px 30px 15px;
+  padding: 3px 7px;
+  font-weight: 500;
+  text-align: center;
+  background: var(--hover-color);
+  color: white;
+  border: 1px solid var(--hover-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 100%;
+
+  &:hover {
+    color: var(--bs-hover-button-color);
+    background: transparent;
+    border: 1px solid #848894;
+  }
+}
+
+.custom-btn2 {
+  padding: 3px auto;
+  font-weight: 500;
+  text-align: center;
+  background: var(--nav-color);
+  color: var(--head-color);
+  border: 1px solid var(--bs-border-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 100%;
+
+  &:hover {
+    color: white;
+    background: var(--bs-border-color);
+    border: 1px solid #848894;
+  }
+}
+
+
+.member-table {
+  // border-collapse: separate;
+  // border-radius: 10px;
+  border-spacing: 0;
+  // border-radius: 6px 6px 6px 6px;
+  // -moz-border-radius: 6px 6px 6px 6px;
+  // -webkit-border-radius: 6px 6px 6px 6px;
+  border: 2px solid var(--nav-color);
+  padding: 0;
+  background-color: var(--nav-color);
+  color: var(--head-color);
+}
+
+.member-table th {
+  text-align: center;
+  vertical-align: center;
+  padding: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: var(--bs-inner-color);
+}
+
+// .member-table th tr {
+//   border-radius: 10px;
+//   background-color: var(--bs-inner-color);
+//   font-size: 0.8rem;
+// }
+
+.member-table td {
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Set background color for odd rows */
+.member-table tr {
+  border-bottom: 2px solid var(--nav-color);
+  background-color: var(--nav-color);
+}
+
+.member-table tr:hover {
+  background-color: var(--body-color);
+}
+
+.hover-underline {
+  color: var(--para-color);
+}
+.hover-underline:hover {
+  text-decoration: underline;
 }
