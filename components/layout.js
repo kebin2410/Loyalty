@@ -7,11 +7,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <NavBar />
-      <div className="w-100 d-flex flex-column">
-        {children}
-      </div>
+      <div className="w-100 d-flex flex-column">{children}</div>
       <Footer />
-      <Preloader />
+      {/* <Preloader /> */}
     </>
   );
 };

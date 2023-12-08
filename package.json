@@ -33,6 +33,7 @@
     "react-international-phone": "^4.0.4",
     "react-linear-gradient-button": "^1.1.1",
     "react-otp-input": "^3.1.0",
+    "react-qr-code": "^2.0.12",
     "react-search-input": "^0.11.3",
     "react-slick": "^0.29.0",
     "sass": "^1.57.1",
