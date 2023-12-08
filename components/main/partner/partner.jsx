@@ -1,5 +1,18 @@
 import { useCallback, useContext, useState } from "react";
-
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaLinkedinIn,
+    FaTwitter,
+    FaTelegram,
+    FaPinterestP,
+    FaWhatsapp,
+    FaReddit,
+    FaGift,
+    FaUsers,
+    FaRegUserCircle,
+  } from "react-icons/fa";
+  
 const Partner = () => {
     return (
         <div className="h-100 flex flex-grow-1 mt-3">
