@@ -10,9 +10,10 @@ import {
     FaReddit,
     FaGift,
     FaUsers,
+    FaUpload,
     FaRegUserCircle,
   } from "react-icons/fa";
-  
+
 const Partner = () => {
     return (
         <div className="h-100 flex flex-grow-1 mt-3">
