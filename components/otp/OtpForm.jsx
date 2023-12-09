@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OtpInput from './OtpInput';
-import arrow_left from "/public/images/icon/arrow-left.png";
 
 const OtpForm = () => {
     const [otp, setOtp] = useState('');
@@ -11,7 +10,7 @@ const OtpForm = () => {
             <section className="sign-in-up  w-100 place-self-center h-100 w-100 mx-auto place-self-center" >
                 <div className="row h-100">
                     <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 p-5 d-flex flex-column justify-content-center">
-                        <div className="m-auto" style={{ maxWidth: "600px" }}>
+                        <div className="m-auto" style={{ maxWidth: "500px" }}>
                             <div className="section-header">
                                 <h4 className="title">Input OTP code</h4>
                             </div>
@@ -20,62 +19,92 @@ const OtpForm = () => {
                                     <div className="col-12 pb-1">
                                         <div className="single-input">
                                             <label style={{ color: "var(--head-color)" }}>Key-in OTP here</label>
-                                            {/* <div className="mobile-otp d-flex align-items-center"> */}
-                                            {/* <div className="input d-flex flex-row justify-content-center gap-3">
-                                                    <input
+                                            <div className="mobile-otp d-flex align-items-center">
+                                                <div className="input d-flex flex-row justify-content-center gap-1">
+                                                    {/* <input
                                                         className="text-center form-control"
-                                                        type="number"
+                                                        type="text"
                                                         placeholder=""
                                                         maxLength="1"
                                                         required
+                                                        onKeyPress={(event) => {
+                                                            if (!/[0-9]/.test(event.key)) {
+                                                                event.preventDefault();
+                                                            }
+                                                        }}
                                                     />
                                                     <input
                                                         className="text-center form-control"
-                                                        type="number"
+                                                        type="text"
                                                         placeholder=""
                                                         maxLength="1"
                                                         required
+                                                        onKeyPress={(event) => {
+                                                            if (!/[0-9]/.test(event.key)) {
+                                                                event.preventDefault();
+                                                            }
+                                                        }}
                                                     />
                                                     <input
                                                         className="text-center form-control"
-                                                        type="number"
+                                                        type="text"
                                                         placeholder=""
                                                         maxLength="1"
                                                         required
+                                                        onKeyPress={(event) => {
+                                                            if (!/[0-9]/.test(event.key)) {
+                                                                event.preventDefault();
+                                                            }
+                                                        }}
                                                     />
                                                     <input
                                                         className="text-center form-control"
-                                                        type="number"
+                                                        type="text"
                                                         placeholder=""
                                                         maxLength="1"
                                                         required
+                                                        onKeyPress={(event) => {
+                                                            if (!/[0-9]/.test(event.key)) {
+                                                                event.preventDefault();
+                                                            }
+                                                        }}
                                                     />
                                                     <input
                                                         className="text-center form-control"
-                                                        type="number"
+                                                        type="text"
                                                         placeholder=""
                                                         maxLength="1"
                                                         required
+                                                        onKeyPress={(event) => {
+                                                            if (!/[0-9]/.test(event.key)) {
+                                                                event.preventDefault();
+                                                            }
+                                                        }}
                                                     />
                                                     <input
                                                         className="text-center form-control"
-                                                        type="number"
+                                                        type="text"
                                                         placeholder=""
                                                         maxLength="1"
                                                         required
-                                                    />
-                                                </div> */}
-                                            <OtpInput />
-                                            {/* </div> */}
+                                                        onKeyPress={(event) => {
+                                                            if (!/[0-9]/.test(event.key)) {
+                                                                event.preventDefault();
+                                                            }
+                                                        }} 
+                                                    />*/}
+                                                </div>
+                                                <OtpInput />
+                                            </div>
+                                        </div>
+                                        <div className="btn-area">
+                                            <div className="d-flex justify-content-between">
+                                                <Link href="#">Resend Code</Link>
+                                                <Link href="#">Back</Link>
+                                            </div>
+                                            <button className="cmn-btn w-100">Submit OTP</button>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="btn-area">
-                                    <div className="d-flex justify-content-between">
-                                        <Link href="#">Resend Code</Link>
-                                        <Link href="#">Back</Link>
-                                    </div>
-                                    <button className="cmn-btn w-100">Submit OTP</button>
                                 </div>
                             </form>
                         </div>
@@ -90,7 +119,7 @@ const OtpForm = () => {
                             </h5>
                         </div>
                     </div>
-                </div>
+                </div >
                 <div className="empty-height"></div>
             </section >
         </div >

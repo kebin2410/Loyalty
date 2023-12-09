@@ -630,9 +630,11 @@ li {
   background-color: transparent;
   cursor: pointer;
 }
+
 .Switch:focus {
   border-color: gray;
 }
+
 .Switch:hover {
   background: var(--switch-bg-color);
 }
@@ -804,7 +806,8 @@ li {
 .custom-input:focus {
   border-color: #F97316;
 }
-.custom-input:disabled{
+
+.custom-input:disabled {
   cursor: not-allowed;
 }
 
@@ -908,16 +911,22 @@ li {
   cursor: pointer;
   color: var(--para-color);
 }
+
 .hover-underline:hover {
-  
+
   text-decoration: underline;
 }
 
-.match-width{
+.match-width {
   max-width: 448px;
   width: 100%
 }
-.wb-color{
+
+.wb-color {
   color: var(--wb-font-button-color);
 }
 
+.mobile-otp div input {
+  width: 20% !important;
+  padding: 5px 10px !important;
+}
