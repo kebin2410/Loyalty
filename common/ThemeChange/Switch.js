@@ -5,7 +5,7 @@ import ThemeContext from "./ThemeContext";
 const Switch = () => {
   const { dark, toggle } = useContext(ThemeContext);
   return (
-    <button className="p-2 m-2 Switch" onClick={() => toggle()}>
+    <button className="p-2 Switch" onClick={() => toggle()}>
       {!dark ? (
         <Sun strokeWidth="1px" size="1.1em" />
       ) : (

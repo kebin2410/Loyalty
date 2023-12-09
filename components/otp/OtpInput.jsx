@@ -11,6 +11,7 @@ export default function App() {
             numInputs={6}
             renderSeparator={<span>-</span>}
             renderInput={(props) => <input {...props} />}
+            inputType='number'
         />
     );
 }
