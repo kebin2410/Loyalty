@@ -35,14 +35,6 @@ const Transaction = () => {
             <div className="col-lg-12">
               <div className="tab-content">
                 <div className="center-container">
-                  {/* <div className="py-2">
-                    <Breadcrumb
-                      breadcrumbs={[
-                        ["Home", "/"],
-                        [singleCard.heading_text, "/"],
-                      ]}
-                    />
-                  </div> */}
                   <LoyaltyCard
                     id={singleCard.id}
                     img1={singleCard.img1}
@@ -99,10 +91,13 @@ const Transaction = () => {
                           style={{
                             width: "30px",
                             height: "30px",
-                            backgroundColor: "#7C2D12",
+                            backgroundColor: "var(--trans-bg-color)",
                           }}
                         >
-                          <BsDatabase color="orange" size={15} />
+                          <BsDatabase
+                            color="var(--trans-item-color)"
+                            size={15}
+                          />
                         </div>
                         <h5
                           className="px-1"
@@ -113,7 +108,10 @@ const Transaction = () => {
                       </div>
                       <div
                         className="px-2 rounded"
-                        style={{ backgroundColor: "#7C2D12", color: "yellow" }}
+                        style={{
+                          backgroundColor: "var(--trans-bg-color)",
+                          color: "var(--trans-item-color)",
+                        }}
                       >
                         MYR 123.00
                       </div>
@@ -156,10 +154,10 @@ const Transaction = () => {
                           style={{
                             width: "30px",
                             height: "30px",
-                            backgroundColor: "#7C2D12",
+                            backgroundColor: "var(--trans-bg-color)",
                           }}
                         >
-                          <FaGift color="orange" size={15} />
+                          <FaGift color="var(--trans-item-color)" size={15} />
                         </div>
                         <h5
                           className="px-1"
@@ -170,7 +168,10 @@ const Transaction = () => {
                       </div>
                       <div
                         className="px-2 rounded"
-                        style={{ backgroundColor: "#7C2D12", color: "yellow" }}
+                        style={{
+                          backgroundColor: "var(--trans-bg-color)",
+                          color: "var(--trans-item-color)",
+                        }}
                       >
                         MYR 345.00
                       </div>

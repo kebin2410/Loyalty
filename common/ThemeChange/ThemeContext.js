@@ -66,9 +66,12 @@ const lightTheme = [
   "--bs-nav-link-color:#374151",
   "--bs-inner-color:#374151",
   "--switch-mode-color: #ffffff",
+  "--switch-bg-color: rgb(55 65 81/300)",
   "--bs-button-color: black",
   "--bs-hover-button-color: white",
   "--wb-font-button-color: white",
+  "--trans-bg-color: #7C2D12",
+  "--trans-item-color: orange",
 ];
 const darkTheme = [
   "--body-color: #eeeeee",
@@ -82,7 +85,10 @@ const darkTheme = [
   "--bs-nav-link-color: var(--head-color)",
   "--bs-inner-color: var(--nav-color)",
   "--switch-mode-color: #000000",
+  "--switch-bg-color: #eeeeee",
   "--bs-button-color: white",
   "--bs-hover-button-color: black",
   "--wb-font-color: black",
+  "--trans-bg-color: orange",
+  "--trans-item-color: #7C2D12",
 ];

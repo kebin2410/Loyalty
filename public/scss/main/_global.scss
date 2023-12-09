@@ -121,6 +121,7 @@ textarea {
   background: #f5faff;
   border: 1px solid #000;
   border-radius: 5px;
+  font-weight: 600;
 }
 
 input::-webkit-outer-spin-button,
@@ -617,35 +618,27 @@ li {
 // -----------Custom Css-------------------------
 
 .Switch {
-  width: 1rem;
-  height: 1rem;
-  position: relative;
-  border-radius: 10px;
-  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  background: var(--switch-mode-bg-color);
   color: var(--switch-mode-color);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
   border-radius: 50%;
-  padding: 0;
-}
-
-.Switch .icon {
-  font-size: 1.3rem;
-}
-
-button {
-  outline: none;
+  background-color: transparent;
   cursor: pointer;
+}
+.Switch:focus {
+  border-color: gray;
+}
+.Switch:hover {
+  background: var(--switch-bg-color);
 }
 
 .active {
   color: var(--head-color);
-}
-
-.change-mode {
-  font-weight: 700;
 }
 
 .nav-item>.active {
@@ -667,6 +660,8 @@ button {
   height: 1rem;
 }
 
+
+//=========card css =================
 .card-container {
   display: flex;
   text-align: center;

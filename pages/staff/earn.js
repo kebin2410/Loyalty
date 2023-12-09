@@ -41,7 +41,7 @@ const Earn = () => {
                       onClick={() => setDisabled(!disabled)}
                     />
                     <label
-                      className="px-3 form-check-label wb-color"
+                      className="px-1 form-check-label wb-color "
                       htmlFor="flexSwitchCheckDefault"
                     >
                       Enter points only
