@@ -20,6 +20,7 @@ import {
   FaWhatsapp,
   FaReddit,
 } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 const CreditCard = () => {
   const singleCard = card_data[0];
@@ -61,6 +62,7 @@ const CreditCard = () => {
                     <Social
                       items={[
                         [FaFacebookF, "/"],
+                        [BsTwitterX, "/"],
                         [FaTwitter, "/"],
                         [FaLinkedinIn, "/"],
                         [FaInstagram, "/"],

@@ -39,7 +39,7 @@ const Members = () => {
                                         {"mem***@a******.com"}
                                     </td>
                                     <td className="">
-                                        <Link href={"/staff/transaction"} className="hover-underline">The Canai Guys</Link>
+                                        <Link href={"/staff/transaction"} className="hover-underline line-clamp-1">The Canai Guys</Link>
                                     </td>
                                 </tr>
                             </tbody>

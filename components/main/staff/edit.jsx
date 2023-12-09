@@ -19,7 +19,9 @@ const Edit = () => {
                                         </div>
                                         <div className="card-body">
                                             <div className="d-flex my-2 px-3" style={{}}><h6>Avatar</h6></div>
-                                            <StyledDropzone />
+                                            <div style={{ cursor: "pointer" }}>
+                                                <StyledDropzone />
+                                            </div>
                                             <div className="d-flex mt-2 px-3" style={{}}><h6>Full name *</h6></div>
                                             <input className="my-2 px-3 custom-input"></input>
                                             <div className="d-flex mt-2 px-3" style={{}}><h6>E-mail address *</h6></div>

@@ -12,6 +12,10 @@
   .cmn-btn {
     font-size: 18px;
   }
+
+  .mini-nav {
+    justify-content: start !important;
+  }
 }
 
 @media (max-width: 1799px) {
@@ -38,6 +42,10 @@
   .cmn-btn {
     font-size: 18px;
   }
+
+  .mini-nav {
+    justify-content: start !important;
+  }
 }
 
 @media (max-width: 1599px) {
@@ -55,6 +63,10 @@
 
   .cmn-btn {
     font-size: 18px;
+  }
+
+  .mini-nav {
+    justify-content: start !important;
   }
 }
 
@@ -150,6 +162,10 @@
 
   .cmn-btn {
     font-size: 18px;
+  }
+
+  .mini-nav {
+    justify-content: start !important;
   }
 }
 
@@ -372,6 +388,10 @@
 
   .cmn-btn {
     font-size: 18px;
+  }
+
+  .mini-nav {
+    justify-content: start !important;
   }
 }
 
@@ -869,6 +889,11 @@
   .cmn-btn {
     font-size: 18px;
   }
+
+  .mini-nav {
+    justify-content: start !important;
+    // font-size: 19px !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1165,6 +1190,11 @@
   .cmn-btn {
     font-size: 18px;
   }
+
+  .mini-padding {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1421,6 +1451,11 @@
   .responsive-avatar {
     display: none;
   }
+
+  .mini-padding {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1509,6 +1544,11 @@
   .footer-section {
     position: fixed;
   }
+
+  .mini-padding {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1584,5 +1624,10 @@
 
   .footer-section {
     position: fixed;
+  }
+
+  .mini-padding {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
   }
 }

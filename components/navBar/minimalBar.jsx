@@ -9,26 +9,36 @@ import Image from "next/image";
 import { FaBars, FaHome } from "react-icons/fa";
 
 const MinimalBar = (props) => {
-    const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-    const items = props.items;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-    if (mounted) {
-        return (
-            <div className="container" style={{ backgroundColor: "var(--bs-inner-color)" }}>
-                <ul className="d-flex justify-content-around">
-                    {items.map((item, index) => (
-                        <li key={index} className="nav-item">
-                            <Link href={item.link}>{item.title}</Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        );
-    }
+  const items = props.items;
+  if (mounted) {
+    return (
+      <div className="" style={{ backgroundColor: "var(--bs-inner-color)" }}>
+        <ul className="d-flex justify-content-around mini-nav">
+          {items.map((item, index) => (
+            <li key={index} className="px-4 mini-padding">
+              <Link
+                className="p-2 line-clamp-1"
+                href={item.link}
+                style={{
+                  color: "var(--head-color)",
+                  fontSize: "14px",
+                  fontWeight: "400",
+                }}
+              >
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
 };
 
 export default MinimalBar;
