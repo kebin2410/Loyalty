@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OtpInput from './OtpInput';
 
 const OtpForm = () => {
+    const [mounted, setMounted] = useState(false);
+    const [value, setValue] = useState("");
     const [otp, setOtp] = useState('');
-    return (
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (mounted) return (
         <div className="h-100 flex flex-grow-1">
             <section className="sign-in-up  w-100 place-self-center h-100 w-100 mx-auto place-self-center" >
                 <div className="row h-100">
@@ -93,8 +99,8 @@ const OtpForm = () => {
                                                             }
                                                         }} 
                                                     />*/}
+                                                    <OtpInput />
                                                 </div>
-                                                <OtpInput />
                                             </div>
                                         </div>
                                         <div className="btn-area">

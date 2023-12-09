@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 
 const LoginForm = () => {
+  const [mounted, setMounted] = useState(false);
   const [value, setValue] = useState("");
-  return (
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (mounted) return (
     <div className="h-100 flex flex-grow-1">
       <section section className="sign-in-up w-100 place-self-center h-100 w-100 mx-auto place-self-center" >
         <div className="row h-100">

@@ -67,10 +67,13 @@ const Transaction = () => {
                     Add transaction
                   </Link>
                   <div
-                    className="d-flex align-items-center justify-content-around match-width border p-2 m-2 rounded"
+                    className="d-flex align-items-center justify-content-around match-width border p-2 m-2 rounded shadow-sm"
                     style={{
                       color: "var(--head-color)",
-                      backgroundColor: "var(--bs-inner-color)",
+                      backgroundColor: "var(--bs-inner-color) !important",
+                      borderColor: "#e9ecef !important",
+                      borderWidth: "3px !important",
+                      padding: "15px !important"
                     }}
                   >
                     <FaRegUserCircle size={25} />
