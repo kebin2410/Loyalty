@@ -27,7 +27,7 @@ const Earn = () => {
                     <h6>Purchase amount {disabled ? "" : "*"}</h6>
                     <input
                       type="number"
-                      className="my-1 custom-input"
+                      className="my-1 px-3 custom-input"
                       disabled={disabled}
                     ></input>
                   </div>
@@ -54,7 +54,7 @@ const Earn = () => {
                     <h6>Points {!disabled ? "" : "*"}</h6>
                     <input
                       type="number"
-                      className="my-1 custom-input"
+                      className="my-1 px-3 custom-input"
                       disabled={!disabled}
                     ></input>
                   </div>

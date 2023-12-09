@@ -1,11 +1,9 @@
 import { useEffect, useState, useContext, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 import Switch from "../../common/ThemeChange/Switch";
 import LangSwitch from "../../common/LanguageChange/Switch";
 import ThemeContext from "../../common/ThemeChange/ThemeContext";
-
 import { FaBars, FaHome } from "react-icons/fa";
 
 const ShortNavbar = () => {

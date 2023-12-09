@@ -43,9 +43,8 @@ const NavBar = () => {
 
   return (
     <header
-      className={`header-section ${
-        windowHeight > 50 && "header-fixed animated fadeInDown"
-      }`}
+      className={`header-section ${windowHeight > 50 && "header-fixed animated fadeInDown"
+        }`}
     >
       <div className="overlay border-bottom">
         <div className="container">
