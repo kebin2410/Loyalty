@@ -12,14 +12,13 @@ import sm3 from "../../public/images/bg/sm03.jpg";
 
 import {
   FaFacebookF,
-  FaInstagram,
   FaLinkedinIn,
-  FaTwitter,
   FaTelegram,
   FaPinterestP,
   FaWhatsapp,
   FaReddit,
 } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 const CreditCard = () => {
@@ -63,13 +62,12 @@ const CreditCard = () => {
                       items={[
                         [FaFacebookF, "/"],
                         [BsTwitterX, "/"],
-                        [FaTwitter, "/"],
                         [FaLinkedinIn, "/"],
-                        [FaInstagram, "/"],
-                        [FaTelegram, "/"],
                         [FaPinterestP, "/"],
-                        [FaWhatsapp, "/"],
                         [FaReddit, "/"],
+                        [FaWhatsapp, "/"],
+                        [FaTelegram, "/"],
+                        [FiMail, "/"],
                       ]}
                     />
                   </div>

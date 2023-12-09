@@ -36,7 +36,7 @@ const MinimalBar = (props) => {
             </li>
           ))}
         </ul>
-      </div>
+      </div>    
     );
   }
 };

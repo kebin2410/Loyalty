@@ -638,6 +638,28 @@ li {
 .Switch:hover {
   background: var(--switch-bg-color);
 }
+.User {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--switch-mode-color);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.User:focus {
+  border-color: gray;
+}
+
+.User:hover {
+  background: var(--switch-bg-color);
+}
+
 
 .active {
   color: var(--head-color);
