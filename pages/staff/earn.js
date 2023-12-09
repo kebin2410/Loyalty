@@ -66,16 +66,18 @@ const Earn = () => {
                     placeholder="Optional note..."
                   ></input>
                   <button
-                    className="cmn-btn mb-3 p-3 w-100"
+                    className="cmn-btn mb-3 w-100"
                     style={{ maxWidth: "448px" }}
                   >
                     Add points to balance
                   </button>
                   <div
-                    className="d-flex align-items-center justify-content-around match-width border p-3 rounded"
+                    className="d-flex align-items-center justify-content-around match-width border p-3 rounded shadow"
                     style={{
                       color: "var(--head-color)",
                       backgroundColor: "var(--bs-inner-color)",
+                      borderColor: "#dfd7d7 !important",
+                      padding: "15px !important"
                     }}
                   >
                     <FaRegUserCircle size={25} />

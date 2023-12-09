@@ -67,21 +67,22 @@ const Transaction = () => {
                     Add transaction
                   </Link>
                   <div
-                    className="d-flex align-items-center justify-content-around match-width border p-2 m-2 rounded shadow-sm"
+                    className="d-flex align-items-center justify-content-around match-width border p-3 rounded shadow"
                     style={{
                       color: "var(--head-color)",
-                      backgroundColor: "var(--bs-inner-color) !important",
-                      borderColor: "#e9ecef !important",
-                      borderWidth: "3px !important",
+                      backgroundColor: "var(--bs-inner-color)",
+                      borderColor: "#dfd7d7 !important",
                       padding: "15px !important"
                     }}
                   >
                     <FaRegUserCircle size={25} />
                     <div className="d-flex flex-column px-3 lh-1">
-                      <b className="wb-color">{"Demo Member"}</b>
-                      Joined in November 2023
+                      <b className="wb-color line-clamp-1">{"Demo Member"}</b>
+                      <div className=" line-clamp-1">
+                        Joined in November 2023
+                      </div>
                     </div>
-                    <div className="wb-color">328-167-685-583</div>
+                    <div className="wb-color line-clamp-1">328-167-685-583</div>
                   </div>
                   <div
                     className="d-flex flex-column align-items-center mt-2 w-100"
