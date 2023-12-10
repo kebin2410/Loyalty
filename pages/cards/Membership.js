@@ -6,9 +6,9 @@ import Social from "../../components/social/Social";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import { BsDatabase } from "react-icons/bs";
 
-import sm1 from "../../public/images/bg/sm01.jpg";
-import sm2 from "../../public/images/bg/sm02.jpg";
-import sm3 from "../../public/images/bg/sm03.jpg";
+import sm1 from "/public/images/bg/sm01.jpg";
+import sm2 from "/public/images/bg/sm02.jpg";
+import sm3 from "/public/images/bg/sm03.jpg";
 
 import {
   FaFacebookF,
@@ -67,13 +67,7 @@ const CreditCard = () => {
                         [FaLinkedinIn, "/"],
                         [FaInstagram, "/"],
                         [FaTelegram, "/"],
-<<<<<<< HEAD
-                        [FiMail, "/"]
-=======
-                        [FaPinterestP, "/"],
-                        [FaWhatsapp, "/"],
-                        [FaReddit, "/"],
->>>>>>> previous_state
+                        [BsTwitterX, "/"]
                       ]}
                     />
                   </div>
