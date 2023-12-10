@@ -1,4 +1,4 @@
-import Navbar from "../components/navBar/Navbar";
+import Navbar from "../components/navBar/ShortNavbar";
 import OtpForm from "../components/otp/OtpForm";
 import Footer from "../components/footer/Footer";
 export default function Otp() {
