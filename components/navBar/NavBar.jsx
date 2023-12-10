@@ -1,14 +1,12 @@
 import { useEffect, useState, useContext, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import DarkModeSwitch from "../../common/ThemeChange/Switch";
 import Menu from "./userMenu/userMenu";
 import ThemeContext from "../../common/ThemeChange/ThemeContext";
-import { FaBars, FaRegUserCircle, FaHome } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 
 const Navbar = (props) => {
   const userMenu = props.userMenu;
-  console.log(userMenu);
   const [windowHeight, setWindowHeight] = useState(0);
   const { dark, toggle } = useContext(ThemeContext);
   const [auth, setAuth] = useState(true);
