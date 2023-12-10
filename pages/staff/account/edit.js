@@ -8,7 +8,7 @@
  * Additionally, it defines a "getLayout" function that returns the provided page as it is.
  */
 
-import Navbar from "../../../components/navBar/Navbar";
+import Navbar from "../../../components/navBar/ShortNavbar";
 import EditMain from "../../../components/main/staff/edit";
 import Footer from "../../../components/footer/Footer";
 import MiniBar from "../../../components/navBar/minimalBar";

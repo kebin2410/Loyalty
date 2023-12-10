@@ -1,4 +1,4 @@
-import Navbar from "../../components/navBar/Navbar";
+import Navbar from "../../components/navBar/ShortNavbar";
 import EarnMain from "../../components/main/staff/earn";
 import Footer from "../../components/footer/Footer";
 import MiniBar from "../../components/navBar/minimalBar";
