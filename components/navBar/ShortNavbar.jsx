@@ -4,22 +4,17 @@ import Image from "next/image";
 import Switch from "../../common/ThemeChange/Switch";
 import LangSwitch from "../../common/LanguageChange/Switch";
 import ThemeContext from "../../common/ThemeChange/ThemeContext";
-import { UserMenu } from "../../components/navBar/data/user";
-import { FaBars, FaRegUserCircle, FaHome } from "react-icons/fa";
+import { FaBars, FaHome } from "react-icons/fa";
 
 const ShortNavbar = () => {
   const [windowHeight, setWindowHeight] = useState(0);
   const { dark, toggle } = useContext(ThemeContext);
-  const [auth, setAuth] = useState(true);
-  const menus = useRef();
-  const hidenMenu = () => {
-    menus.current.classList.remove("show");
-  };
   const navBarTop = () => {
     if (window !== undefined) {
       let height = window.scrollY;
       setWindowHeight(height);
     }
+
   };
   useEffect(() => {
     window.addEventListener("scroll", navBarTop);
@@ -30,23 +25,14 @@ const ShortNavbar = () => {
 
   return (
     <header
-      className={`header-section register login ${
-        windowHeight > 50 && "header-fixed animated fadeInDown"
-      }`}
+      className={`header-section register login ${windowHeight > 50 && "header-fixed animated fadeInDown"
+        }`}
     >
       <div className="container">
         <div className="row d-flex header-area">
           <nav className="navbar d-flex justify-content-between  navbar-expand-lg navbar-dark">
             <Link className="navbar-brand" href="/">
-              {!dark ? (
-                <i className="text-white">
-                  <FaHome />
-                </i>
-              ) : (
-                <i className="text-black">
-                  <FaHome />
-                </i>
-              )}
+              {!dark ? <i className="text-white"><FaHome /></i> : <i className="text-black"><FaHome /></i>}
             </Link>
             <div className="d-flex align-items-center justify-content-end">
               <ul className="navbar-nav">
@@ -59,19 +45,6 @@ const ShortNavbar = () => {
                   Register
                 </Link>
               </div>
-              {auth && (
-                <>
-                  <div className="d-flex">
-                    <button
-                      className="mx-1 User"
-                      style={{ cursor: "pointer" }}
-                    >
-                      <FaRegUserCircle size={24} color="var(--head-color)" />
-                    </button>
-                    <div class="vr py-2 mx-2 wb-color"></div>
-                  </div>
-                </>
-              )}
               <Switch />
             </div>
           </nav>
