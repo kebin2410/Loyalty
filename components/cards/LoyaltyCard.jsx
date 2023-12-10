@@ -10,7 +10,7 @@ const LoyaltyCard = ({
   sub_title,
   sub_text,
   balance,
-  identifier,
+  membershipID,
   issue_date,
   expire_date,
   bgColor,
@@ -51,7 +51,7 @@ const LoyaltyCard = ({
         <div className="d-flex justify-content-between">
           <div className="text-start">
             <h6 className="line-clamp-1 text-white pb-1" style={{ fontWeight: "200" }}>Membership ID</h6>
-            <h6 className="line-clamp-1 text-white" style={{ fontWeight: "600" }}>{identifier}</h6>
+            <h6 className="line-clamp-1 text-white" style={{ fontWeight: "600" }}>{membershipID}</h6>
           </div>
           <div className="d-flex">
             <div className="mx-2 responsive-text text-start">

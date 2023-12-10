@@ -1,10 +1,14 @@
-import ShortNavbar from "../../components/navBar/ShortNavbar";
+import Navbar from "../../components/navBar/Navbar";
 import LoginForm from "../../components/login/partner/LoginForm";
 import Footer from "../../components/footer/Footer";
+import Minibar from "../../components/navBar/minimalBar";
+import { navData } from "../../components/navBar/miniData/partner";
+import { PartnerMenuInfo } from "../../components/navBar/userMenu/userMenuData";
 export default function Login() {
     return (
         <>
-            <ShortNavbar />
+            <Navbar userMenu={PartnerMenuInfo}/>
+            <Minibar items={navData}/>
             <LoginForm />
             <Footer />
         </>

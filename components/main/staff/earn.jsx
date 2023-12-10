@@ -98,7 +98,7 @@ const Earn = () => {
                                         sub_title={singleCard.sub_title}
                                         sub_text={singleCard.sub_text}
                                         balance={singleCard.balance}
-                                        identifier={singleCard.identifer}
+                                        membershipID={singleCard.membershipID}
                                         issue_date={singleCard.issue_date}
                                         expire_date={singleCard.expiry_date}
                                     />

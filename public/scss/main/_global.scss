@@ -638,7 +638,7 @@ li {
 .Switch:hover {
   background: var(--switch-bg-color);
 }
-.User {
+.user-menu {
   width: 35px;
   height: 35px;
   display: flex;
@@ -652,11 +652,11 @@ li {
   cursor: pointer;
 }
 
-.User:focus {
+.user-menu:focus {
   border-color: gray;
 }
 
-.User:hover {
+.user-menu:hover {
   background: var(--switch-bg-color);
 }
 

@@ -1,12 +1,11 @@
 import Footer from "./footer/Footer";
-import NavBar from "./navBar/ShortNavbar";
+import NavBar from "./navBar/Navbar";
 import Preloader from "./preloader/Preloader";
-import ScrollToTop from "./scrollToTop/ScrollToTop";
-
+import { MemberMenuInfo } from "../components/navBar/userMenu/userMenuData";
 const Layout = ({ children }) => {
   return (
     <>
-      <NavBar />
+      <NavBar userMenu={MemberMenuInfo}/>
       <div className="w-100 d-flex flex-column">{children}</div>
       <Footer />
       <Preloader />

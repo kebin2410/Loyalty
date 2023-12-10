@@ -20,7 +20,7 @@ export default function Home() {
                       headingText={singleCard.heading_text}
                       sub_title={singleCard.sub_title}
                       sub_text={singleCard.sub_text}
-                      identifier={singleCard.identifer}
+                      membershipID={singleCard.membershipID}
                       issue_date={singleCard.issue_date}
                       expire_date={singleCard.expiry_date}
                     />

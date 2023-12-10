@@ -1,12 +1,13 @@
-import ShortNavbar from "../../components/navBar/ShortNavbar";
+import Navbar from "../../components/navBar/Navbar";
 import TransactionMain from "../../components/main/staff/transaction";
 import Footer from "../../components/footer/Footer";
 import MiniBar from "../../components/navBar/minimalBar";
-import {navData} from "../../components/navBar/staff"; 
+import {navData} from "../../components/navBar/miniData/staff";
+import { StaffMenuInfo } from "../../components/navBar/userMenu/userMenuData"; 
 export default function QRcode() {
     return (
         <>
-            <ShortNavbar />
+            <Navbar userMenu={StaffMenuInfo}/>
             <MiniBar items={navData}/>
             <TransactionMain />
             <Footer />

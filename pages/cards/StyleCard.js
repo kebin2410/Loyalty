@@ -3,7 +3,7 @@ import Image from "next/image";
 import LoyaltyCard from "../../components/cards/LoyaltyCard";
 import { card_data } from "../../components/cards/cardData";
 import Social from "../../components/social/Social";
-import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
+import Breadcrumb from "../../components/breadcrumb/Breadcrumb"; 
 import { BsDatabase } from "react-icons/bs";
 
 import sm1 from "../../public/images/bg/sm01.jpg";
@@ -49,7 +49,7 @@ const CreditCard = () => {
                     sub_title={singleCard.sub_title}
                     sub_text={singleCard.sub_text}
                     balance={singleCard.balance}
-                    identifier={singleCard.identifer}
+                    membershipID={singleCard.membershipID}
                     issue_date={singleCard.issue_date}
                     expire_date={singleCard.expiry_date}
                   />
