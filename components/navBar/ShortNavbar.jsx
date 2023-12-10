@@ -1,12 +1,15 @@
 import { useEffect, useState, useContext, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Switch from "../../common/ThemeChange/Switch";
+import DarkModeSwitch from "../../common/ThemeChange/Switch";
+import Menu from "./userMenu/userMenu";
 import LangSwitch from "../../common/LanguageChange/Switch";
 import ThemeContext from "../../common/ThemeChange/ThemeContext";
 import { FaBars, FaHome } from "react-icons/fa";
 
-const ShortNavbar = () => {
+const ShortNavbar = (props) => {
+  const userMenu = props.userMenu;
+  const [auth, setAuth] = useState(true);
   const [windowHeight, setWindowHeight] = useState(0);
   const { dark, toggle } = useContext(ThemeContext);
   const navBarTop = () => {
@@ -45,7 +48,15 @@ const ShortNavbar = () => {
                   Register
                 </Link>
               </div>
-              <Switch />
+              {auth && (
+                <>
+                  <div className="d-flex">
+                    <Menu menuData={userMenu}/>
+                    <div className="vr py-2 mx-2 wb-color"></div>
+                  </div>
+                </>
+              )}
+              <DarkModeSwitch />
             </div>
           </nav>
         </div>
