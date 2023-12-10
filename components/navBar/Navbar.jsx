@@ -7,7 +7,7 @@ import LangSwitch from "../../common/LanguageChange/Switch";
 import ThemeContext from "../../common/ThemeChange/ThemeContext";
 import { FaBars, FaHome } from "react-icons/fa";
 
-const ShortNavbar = (props) => {
+const Navbar = (props) => {
   const userMenu = props.userMenu;
   const [auth, setAuth] = useState(true);
   const [windowHeight, setWindowHeight] = useState(0);
@@ -65,4 +65,4 @@ const ShortNavbar = (props) => {
   );
 };
 
-export default ShortNavbar;
+export default Navbar;

@@ -1,4 +1,4 @@
-import Navbar from "../../components/navBar/ShortNavbar";
+import Navbar from "../../components/navBar/Navbar";
 import LoginForm from "../../components/login/staff/LoginForm";
 import Footer from "../../components/footer/Footer";
 import { StaffMenuInfo } from "../../components/navBar/userMenu/userMenuData";

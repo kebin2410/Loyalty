@@ -1,4 +1,4 @@
-import Navbar from "../../components/navBar/ShortNavbar";
+import Navbar from "../../components/navBar/Navbar";
 import QrcodeMain from "../../components/main/staff/qrcode";
 import Footer from "../../components/footer/Footer";
 import MiniBar from "../../components/navBar/minimalBar";
