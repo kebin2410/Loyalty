@@ -1,5 +1,5 @@
 import Footer from "./footer/Footer";
-import NavBar from "./navBar/Navbar";
+import NavBar from "./navBar/ShortNavbar";
 import Preloader from "./preloader/Preloader";
 import { MemberMenuInfo } from "../components/navBar/userMenu/userMenuData";
 const Layout = ({ children }) => {
