@@ -46,12 +46,12 @@ const Navbar = (props) => {
               )}
             </Link>
             <div className="d-flex align-items-center justify-content-end">
-              {!auth && 
+              {!auth && ( 
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link href="/login">Log In</Link>
                 </li>
-              </ul>}
+              </ul> )}
               <div className="right-area header-action d-flex align-items-center mx-3">
                 <Link href="/register" className="cmn-btn btn-register">
                   Register
