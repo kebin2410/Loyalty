@@ -1,16 +1,19 @@
 import Navbar from "../../components/navBar/Navbar";
-import LoginForm from "../../components/login/partner/LoginForm";
+import AdminDashboard from "../../components/main/admin/admin";
+import { navData } from "../../components/navBar/miniData/admin";
+import MinimalBar from "../../components/navBar/minimalBar";
 import Footer from "../../components/footer/Footer";
-export default function Login() {
+export default function Dashboard() {
     return (
         <>
             <Navbar />
-            <LoginForm />
+            <MinimalBar items={navData}/>
+            <AdminDashboard />
             <Footer />
         </>
     );
 }
 
-Login.getLayout = function getLayout(page) {
+Dashboard.getLayout = function getLayout(page) {
     return <>{page}</>;
 };

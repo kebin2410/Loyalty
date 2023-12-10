@@ -1,15 +1,15 @@
 export const navData = [
     {
       title: "Dashboard",
-      link: "/staff/dashboard",
+      link: "/partner/dashboard",
     },
     {
       title: "Scan QR Code",
-      url: "/staff/qrcode",
+      link: "/partner/qrcode",
     },
     {
       title: "Members",
-      url: "/staff/members",
+      link: "/partner/members",
     },
   ];
   

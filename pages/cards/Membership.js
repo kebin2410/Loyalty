@@ -20,6 +20,7 @@ import {
   FaWhatsapp,
   FaReddit,
 } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 const CreditCard = () => {
@@ -63,11 +64,12 @@ const CreditCard = () => {
                       items={[
                         [FaFacebookF, "/"],
                         [BsTwitterX, "/"],
-                        [FaTwitter, "/"],
                         [FaLinkedinIn, "/"],
-                        [FaInstagram, "/"],
+                        [FaPinterestP, "/"],
+                        [FaReddit, "/"],
+                        [FaWhatsapp, "/"],
                         [FaTelegram, "/"],
-                        [BsTwitterX, "/"]
+                        [CiMail, "/"],
                       ]}
                     />
                   </div>

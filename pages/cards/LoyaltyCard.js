@@ -12,7 +12,6 @@ import sm3 from "../../public/images/bg/sm03.jpg";
 
 import {
   FaFacebookF,
-  FaInstagram,
   FaLinkedinIn,
   FaTwitter,
   FaTelegram,
@@ -20,6 +19,8 @@ import {
   FaWhatsapp,
   FaReddit,
 } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import { CiMail } from "react-icons/ci";
 import Link from "next/link";
 const CreditCard = () => {
   const singleCard = card_data[3];
@@ -61,13 +62,13 @@ const CreditCard = () => {
                     <Social
                       items={[
                         [FaFacebookF, "/"],
-                        [FaTwitter, "/"],
+                        [BsTwitterX, "/"],
                         [FaLinkedinIn, "/"],
-                        [FaInstagram, "/"],
-                        [FaTelegram, "/"],
                         [FaPinterestP, "/"],
-                        [FaWhatsapp, "/"],
                         [FaReddit, "/"],
+                        [FaWhatsapp, "/"],
+                        [FaTelegram, "/"],
+                        [CiMail, "/"],
                       ]}
                     />
                   </div>

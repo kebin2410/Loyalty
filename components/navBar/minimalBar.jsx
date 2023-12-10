@@ -9,13 +9,12 @@ import Image from "next/image";
 import { FaBars, FaHome } from "react-icons/fa";
 
 const MinimalBar = (props) => {
+  const items = props.items;
   const [mounted, setMounted] = useState(false);
-
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  const items = props.items;
   if (mounted) {
     return (
       <div className="" style={{ backgroundColor: "var(--bs-inner-color)" }}>

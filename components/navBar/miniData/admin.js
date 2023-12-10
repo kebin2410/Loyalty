@@ -5,10 +5,10 @@ export const navData = [
     },
     {
       title: "Scan QR Code",
-      url: "/admin/qrcode",
+      link: "/admin/qrcode",
     },
     {
       title: "Members",
-      url: "/admin/members",
+      link: "/admin/members",
     },
   ];
