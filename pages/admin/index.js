@@ -1,5 +1,5 @@
 import Navbar from "../../components/navBar/Navbar";
-import AdminDashboard from "../../components/main/admin/admin";
+import AdminDashboard from "../../components/main/admin/dashboard";
 import { AdminMenuInfo } from "../../components/navBar/userMenu/userMenuData";
 import { navData } from "../../components/navBar/miniData/admin";
 import MinimalBar from "../../components/navBar/minimalBar";

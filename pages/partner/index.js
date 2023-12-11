@@ -1,5 +1,5 @@
 import Navbar from "../../components/navBar/Navbar";
-import LoginForm from "../../components/login/partner/LoginForm";
+import PartnerMain from "../../components/main/partner/dashboard";
 import Footer from "../../components/footer/Footer";
 import Minibar from "../../components/navBar/minimalBar";
 import { navData } from "../../components/navBar/miniData/partner";
@@ -9,7 +9,7 @@ export default function Login() {
         <>
             <Navbar userMenu={PartnerMenuInfo}/>
             <Minibar items={navData}/>
-            <LoginForm />
+            <PartnerMain />
             <Footer />
         </>
     );

@@ -9,7 +9,7 @@ import { FaBars, FaHome } from "react-icons/fa";
 
 const Navbar = (props) => {
   const userMenu = props.userMenu;
-  const [auth, setAuth] = useState(true);
+  const [auth, setAuth] = useState(false);
   const [windowHeight, setWindowHeight] = useState(0);
   const { dark, toggle } = useContext(ThemeContext);
   const navBarTop = () => {
@@ -17,7 +17,6 @@ const Navbar = (props) => {
       let height = window.scrollY;
       setWindowHeight(height);
     }
-
   };
   useEffect(() => {
     window.addEventListener("scroll", navBarTop);
@@ -28,14 +27,23 @@ const Navbar = (props) => {
 
   return (
     <header
-      className={`header-section register login ${windowHeight > 50 && "header-fixed animated fadeInDown"
-        }`}
+      className={`header-section register login ${
+        windowHeight > 50 && "header-fixed animated fadeInDown"
+      }`}
     >
       <div className="container">
         <div className="row d-flex header-area">
           <nav className="navbar d-flex justify-content-between  navbar-expand-lg navbar-dark">
             <Link className="navbar-brand" href="/">
-              {!dark ? <i className="text-white"><FaHome /></i> : <i className="text-black"><FaHome /></i>}
+              {!dark ? (
+                <i className="text-white">
+                  <FaHome />
+                </i>
+              ) : (
+                <i className="text-black">
+                  <FaHome />
+                </i>
+              )}
             </Link>
             <div className="d-flex align-items-center justify-content-end">
               <ul className="navbar-nav">
@@ -51,7 +59,7 @@ const Navbar = (props) => {
               {auth && (
                 <>
                   <div className="d-flex">
-                    <Menu menuData={userMenu}/>
+                    <Menu menuData={userMenu} />
                     <div className="vr py-2 mx-2 wb-color"></div>
                   </div>
                 </>
