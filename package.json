@@ -19,7 +19,7 @@
     "bootstrap": "^5.2.3",
     "dynamsoft-camera-enhancer": "^4.0.0",
     "dynamsoft-javascript-barcode": "^9.6.32",
-    "eslint": "8.30.0",
+    "eslint": "8.54.0",
     "eslint-config-next": "13.1.1",
     "framer-motion": "^10.16.16",
     "mui-datatables": "^4.3.0",
