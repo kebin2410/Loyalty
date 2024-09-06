@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
-    "@nextui-org/react": "^2.2.9",
+    "@nextui-org/react": "^2.4.2",
     "@tanstack/react-table": "^8.10.7",
     "bootstrap": "^5.3.2",
     "dynamsoft-camera-enhancer": "^4.0.0",
