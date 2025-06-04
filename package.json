@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
-    "@nextui-org/react": "^2.2.9",
+    "@nextui-org/react": "^2.6.11",
     "@tanstack/react-table": "^8.10.7",
     "bootstrap": "^5.3.2",
     "dynamsoft-camera-enhancer": "^4.0.0",
@@ -24,7 +24,7 @@
     "framer-motion": "^10.16.16",
     "mui-datatables": "^4.3.0",
     "mui-one-time-password-input": "^2.0.1",
-    "next": "^13.5.6",
+    "next": "^15.2.2",
     "prettier": "^3.0.0",
     "primereact": "^10.2.1",
     "qrcode": "^1.5.3",
